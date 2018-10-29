@@ -43,7 +43,7 @@ class AdjMatrixGraph implements Graph {
 	public void print() {
 		System.out.println(vertices + " vertices, " + edges + " edges");
 
-		for (int i = 0; i < edges; i++) {
+		for (int i = 0; i < vertices; i++) {
 			String str = "";
 			for (int j = 0; j < vertices; j++) {
 				str += matrix[i][j] + " ";
