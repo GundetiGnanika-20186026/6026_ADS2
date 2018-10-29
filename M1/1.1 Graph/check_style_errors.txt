@@ -1,18 +1,14 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Queue.java:156: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:46: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:160:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:211:21: '(' is followed by whitespace. [ParenPad]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:251: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:295: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:323: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:217:21: '(' is followed by whitespace. [ParenPad]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:257: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:301: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M1\1.1 Graph\Solution.java:329: Line is longer than 80 characters (found 100). [LineLength]
 Audit done.
 Checkstyle ends with 7 errors.

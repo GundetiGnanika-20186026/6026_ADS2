@@ -3,148 +3,154 @@ import java.util.Scanner;
  * Interface for graph.
  */
 interface Graph {
-    /**
-     *  function for number of vertices .
-     *
-     * @return     { vertices }
-     */
-    int totalVertices();
-    /**
-     *  function for number of edges .
-     *
-     * @return     { total edges }
-     */
-    int totalEdges();
-    /**
-     * Adds an edge.
-     *
-     * @param      v     { vertex1 }
-     * @param      w     { vertex2 }
-     */
-    void addEdge(int v, int w);
-    /**
-     *  function to get vertices adjacent to v .
-     *
-     * @param      v     { vertex }
-     *
-     * @return     { vertex }
-     */
-    Iterable<Integer> adj(int v);
-    /**
-     * Determines if it has edge.
-     *
-     * @param      v     { vertex1 }
-     * @param      w     { vertex2 }
-     *
-     * @return     True if has edge, False otherwise.
-     */
-    boolean hasEdge(int v, int w);
+	/**
+	 *  function for number of vertices .
+	 *
+	 * @return     { vertices }
+	 */
+	int totalVertices();
+	/**
+	 *  function for number of edges .
+	 *
+	 * @return     { total edges }
+	 */
+	int totalEdges();
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { vertex1 }
+	 * @param      w     { vertex2 }
+	 */
+	void addEdge(int v, int w);
+	/**
+	 *  function to get vertices adjacent to v .
+	 *
+	 * @param      v     { vertex }
+	 *
+	 * @return     { vertex }
+	 */
+	Iterable<Integer> adj(int v);
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { vertex1 }
+	 * @param      w     { vertex2 }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	boolean hasEdge(int v, int w);
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 class AdjacencyList implements Graph {
-    /**
-     *  Bags array .
-     */
-    private Bag<Integer>[] bags;
-    /**
-     *  vertex value .
-     */
-    private int vertices;
-    /**
-     * edge num .
-     */
-    private int edges;
-    /**
-     * Constructs the object.
-     *
-     * @param      vertex  The vertex
-     */
-    AdjacencyList(final int vertex) {
-        this.vertices = vertex;
-        bags = (Bag<Integer>[]) new Bag[vertex];
-        for (int l = 0; l < vertex; l++) {
-            bags[l] = new Bag();
-        }
-        this.edges = 0;
-    }
-    /**
-     * number of vertices .
-     *
-     * @return     { total vertices }
-     */
-    public int totalVertices() {
-        return this.vertices;
-    }
-    /**
-     *  function for number of edges .
-     *
-     * @return     { total edges }
-     */
-    public int totalEdges() {
-        return this.edges;
-    }
-    /**
-     * Adds an edge.
-     *
-     * @param      v     { vertex1 }
-     * @param      w     { vertex2 }
-     */
-    public void addEdge(final int v, final int w) {
-        edges++;
-        if (v == w || hasEdge(v, w)) {
-            edges--;
-        }
-        bags[v].add(w);
-        bags[w].add(v);
-    }
-    /**
-     * Determines if it has edge.
-     *
-     * @param      v     { vertex1 }
-     * @param      w     { vertex2 }
-     *
-     * @return     True if has edge, False otherwise.
-     */
-    public boolean hasEdge(final int v, final int w) {
-        for (Integer val : bags[v]) {
-            if (val == w) {
-                return true;
-            }
-        }
-        return false;
-    }
-    /**
-     * { function for Iterator }.
-     *
-     * @param      v     { vertex }
-     *
-     * @return     {queue}
-     */
-    public Iterable<Integer> adj(final int v) {
-        Queue<Integer> queue = new Queue<>();
-        for (Integer val : bags[v]) {
-            queue.enqueue(val);
-        }
-        return queue;
-    }
-    /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        if (edges == 0) {
-            System.out.println(vertices + " vertices, "
-                               + edges + " edges");
-            System.out.println("No edges");
-            return null;
-        }
-        System.out.println(vertices + " vertices, "
-                           + edges + " edges");
-        return null;
-    }
+	/**
+	 *  Bags array .
+	 */
+	private Bag<Integer>[] bags;
+	/**
+	 *  vertex value .
+	 */
+	private int vertices;
+	/**
+	 * edge num .
+	 */
+	private int edges;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      vertex  The vertex
+	 */
+	AdjacencyList(final int vertex) {
+		this.vertices = vertex;
+		bags = (Bag<Integer>[]) new Bag[vertex];
+		for (int l = 0; l < vertex; l++) {
+			bags[l] = new Bag();
+		}
+		this.edges = 0;
+	}
+	/**
+	 * number of vertices .
+	 * its complexity is O(1).
+	 *
+	 * @return     { total vertices }
+	 */
+	public int totalVertices() {
+		return this.vertices;
+	}
+	/**
+	 *  function for number of edges .
+	 *  its complexity is O(1).
+	 *
+	 * @return     { total edges }
+	 */
+	public int totalEdges() {
+		return this.edges;
+	}
+	/**
+	 * Adds an edge.
+	 * its complexity is O(1).
+	 *
+	 * @param      v     { vertex1 }
+	 * @param      w     { vertex2 }
+	 */
+	public void addEdge(final int v, final int w) {
+		edges++;
+		if (v == w || hasEdge(v, w)) {
+			edges--;
+		}
+		bags[v].add(w);
+		bags[w].add(v);
+	}
+	/**
+	 * Determines if it has edge.
+	 * its complexity is O(N).
+	 *
+	 * @param      v     { vertex1 }
+	 * @param      w     { vertex2 }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(final int v, final int w) {
+		for (Integer val : bags[v]) {
+			if (val == w) {
+				return true;
+			}
+		}
+		return false;
+	}
+	/**
+	 * { function for Iterator }.
+	 * its complexity is O(N).
+	 *
+	 * @param      v     { vertex }
+	 *
+	 * @return     {queue}
+	 */
+	public Iterable<Integer> adj(final int v) {
+		Queue<Integer> queue = new Queue<>();
+		for (Integer val : bags[v]) {
+			queue.enqueue(val);
+		}
+		return queue;
+	}
+	/**
+	 * Returns a string representation of the object.
+	 * its complexity is O(1).
+	 *
+	 * @return     String representation of the object.
+	 */
+	public String toString() {
+		if (edges == 0) {
+			System.out.println(vertices + " vertices, "
+			                   + edges + " edges");
+			System.out.println("No edges");
+			return null;
+		}
+		System.out.println(vertices + " vertices, "
+		                   + edges + " edges");
+		return null;
+	}
 }
 
 
@@ -294,24 +300,24 @@ final class Solution {
 		String[] places = scan.nextLine().split(",");
 		switch (cmd) {
 		case "List" :
-		    AdjacencyList listobj = new AdjacencyList(vertexNum);
-            for (int k = 0; k < edges; k++) {
-                String[] edgesval = scan.nextLine().split(" ");
-                listobj.addEdge(Integer.parseInt(edgesval[0]),
-                                Integer.parseInt(edgesval[1]));
-            }
-            listobj.toString();
-            for (int j = 0; j < vertexNum; j++) {
-                String str = "";
-                if (listobj.totalEdges() == 0) {
-                    break;
-                }
-                str = str + places[j] + ": ";
-                for (Integer each : listobj.adj(j)) {
-                    str = str + places[each] + " ";
-                }
-                System.out.println(str);
-            }
+			AdjacencyList listobj = new AdjacencyList(vertexNum);
+			for (int k = 0; k < edges; k++) {
+				String[] edgesval = scan.nextLine().split(" ");
+				listobj.addEdge(Integer.parseInt(edgesval[0]),
+				                Integer.parseInt(edgesval[1]));
+			}
+			listobj.toString();
+			for (int j = 0; j < vertexNum; j++) {
+				String str = "";
+				if (listobj.totalEdges() == 0) {
+					break;
+				}
+				str = str + places[j] + ": ";
+				for (Integer each : listobj.adj(j)) {
+					str = str + places[each] + " ";
+				}
+				System.out.println(str);
+			}
 
 			break;
 		case "Matrix" :

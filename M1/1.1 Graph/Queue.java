@@ -151,7 +151,7 @@ class Queue<Item> implements Iterable<Item> {
 
      *              Worst Case : O(1)
      *
-     * @return
+     * @return      item.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
