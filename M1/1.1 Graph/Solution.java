@@ -329,7 +329,7 @@ final class Solution {
 
             for (int i = 0; i < edges; i++) {
                 String[] input = scan.nextLine().split(" ");
-                obj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
+obj.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
             }
             obj.print();
             break;
