@@ -97,7 +97,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 36 vertices, 72 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
@@ -138,7 +138,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-36 vertices, 78 edges
+36 vertices, 72 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
@@ -186,23 +186,24 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
-1 vertices, 1 edges
-1
+1 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
 0 vertices, 0 edges
+No edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########

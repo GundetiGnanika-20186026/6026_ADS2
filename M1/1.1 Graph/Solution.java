@@ -26,6 +26,9 @@ class AdjMatrixGraph implements Graph {
 	}
 
 	public void addEdge(int v, int w) {
+		if ( v == w || hasEdge(v, w)) {
+			return;
+		}
 		matrix[v][w] = 1;
 		matrix[w][v] = 1;
 		edges++;
@@ -41,6 +44,12 @@ class AdjMatrixGraph implements Graph {
 	}
 
 	public void print() {
+		if(edges == 0) {
+		  System.out.println(vertices + " vertices, " + edges + " edges");
+		  System.out.println("No edges");
+		  return;
+
+		}
 		System.out.println(vertices + " vertices, " + edges + " edges");
 
 		for (int i = 0; i < vertices; i++) {
