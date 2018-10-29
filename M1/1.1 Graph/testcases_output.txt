@@ -16,8 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -38,8 +37,19 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+0 1 1 0 0 1 1 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 0 0 0 
+0 0 0 1 0 1 1 0 0 0 0 0 0 
+1 0 0 1 1 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 1 0 0 1 
+0 0 0 0 0 0 0 0 0 1 0 1 0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -83,8 +93,7 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -128,8 +137,9 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
+	at AdjMatrixGraph.print(Solution.java:48)
+	at Solution.main(Solution.java:81)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -138,8 +148,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -148,8 +157,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+1
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -158,8 +166,7 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -168,7 +175,6 @@ Expected Output:
 No edges
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
