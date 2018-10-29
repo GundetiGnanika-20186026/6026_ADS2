@@ -41,7 +41,7 @@ class AdjMatrixGraph implements Graph {
     }
 
     public void print() {
-    	System.out.println(vertices+" vertices,"+edges+" edges");
+    	System.out.println(vertices+" vertices, "+edges+" edges");
 
     	for(int i = 0; i < vertices; i++) {
     		String str = "";
