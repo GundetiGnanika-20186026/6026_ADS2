@@ -40,7 +40,8 @@ class AdjMatrixGraph implements Graph {
     	return matrix[v][w] == 1;
     }
 
-    public void print(){
+    public void print() {
+    	System.out.println(vertices+" vertices,"+edges+" edges");
 
     	for(int i = 0; i < vertices; i++) {
     		String str = "";

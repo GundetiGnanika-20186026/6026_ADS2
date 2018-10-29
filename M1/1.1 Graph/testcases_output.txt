@@ -37,6 +37,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
+13 vertices,13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -137,9 +138,10 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
+36 vertices,78 edges
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 36
-	at AdjMatrixGraph.print(Solution.java:48)
-	at Solution.main(Solution.java:81)
+	at AdjMatrixGraph.print(Solution.java:49)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -157,6 +159,7 @@ Expected Output:
 No edges
 
 Your Output: 
+1 vertices,1 edges
 1
 ----------------------------------------
 
@@ -166,7 +169,7 @@ Expected Output:
 No edges
 
 Your Output: 
-
+0 vertices,0 edges
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
