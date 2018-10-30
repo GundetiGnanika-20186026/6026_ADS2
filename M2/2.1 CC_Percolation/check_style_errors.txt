@@ -1,11 +1,12 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:21:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:21:53: 's' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:35:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:21:8: Unused @param tag for 's'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:24:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:24:53: Expected @param tag for 's1'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:35:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:38:34: Expected @param tag for 'g1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]

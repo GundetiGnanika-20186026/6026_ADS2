@@ -1,3 +1,6 @@
+/**
+ * Class for depth first paths.
+ */
 public class DepthFirstPaths {
     /**
      * marked[v] = is there an s-v path?.
@@ -18,8 +21,8 @@ public class DepthFirstPaths {
      * @param      s     { source }
      */
 
-    public DepthFirstPaths(final Graph G, final int s) {
-        this.s = s;
+    public DepthFirstPaths(final Graph G, final int s1) {
+        this.s = s1;
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
 
@@ -32,12 +35,12 @@ public class DepthFirstPaths {
      * @param      G     { Graph }
      * @param      v     { vertex }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph g1, final int v) {
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g1.adj(v)) {
             if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g1, w);
             }
         }
     }
