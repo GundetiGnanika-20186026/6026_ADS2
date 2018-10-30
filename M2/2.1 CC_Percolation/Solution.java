@@ -40,7 +40,7 @@ class Percolation {
 }
 
 final class Solution {
-    private Solution(){
+    private Solution() {
 
     }
     public static void main(String[] args) {
@@ -51,10 +51,10 @@ final class Solution {
         Percolation obj = new Percolation(vertexes);
 
         while (scan.hasNext()) {
-                int rowvalue = scan.nextInt();
-                int colvalue = scan.nextInt();
-                grid[rowvalue - 1][colvalue - 1] = true;
-            }
+            int rowvalue = scan.nextInt();
+            int colvalue = scan.nextInt();
+            grid[rowvalue - 1][colvalue - 1] = true;
+        }
         System.out.println(obj.percolates(grid, graph));
 
 
