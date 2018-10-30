@@ -3,10 +3,8 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:21:8: Unused @param tag for 's'. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:24:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:24:53: Expected @param tag for 's1'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:35:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\DepthFirstPaths.java:38:34: Expected @param tag for 'g1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
@@ -14,17 +12,17 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: 'V' hides a field. [HiddenField]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:45:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:45:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:51:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:51:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:63: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:101: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:46:20: '{' at column 20 should have line break after. [LeftCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:53:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:53:20: '{' at column 20 should have line break after. [LeftCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:66: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:105: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:21: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:25: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:134: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:140: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:109: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:118:21: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:118:25: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:139: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:145: First sentence should end with a period. [JavadocStyle]
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...

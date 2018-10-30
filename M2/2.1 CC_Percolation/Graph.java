@@ -39,12 +39,14 @@ public class Graph {
 
     /**
      * {  number of vertices }.
+     * its complexity is O(1).
      *
      * @return     { v }
      */
     public int V() { return V; }
     /**
      * {  number of edges }.
+     * its complexity is O(1).
      *
      * @return     { e }
      */
@@ -55,6 +57,7 @@ public class Graph {
 
     /**
      * Adds an edge.
+     * its complexity is O(1).
      *
      * @param      v     { vertex1 }
      * @param      w     { vertex2 }
@@ -69,6 +72,7 @@ public class Graph {
 
     /**
      * does the graph contain the edge v-w?.
+     * its complexity is O(1).
      *
      * @param      v     { vertex1 }
      * @param      w     { vertex2 }
@@ -126,6 +130,7 @@ public class Graph {
 
         /**
          * Determines if it has next.
+         * its complexity is O(n).
          *
          * @return     True if has next, False otherwise.
          */

@@ -31,8 +31,9 @@ public class DepthFirstPaths {
 
     /**
      *  depth first search from v.
+     *  its complexity is O(N).
      *
-     * @param      G     { Graph }
+     * @param      g1    { Graph }
      * @param      v     { vertex }
      */
     private void dfs(final Graph g1, final int v) {
@@ -47,6 +48,7 @@ public class DepthFirstPaths {
 
     /**
      * Determines if it has path to.
+     * its complexity is O(1).
      *
      * @param      v     { vertex }
      *

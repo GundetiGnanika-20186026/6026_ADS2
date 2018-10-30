@@ -17,6 +17,7 @@ class Percolation {
     }
     /**
      * will convert two dimensional to one dimensional.
+     * its complexity is O(1).
      *
      * @param      i     { required row }
      * @param      j     { required col }
