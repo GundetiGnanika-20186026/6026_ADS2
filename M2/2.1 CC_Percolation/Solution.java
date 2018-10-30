@@ -23,7 +23,7 @@ class Percolation {
      *
      * @return     { value in ith row and jth col }
      */
-    public int  transition(final int i , final int j) {
+    public int  transition(final int i, final int j) {
         return ((i * size) + j);
     }
     /**
@@ -40,22 +40,22 @@ class Percolation {
                 if (grid[row][col]) {
                     int tmp = transition(row, col);
                     if (row == 0) {
-                        graph.addEdge(tmp , size * size);
+                        graph.addEdge(tmp, size * size);
                     }
                     if (row == size - 1) {
-                        graph.addEdge(tmp , size * size + 1);
+                        graph.addEdge(tmp, size * size + 1);
                     }
                     if (row - 1 >= 0 && grid[row - 1][col]) {
-                        graph.addEdge(tmp , transition(row - 1, col));
+                        graph.addEdge(tmp, transition(row - 1, col));
                     }
                     if (row + 1 < size  && grid[row + 1][col]) {
-                        graph.addEdge(tmp , transition(row + 1, col));
+                        graph.addEdge(tmp, transition(row + 1, col));
                     }
                     if (col - 1 >= 0 && grid[row][col - 1]) {
-                        graph.addEdge(tmp , transition(row, col - 1));
+                        graph.addEdge(tmp, transition(row, col - 1));
                     }
                     if (col + 1 < size && grid[row][col + 1]) {
-                        graph.addEdge(tmp , transition(row, col + 1));
+                        graph.addEdge(tmp, transition(row, col + 1));
                     }
                 }
             }
@@ -101,7 +101,8 @@ final class Solution {
 
         // while (scan.hasNext()) {
         //     String[] input = scan.nextLine().split(" ");
-        //     grid[Integer.parseInt(input[0])-1][Integer.parseInt(input[1])-1] = 1;
+        //     grid[Integer.parseInt(input[0])-1]
+        //     [Integer.parseInt(input[1])-1] = 1;
         // }
         // for(int i = 0; i < size;i++){
         //     for(int j = 0; j< size; j++){
