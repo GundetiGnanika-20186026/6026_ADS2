@@ -22,7 +22,7 @@ public class DepthFirstPaths {
         this.s = s;
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
-        //validateVertex(s);
+
         dfs(G, s);
     }
 
@@ -50,14 +50,9 @@ public class DepthFirstPaths {
      * @return     True if has path to, False otherwise.
      */
     public boolean hasPathTo(final int v) {
-        //validateVertex(v);
+
         return marked[v];
     }
 
-    // // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    // private void validateVertex(final int v) {
-    //     int V = marked.length;
-    //     if (v < 0 || v >= V)
-    //         throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    // }
+
 }

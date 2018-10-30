@@ -1,13 +1,33 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * Class for graph.
+ */
 public class Graph {
+    /**
+     * { var_description }
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * { var_description }
+     */
     private final int V;
+    /**
+     * { var_description }
+     */
     private int E;
+    /**
+     * { var_description }
+     */
     private boolean[][] adj;
 
     // empty graph with V vertices
+
+    /**
+     * Constructs the object.
+     *
+     * @param      V     { parameter_description }
+     */
     public Graph(final int V) {
         if (V < 0) throw new IllegalArgumentException("Too few vertices");
         this.V = V;
@@ -16,7 +36,18 @@ public class Graph {
     }
 
     // number of vertices and edges
+
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int V() { return V; }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int E() { return E; }
 
 
@@ -32,43 +63,43 @@ public class Graph {
         return adj[v][w];
     }
 
-    // return list of neighbors of v
-    public Iterable<Integer> adj(final int v) {
-        return new AdjIterator(v);
-    }
+    // // return list of neighbors of v
+    // public Iterable<Integer> adj(final int v) {
+    //     return new AdjIterator(v);
+    // }
 
-    // support iteration over graph vertices
-    private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
-        private int v;
-        private int w = 0;
+    // // support iteration over graph vertices
+    // private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
+    //     private int v;
+    //     private int w = 0;
 
-        AdjIterator(int v) {
-            this.v = v;
-        }
+    //     AdjIterator(int v) {
+    //         this.v = v;
+    //     }
 
-        public Iterator<Integer> iterator() {
-            return this;
-        }
+    //     public Iterator<Integer> iterator() {
+    //         return this;
+    //     }
 
-        public boolean hasNext() {
-            while (w < V) {
-                if (adj[v][w]) return true;
-                w++;
-            }
-            return false;
-        }
+    //     public boolean hasNext() {
+    //         while (w < V) {
+    //             if (adj[v][w]) return true;
+    //             w++;
+    //         }
+    //         return false;
+    //     }
 
-        public Integer next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            return w++;
-        }
+    //     public Integer next() {
+    //         if (!hasNext()) {
+    //             throw new NoSuchElementException();
+    //         }
+    //         return w++;
+    //     }
 
-        public void remove()  {
-            throw new UnsupportedOperationException();
-        }
-    }
+    //     public void remove()  {
+    //         throw new UnsupportedOperationException();
+    //     }
+    // }
 
 
     // string representation of Graph - takes quadratic time
