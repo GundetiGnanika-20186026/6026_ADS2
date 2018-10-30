@@ -8,8 +8,6 @@ Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:7: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:11: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
@@ -19,20 +17,21 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: 'V' hides a field. [HiddenField]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:40: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:45:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:45:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:46: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:51:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:51:20: '{' at column 20 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:55:5: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'addEdge' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'addEdge' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:55:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:56: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:62:5: Class 'Graph' looks like designed for extension (can be subclassed), but the method 'contains' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Graph' final or making the method 'contains' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:62:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:72: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:101: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:105: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:21: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:25: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:118: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:134: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:140: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:151: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Solution.java:38:25: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Solution.java:38:38: ';' is preceded with whitespace. [NoWhitespaceBefore]
