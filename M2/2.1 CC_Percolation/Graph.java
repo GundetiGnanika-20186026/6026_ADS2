@@ -8,7 +8,7 @@ public class Graph {
     private boolean[][] adj;
 
     // empty graph with V vertices
-    public Graph(int V) {
+    public Graph(final int V) {
         if (V < 0) throw new IllegalArgumentException("Too few vertices");
         this.V = V;
         this.E = 0;
@@ -21,19 +21,19 @@ public class Graph {
 
 
     // add undirected edge v-w
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         if (!adj[v][w]) E++;
         adj[v][w] = true;
         adj[w][v] = true;
     }
 
     // does the graph contain the edge v-w?
-    public boolean contains(int v, int w) {
+    public boolean contains(final int v, final int w) {
         return adj[v][w];
     }
 
     // return list of neighbors of v
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return new AdjIterator(v);
     }
 

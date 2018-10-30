@@ -1,12 +1,39 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
+    /**
+     * size.
+     */
     private int size;
+    /**
+     * Constructs the object.
+     *
+     * @param      vertex  The vertex
+     */
     Percolation(final int vertex) {
         size = vertex;
     }
-    public int  transition(int i , int j) {
+    /**
+     * will convert two dimensional to one dimensional.
+     *
+     * @param      i     { required row }
+     * @param      j     { required col }
+     *
+     * @return     { value in ith row and jth col }
+     */
+    public int  transition(final int i , final int j) {
         return ((i * size) + j);
     }
+    /**
+     * checks wether the path is present or not.
+     *
+     * @param      grid   The grid
+     * @param      graph  The graph
+     *
+     * @return     { true or false }
+     */
     public boolean percolates(final boolean[][] grid, final Graph graph) {
         for (int row = 0 ; row < size ; row++) {
             for (int col = 0 ; col < size; col++) {
@@ -39,11 +66,22 @@ class Percolation {
 
 }
 
+/**
+ * Solution class.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
-    public static void main(String[] args) {
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int vertexes = Integer.parseInt(scan.nextLine());
         boolean[][] grid = new boolean[vertexes][vertexes];

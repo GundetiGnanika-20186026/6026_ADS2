@@ -4,7 +4,7 @@ public class DepthFirstPaths {
     private final int s;         // source vertex
 
 
-    public DepthFirstPaths(Graph G, int s) {
+    public DepthFirstPaths(final Graph G, final int s) {
         this.s = s;
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
@@ -13,7 +13,7 @@ public class DepthFirstPaths {
     }
 
     // depth first search from v
-    private void dfs(Graph G, int v) {
+    private void dfs(final Graph G, final int v) {
         marked[v] = true;
         for (int w : G.adj(v)) {
             if (!marked[w]) {
@@ -24,13 +24,13 @@ public class DepthFirstPaths {
     }
 
 
-    public boolean hasPathTo(int v) {
+    public boolean hasPathTo(final int v) {
         validateVertex(v);
         return marked[v];
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
