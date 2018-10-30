@@ -5,19 +5,19 @@ import java.util.NoSuchElementException;
  */
 public class Graph {
     /**
-     * { var_description }
+     * { newline }.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }
+     * { vertexes }.
      */
     private final int V;
     /**
-     * { var_description }
+     * { edges }.
      */
     private int E;
     /**
-     * { var_description }
+     * { matrix of two dimensional }.
      */
     private boolean[][] adj;
 
@@ -68,7 +68,7 @@ public class Graph {
 
 
     /**
-     * does the graph contain the edge v-w?
+     * does the graph contain the edge v-w?.
      *
      * @param      v     { vertex1 }
      * @param      w     { vertex2 }
@@ -99,26 +99,26 @@ public class Graph {
      */
     private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
         /**
-         * { var_description }
+         * { vertex }
          */
         private int v;
         /**
-         * { var_description }
+         * { edge }
          */
         private int w = 0;
         /**
          * Constructs the object.
          *
-         * @param      v     { parameter_description }
+         * @param      v     { vertex }
          */
         AdjIterator(int v) {
             this.v = v;
         }
 
         /**
-         * { function_description }
+         * { iterates through the graph }.
          *
-         * @return     { description_of_the_return_value }
+         * @return     { item present }
          */
         public Iterator<Integer> iterator() {
             return this;
@@ -138,9 +138,9 @@ public class Graph {
         }
 
         /**
-         * { function_description }
+         * { returns next value }
          *
-         * @return     { description_of_the_return_value }
+         * @return     { integer }
          */
         public Integer next() {
             if (!hasNext()) {
@@ -148,12 +148,12 @@ public class Graph {
             }
             return w++;
         }
-        /**
-         * { function_description }
-         */
-        public void remove()  {
-            throw new UnsupportedOperationException();
-        }
+        // /**
+        //  * {  }
+        //  */
+        // public void remove()  {
+        //     throw new UnsupportedOperationException();
+        // }
     }
 
 

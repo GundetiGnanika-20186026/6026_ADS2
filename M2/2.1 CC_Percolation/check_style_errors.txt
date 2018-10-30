@@ -8,12 +8,8 @@ Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:11: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:15: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:18:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:19: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: 'V' hides a field. [HiddenField]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:31:28: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:32: 'if' construct must use '{}'s. [NeedBraces]
@@ -26,11 +22,9 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:105: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:21: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:114:25: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:118: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:134: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:140: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Graph.java:151: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 Audit done.

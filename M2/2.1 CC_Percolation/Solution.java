@@ -28,6 +28,7 @@ class Percolation {
     }
     /**
      * checks wether the path is present or not.
+     * its complexity is O(n*n).
      *
      * @param      grid   The grid
      * @param      graph  The graph
