@@ -35,8 +35,8 @@ class Percolation {
      * @return     { true or false }
      */
     public boolean percolates(final boolean[][] grid, final Graph graph) {
-        for (int row = 0 ; row < size ; row++) {
-            for (int col = 0 ; col < size; col++) {
+        for (int row = 0; row < size; row++) {
+            for (int col = 0; col < size; col++) {
                 if (grid[row][col]) {
                     int tmp = transition(row, col);
                     if (row == 0) {

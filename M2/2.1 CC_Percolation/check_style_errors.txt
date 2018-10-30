@@ -33,8 +33,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 23 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Solution.java:38:25: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Solution.java:38:38: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M2\2.1 CC_Percolation\Solution.java:39:29: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 3 errors.
