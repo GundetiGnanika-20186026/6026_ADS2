@@ -1,19 +1,42 @@
 import java.util.Scanner;
+/**
+ * Class for bipartite.
+ */
 class Bipartite {
-    private boolean isBipartite;   // is the graph bipartite?
-    private boolean[] color;       // color[v] gives vertices on one side of bipartition
-    private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
-    private int[] edgeTo;          // edgeTo[v] = last edge on path to v
-    private Stack<Integer> cycle;  // odd-length cycle
-    public Bipartite(Graph G) {
+	/**
+	 * is the graph bipartite?
+	 */
+    private boolean isBipartite;
+    /**
+     *  // color[v] gives vertices on one side of bipartition.
+     */
+    private boolean[] color;
+    /**
+     *  // marked[v] = true iff v has been visited in DFS.
+     */
+    private boolean[] marked;
+    /**
+     * // edgeTo[v] = last edge on path to v.
+     */
+    private int[] edgeTo;
+    /**
+     *  // odd-length cycle.
+     */
+    private Stack<Integer> cycle;
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { graph }
+     */
+    public Bipartite(Graph g1) {
         isBipartite = true;
-        color  = new boolean[G.V()];
-        marked = new boolean[G.V()];
-        edgeTo = new int[G.V()];
+        color  = new boolean[g1.V()];
+        marked = new boolean[g1.V()];
+        edgeTo = new int[g1.V()];
 
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < g1.V(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g1, v);
             }
         }
         //assert check(G);
@@ -51,43 +74,18 @@ class Bipartite {
     }
 
 
-    public boolean color(int v) {
+    public boolean color(int v1) {
        // validateVertex(v);
         if (!isBipartite)
             throw new UnsupportedOperationException("graph is not bipartite");
-        return color[v];
+        return color[v1];
     }
 
-    public Iterable<Integer> oddCycle() {
-        return cycle;
-    }
-
-    // private boolean check(ginal Graph G) {
-    //     // graph is bipartite
-    //     if (isBipartite) {
-    //         for (int v = 0; v < G.V(); v++) {
-    //             for (int w : G.adj(v)) {
-    //                 if (color[v] == color[w]) {
-    //                     System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
-    //                     return false;
-    //                 }
-    //             }
-    //         }
-    //     } else {
-    //         // verify cycle
-    //         int first = -1, last = -1;
-    //         for (int v : oddCycle()) {
-    //             if (first == -1) first = v;
-    //             last = v;
-    //         }
-    //         if (first != last) {
-    //             System.err.printf("cycle begins with %d and ends with %d\n", first, last);
-    //             return false;
-    //         }
-    //     }
-
-    //     return true;
+    // public Iterable<Integer> oddCycle() {
+    //     return cycle;
     // }
+
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
