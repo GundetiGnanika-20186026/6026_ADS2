@@ -41,6 +41,7 @@ class DirectedCycle {
 
     /**
      * depth first search.
+     * Time complexity for this method is O(E)
      *
      * @param      g2     { graph }
      * @param      v     { vertex }
@@ -70,6 +71,7 @@ class DirectedCycle {
 
     /**
      * Determines if it has cycle.
+     * Time complexity for this method is O(1).
      *
      * @return     True if has cycle, False otherwise.
      */

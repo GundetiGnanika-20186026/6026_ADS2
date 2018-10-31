@@ -32,6 +32,7 @@ public class Digraph {
 
     /**
      * returns no. of vertexes.
+     * Time complexity is O(1).
      *
      * @return     { vertexes }
      */
@@ -41,6 +42,7 @@ public class Digraph {
 
     /**
      * no. of edges.
+     * Time complexity is O(1).
      *
      * @return     { edges }
      */
@@ -50,6 +52,7 @@ public class Digraph {
 
     /**
      * Adds an edge.
+     * Time complexity is O(1).
      *
      * @param      v1    { vertex1 }
      * @param      w1     { vertex2 }
@@ -62,6 +65,7 @@ public class Digraph {
 
     /**
      * returns every value using iterator.
+     * Time complexity is O(v).
      *
      * @param      v1     { vertex }
      *
