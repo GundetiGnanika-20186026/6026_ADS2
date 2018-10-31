@@ -1,11 +1,30 @@
 import java.util.Scanner;
+/**
+ * Class for directed cycle.
+ */
 class DirectedCycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+	/**
+	 * marked[v] = has vertex v been marked?.
+	 */
+    private boolean[] marked;
+    /**
+     * edgeTo[v] = previous vertex on path to v.
+     */
+    private int[] edgeTo;
+    /**
+     * onStack[v] = is vertex on the stack?.
+     */
+    private boolean[] onStack;
+    /**
+     * directed cycle (or null if no such cycle).
+     */
+    private Stack<Integer> cycle;
 
-
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { graph }
+     */
     public DirectedCycle(Digraph G) {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
@@ -37,7 +56,7 @@ class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                //assert check();
             }
         }
         onStack[v] = false;
@@ -54,7 +73,7 @@ class DirectedCycle {
     }
 
 
-    // certify that digraph has a directed cycle if it reports one
+   // certify that digraph has a directed cycle if it reports one
     private boolean check() {
 
         if (hasCycle()) {
@@ -73,35 +92,25 @@ class DirectedCycle {
 
         return true;
     }
-
-
-    // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     Digraph G = new Digraph(in);
-
-    //     DirectedCycle finder = new DirectedCycle(G);
-    //     if (finder.hasCycle()) {
-    //         StdOut.print("Directed cycle: ");
-    //         for (int v : finder.cycle()) {
-    //             StdOut.print(v + " ");
-    //         }
-    //         StdOut.println();
-    //     }
-
-    //     else {
-    //         StdOut.println("No directed cycle");
-    //     }
-    //     StdOut.println();
-    // }
-
 }
 
 
-
-
-
+/**
+ * Class for solution.
+ */
 class Solution{
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	Solution(){
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertexes = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
@@ -118,7 +127,5 @@ class Solution{
         else {
         	System.out.println("Cycle doesn't exists.");
         }
-
-
-	}
+    }
 }
