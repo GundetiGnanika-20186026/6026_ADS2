@@ -6,6 +6,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:4: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:5:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:5:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
@@ -17,22 +19,8 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:32: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:39:22: Parameter item should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:39:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:52: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:64: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:72: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:74: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:81: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:83: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:83:39: '{' at column 39 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:86: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:87:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:88: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:88:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:89: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:89:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:91:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:92: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:81: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:88: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:89: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 17 errors.
