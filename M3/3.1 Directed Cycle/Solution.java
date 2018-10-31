@@ -23,29 +23,42 @@ class DirectedCycle {
     /**
      * Constructs the object.
      *
-     * @param      G     { graph }
+     * @param      g1     { graph }
      */
-    public DirectedCycle(Digraph G) {
-        marked  = new boolean[G.vertex()];
-        onStack = new boolean[G.vertex()];
-        edgeTo  = new int[G.vertex()];
-        for (int v = 0; v < G.vertex(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+    public DirectedCycle(final Digraph g1) {
+        marked  = new boolean[g1.vertex()];
+        onStack = new boolean[g1.vertex()];
+        edgeTo  = new int[g1.vertex()];
+        for (int v = 0; v < g1.vertex(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(g1, v);
+            }
+        }
     }
 
-    // check that algorithm computes either the topological order or finds a directed cycle
-    private void dfs(Digraph G, int v) {
+    // check that algorithm computes either the topological
+    // order or finds a directed cycle
+
+    /**
+     * depth first search.
+     *
+     * @param      G     { graph }
+     * @param      v     { vertex }
+     */
+    private void dfs(final Digraph g2, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g2.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g2, w);
             }
 
             // trace back directed cycle
@@ -61,7 +74,11 @@ class DirectedCycle {
         onStack[v] = false;
     }
 
-
+    /**
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
+     */
     public boolean hasCycle() {
         return cycle != null;
     }

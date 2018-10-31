@@ -5,21 +5,13 @@ Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:28:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:28:26: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:28:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:32: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:36: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:37:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:37:22: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:37:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:37:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:43: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:49:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:65:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:97: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:45:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:48:36: Expected @param tag for 'g2'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:56:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:62:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:114: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:4: Missing a Javadoc comment. [JavadocType]
