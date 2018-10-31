@@ -25,7 +25,7 @@ class DirectedCycle {
      *
      * @param      g1     { graph }
      */
-    public DirectedCycle(final Digraph g1) {
+    DirectedCycle(final Digraph g1) {
         marked  = new boolean[g1.vertex()];
         onStack = new boolean[g1.vertex()];
         edgeTo  = new int[g1.vertex()];
