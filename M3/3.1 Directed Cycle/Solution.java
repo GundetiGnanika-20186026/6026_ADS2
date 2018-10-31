@@ -74,24 +74,24 @@ class DirectedCycle {
 
 
    // certify that digraph has a directed cycle if it reports one
-    private boolean check() {
+    // private boolean check() {
 
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
+    //     if (hasCycle()) {
+    //         // verify cycle
+    //         int first = -1, last = -1;
+    //         for (int v : cycle()) {
+    //             if (first == -1) first = v;
+    //             last = v;
+    //         }
+    //         if (first != last) {
+    //             System.err.printf("cycle begins with %d and ends with %d\n", first, last);
+    //             return false;
+    //         }
+    //     }
 
 
-        return true;
-    }
+    //     return true;
+    // }
 }
 
 

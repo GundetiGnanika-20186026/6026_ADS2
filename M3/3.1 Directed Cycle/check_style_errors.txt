@@ -32,13 +32,12 @@ Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:13:21: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:43:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:52:20: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:62:39: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:76:48: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:38:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:47:20: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:57:39: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Digraph.java:70:48: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -56,18 +55,16 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:49:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:66:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:71:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:77:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:83: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:87: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:87: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:101:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:101:15: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:105:19: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:118:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:118:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:118:38: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:120: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Solution.java:126:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:4: Missing a Javadoc comment. [JavadocType]

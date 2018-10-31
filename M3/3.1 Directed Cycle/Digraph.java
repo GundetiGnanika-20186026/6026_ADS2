@@ -10,16 +10,12 @@ public class Digraph {
 	/**
 	 * number of edges in this digraph.
 	 */
-	private int E;
+	private int e;
 	/**
 	 * adj[v] = adjacency list for vertex v.
 	 */
 	private Bag<Integer>[] adj;
-	// /**
-	//  * indegree[v] = indegree of vertex v.
-	//  */
-	// private int[] indegree;
-	/**
+    /**
 	 * Constructs the object.
 	 *
 	 * @param      v1     { vertex }
@@ -27,8 +23,7 @@ public class Digraph {
 	public Digraph(final int v1) {
 
 		this.v = v1;
-		this.E = 0;
-		//indegree = new int[V];
+		this.e = 0;
 		adj = (Bag<Integer>[]) new Bag[v];
 		for (int i = 0; i < v; i++) {
 			adj[i] = new Bag<Integer>();
@@ -50,7 +45,7 @@ public class Digraph {
 	 * @return     { edges }
 	 */
 	public int E() {
-		return E;
+		return e;
 	}
 
 	/**
@@ -62,8 +57,7 @@ public class Digraph {
 	public void addEdge(final int v, final int w) {
 
 		adj[v].add(w);
-		//indegree[w]++;
-		E++;
+		e++;
 	}
 
 	/**
