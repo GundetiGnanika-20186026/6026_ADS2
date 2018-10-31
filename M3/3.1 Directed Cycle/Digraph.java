@@ -44,7 +44,7 @@ public class Digraph {
 	 *
 	 * @return     { edges }
 	 */
-	public int E() {
+	public int edges() {
 		return e;
 	}
 

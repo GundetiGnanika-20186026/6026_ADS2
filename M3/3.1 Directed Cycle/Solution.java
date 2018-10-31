@@ -3,9 +3,9 @@ import java.util.Scanner;
  * Class for directed cycle.
  */
 class DirectedCycle {
-	/**
-	 * marked[v] = has vertex v been marked?.
-	 */
+    /**
+     * marked[v] = has vertex v been marked?.
+     */
     private boolean[] marked;
     /**
      * edgeTo[v] = previous vertex on path to v.
@@ -78,34 +78,33 @@ class DirectedCycle {
 /**
  * Class for solution.
  */
-final class Solution{
-	/**
-	 * Constructs the object.
-	 */
-	private Solution(){
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int vertexes = Integer.parseInt(scan.nextLine());
-		int edges = Integer.parseInt(scan.nextLine());
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int vertexes = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
         Digraph graphobj = new Digraph(vertexes);
-		while(scan.hasNext()){
-			String[] lines = scan.nextLine().split(" ");
-			graphobj.addEdge(Integer.parseInt(lines[0]), Integer.parseInt(lines[1]));
+        while (scan.hasNext()) {
+            String[] lines = scan.nextLine().split(" ");
+            graphobj.addEdge(Integer.parseInt(lines[0]), Integer.parseInt(lines[1]));
         }
         DirectedCycle finder = new DirectedCycle(graphobj);
         if (finder.hasCycle()) {
             System.out.println("Cycle exists.");
 
-        }
-        else {
-        	System.out.println("Cycle doesn't exists.");
+        } else {
+            System.out.println("Cycle doesn't exists.");
         }
     }
 }
