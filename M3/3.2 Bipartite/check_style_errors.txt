@@ -113,16 +113,5 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:2: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:21: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:28: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:29: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:30: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:33: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:37: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:114: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:127: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:140: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:142: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 1 errors.
