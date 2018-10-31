@@ -226,20 +226,20 @@ public class Graph {
 
 
 
-    /**
-     * does the graph contain the edge v-w?.
-     * its complexity is O(1).
-     *
-     * @param      v     { vertex1 }
-     * @param      w     { vertex2 }
-     *
-     * @return     { boolean }
-     */
-    public boolean contains(final int v, final int w) {
-        return adj[v][w];
-    }
+    // /**
+    //  * does the graph contain the edge v-w?.
+    //  * its complexity is O(1).
+    //  *
+    //  * @param      v     { vertex1 }
+    //  * @param      w     { vertex2 }
+    //  *
+    //  * @return     { boolean }
+    //  */
+    // public boolean contains(final int v, final int w) {
+    //     return adj[v][w];
+    // }
 
-    // return list of neighbors of v
+    // // return list of neighbors of v
 
     /**
      * return list of neighbors of v.
@@ -309,27 +309,9 @@ public class Graph {
             }
             return w++;
         }
-        // /**
-        //  * {  }
-        //  */
-        // public void remove()  {
-        //     throw new UnsupportedOperationException();
-        // }
+
     }
 
 
-    // string representation of Graph - takes quadratic time
-    // public String toString() {
-    //     StringBuilder s = new StringBuilder();
-    //     s.append(V + " " + E + NEWLINE);
-    //     for (int v = 0; v < V; v++) {
-    //         s.append(v + ": ");
-    //         for (int w : adj(v)) {
-    //             s.append(w + " ");
-    //         }
-    //         s.append(NEWLINE);
-    //     }
-    //     return s.toString();
-    // }
 
 }
