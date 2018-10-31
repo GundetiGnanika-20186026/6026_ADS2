@@ -67,8 +67,8 @@ public class Digraph {
      *
      * @return     { a value }
      */
-    public Iterable<Integer> adj(final int v) {
+    public Iterable<Integer> adj(final int v1) {
 
-        return adj[v];
+        return adj[v1];
     }
 }
