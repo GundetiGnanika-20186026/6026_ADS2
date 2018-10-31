@@ -28,7 +28,7 @@ class Bipartite {
 	 *
 	 * @param      g1     { graph }
 	 */
-	public Bipartite(final Graph g1) {
+	Bipartite(final Graph g1) {
 		isBipartite = true;
 		color  = new boolean[g1.V()];
 		marked = new boolean[g1.V()];
@@ -48,12 +48,14 @@ class Bipartite {
 	 * @param      g1    The g1
 	 * @param      v     { vertex1 }
 	 */
-	private void dfs(Graph g1, int v) {
+	private void dfs(final Graph g1, final int v) {
 		marked[v] = true;
 		for (int w : g1.adj(v)) {
 
 			// short circuit if odd-length cycle found
-			if (cycle != null) return;
+			if (cycle != null) {
+				return;
+			}
 
 			// found uncolored vertex, so recur
 			if (!marked[w]) {
@@ -109,7 +111,7 @@ final class Solution {
 		Graph graphobj = new Graph(vertexes);
 		while (scan.hasNext()) {
 			String[] array = scan.nextLine().split(" ");
-			graphobj.addEdge(Integer.parseInt(array[0]), Integer.parseInt(array[1]));
+graphobj.addEdge(Integer.parseInt(array[0]), Integer.parseInt(array[1]));
 		}
 		Bipartite b = new Bipartite(graphobj);
 		if (b.isBipartite()) {
