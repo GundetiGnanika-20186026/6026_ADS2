@@ -16,7 +16,7 @@ class Bipartite {
                 dfs(G, v);
             }
         }
-        assert check(G);
+        //assert check(G);
     }
 
     private void dfs(Graph G, int v) {
@@ -62,88 +62,52 @@ class Bipartite {
         return cycle;
     }
 
-    private boolean check(Graph G) {
-        // graph is bipartite
-        if (isBipartite) {
-            for (int v = 0; v < G.V(); v++) {
-                for (int w : G.adj(v)) {
-                    if (color[v] == color[w]) {
-                        System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
-                        return false;
-                    }
-                }
-            }
-        }
-
-        // graph has an odd-length cycle
-        else {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : oddCycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    // private void validateVertex(int v) {
-    //     int V = marked.length;
-    //     if (v < 0 || v >= V)
-    //         throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    // }
-
-    // /**
-    //  * Unit tests the {@code Bipartite} data type.
-    //  *
-    //  * @param args the command-line arguments
-    //  */
-    // public static void main(String[] args) {
-    //     int V1 = Integer.parseInt(args[0]);
-    //     int V2 = Integer.parseInt(args[1]);
-    //     int E  = Integer.parseInt(args[2]);
-    //     int F  = Integer.parseInt(args[3]);
-
-    //     // create random bipartite graph with V1 vertices on left side,
-    //     // V2 vertices on right side, and E edges; then add F random edges
-    //     Graph G = GraphGenerator.bipartite(V1, V2, E);
-    //     for (int i = 0; i < F; i++) {
-    //         int v = StdRandom.uniform(V1 + V2);
-    //         int w = StdRandom.uniform(V1 + V2);
-    //         G.addEdge(v, w);
-    //     }
-
-    //     StdOut.println(G);
-
-
-    //     Bipartite b = new Bipartite(G);
-    //     if (b.isBipartite()) {
-    //         StdOut.println("Graph is bipartite");
+    // private boolean check(ginal Graph G) {
+    //     // graph is bipartite
+    //     if (isBipartite) {
     //         for (int v = 0; v < G.V(); v++) {
-    //             StdOut.println(v + ": " + b.color(v));
+    //             for (int w : G.adj(v)) {
+    //                 if (color[v] == color[w]) {
+    //                     System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
+    //                     return false;
+    //                 }
+    //             }
+    //         }
+    //     } else {
+    //         // verify cycle
+    //         int first = -1, last = -1;
+    //         for (int v : oddCycle()) {
+    //             if (first == -1) first = v;
+    //             last = v;
+    //         }
+    //         if (first != last) {
+    //             System.err.printf("cycle begins with %d and ends with %d\n", first, last);
+    //             return false;
     //         }
     //     }
-    //     else {
-    //         StdOut.print("Graph has an odd-length cycle: ");
-    //         for (int x : b.oddCycle()) {
-    //             StdOut.print(x + " ");
-    //         }
-    //         StdOut.println();
-    //     }
+
+    //     return true;
     // }
-
-
 }
 
+////////////////////////////////////////////////////////////////////////////////
 
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution(){
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertexes = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
@@ -155,8 +119,7 @@ class Solution {
 		Bipartite b = new Bipartite(graphobj);
 		if(b.isBipartite()){
 			System.out.println("Graph is bipartite");
-		}
-		else {
+		} else {
 			System.out.println("Graph is not a bipartite");
 		}
 
