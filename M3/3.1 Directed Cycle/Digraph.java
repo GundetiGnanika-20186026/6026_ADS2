@@ -63,7 +63,7 @@ public class Digraph {
     /**
      * returns every value using iterator.
      *
-     * @param      v     { vertex }
+     * @param      v1     { vertex }
      *
      * @return     { a value }
      */
