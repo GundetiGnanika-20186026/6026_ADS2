@@ -6,10 +6,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:1:8: Unused import - java.util.Iterator. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:43: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Stack.java:50: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
