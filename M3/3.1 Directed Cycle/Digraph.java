@@ -35,7 +35,7 @@ public class Digraph {
 	 *
 	 * @return     { vertexes }
 	 */
-	public int V() {
+	public int vertex() {
 		return v;
 	}
 
@@ -71,9 +71,4 @@ public class Digraph {
 
 		return adj[v];
 	}
-
-
-
-
-
 }
