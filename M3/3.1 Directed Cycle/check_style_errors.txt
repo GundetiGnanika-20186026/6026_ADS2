@@ -1,11 +1,7 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Bag.java:18: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Bag.java:20: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Bag.java:78: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.1 Directed Cycle\Bag.java:79: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
