@@ -6,7 +6,7 @@ public class Digraph {
 	 *  number of vertices in this digraph.
 	 */
 
-	private final int V;
+	private final int v;
 	/**
 	 * number of edges in this digraph.
 	 */
@@ -15,23 +15,23 @@ public class Digraph {
 	 * adj[v] = adjacency list for vertex v.
 	 */
 	private Bag<Integer>[] adj;
-	/**
-	 * indegree[v] = indegree of vertex v.
-	 */
-	private int[] indegree;
+	// /**
+	//  * indegree[v] = indegree of vertex v.
+	//  */
+	// private int[] indegree;
 	/**
 	 * Constructs the object.
 	 *
-	 * @param      V     { vertex }
+	 * @param      v1     { vertex }
 	 */
-	public Digraph(final int V) {
+	public Digraph(final int v1) {
 
-		this.V = V;
+		this.v = v1;
 		this.E = 0;
-		indegree = new int[V];
-		adj = (Bag<Integer>[]) new Bag[V];
-		for (int v = 0; v < V; v++) {
-			adj[v] = new Bag<Integer>();
+		//indegree = new int[V];
+		adj = (Bag<Integer>[]) new Bag[v];
+		for (int i = 0; i < v; i++) {
+			adj[i] = new Bag<Integer>();
 		}
 	}
 
@@ -41,7 +41,7 @@ public class Digraph {
 	 * @return     { vertexes }
 	 */
 	public int V() {
-		return V;
+		return v;
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class Digraph {
 	public void addEdge(final int v, final int w) {
 
 		adj[v].add(w);
-		indegree[w]++;
+		//indegree[w]++;
 		E++;
 	}
 
@@ -78,16 +78,7 @@ public class Digraph {
 		return adj[v];
 	}
 
-	// public int outdegree(final int v) {
 
-	//     return adj[v].size();
-	// }
-
-
-	// public int indegree(final int v) {
-
-	//     return indegree[v];
-	// }
 
 
 
