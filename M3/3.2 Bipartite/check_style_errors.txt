@@ -20,6 +20,4 @@ Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
