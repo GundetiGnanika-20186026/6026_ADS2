@@ -2,73 +2,73 @@
  * Class for digraph.
  */
 public class Digraph {
-	/**
-	 *  number of vertices in this digraph.
-	 */
-
-	private final int v;
-	/**
-	 * number of edges in this digraph.
-	 */
-	private int e;
-	/**
-	 * adj[v] = adjacency list for vertex v.
-	 */
-	private Bag<Integer>[] adj;
     /**
-	 * Constructs the object.
-	 *
-	 * @param      v1     { vertex }
-	 */
-	public Digraph(final int v1) {
+     *  number of vertices in this digraph.
+     */
 
-		this.v = v1;
-		this.e = 0;
-		adj = (Bag<Integer>[]) new Bag[v];
-		for (int i = 0; i < v; i++) {
-			adj[i] = new Bag<Integer>();
-		}
-	}
+    private final int v;
+    /**
+     * number of edges in this digraph.
+     */
+    private int e;
+    /**
+     * adj[v] = adjacency list for vertex v.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * Constructs the object.
+     *
+     * @param      v1     { vertex }
+     */
+    public Digraph(final int v1) {
 
-	/**
-	 * returns no. of vertexes.
-	 *
-	 * @return     { vertexes }
-	 */
-	public int vertex() {
-		return v;
-	}
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Integer>();
+        }
+    }
 
-	/**
-	 * no. of edges.
-	 *
-	 * @return     { edges }
-	 */
-	public int edges() {
-		return e;
-	}
+    /**
+     * returns no. of vertexes.
+     *
+     * @return     { vertexes }
+     */
+    public int vertex() {
+        return v;
+    }
 
-	/**
-	 * Adds an edge.
-	 *
-	 * @param      v     { vertex1 }
-	 * @param      w     { vertex2 }
-	 */
-	public void addEdge(final int v, final int w) {
+    /**
+     * no. of edges.
+     *
+     * @return     { edges }
+     */
+    public int edges() {
+        return e;
+    }
 
-		adj[v].add(w);
-		e++;
-	}
+    /**
+     * Adds an edge.
+     *
+     * @param      v1    { vertex1 }
+     * @param      w1     { vertex2 }
+     */
+    public void addEdge(final int v1, final int w1) {
 
-	/**
-	 * returns every value using iterator.
-	 *
-	 * @param      v     { vertex }
-	 *
-	 * @return     { a value }
-	 */
-	public Iterable<Integer> adj(final int v) {
+        adj[v1].add(w1);
+        e++;
+    }
 
-		return adj[v];
-	}
+    /**
+     * returns every value using iterator.
+     *
+     * @param      v     { vertex }
+     *
+     * @return     { a value }
+     */
+    public Iterable<Integer> adj(final int v) {
+
+        return adj[v];
+    }
 }
