@@ -37,16 +37,22 @@ public class Stack<Item> {
         size = 0;
     }
 
+
+
     /**
-      * Is the stack empty?
-      */
+     * Is the stack empty?
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-      * Return the number of items in the stack.
-      */
+     * Return the number of items in the stack.
+     *
+     * @return     { size }
+     */
     public int size() {
         return size;
     }
