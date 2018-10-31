@@ -39,7 +39,7 @@ public class Graph {
      *
      * @return     { v }
      */
-    public int V() {
+    public int vertex2() {
         return v;
     }
     /**
@@ -48,7 +48,7 @@ public class Graph {
      *
      * @return     { e }
      */
-    public int E() { return e; }
+    public int edge2() { return e; }
 
 
     // add undirected edge v-w
