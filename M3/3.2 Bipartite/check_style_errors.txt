@@ -112,10 +112,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 42 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
