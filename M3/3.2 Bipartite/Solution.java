@@ -74,16 +74,14 @@ class Bipartite {
     }
 
 
-    public boolean color(int v1) {
-       // validateVertex(v);
-        if (!isBipartite)
-            throw new UnsupportedOperationException("graph is not bipartite");
-        return color[v1];
-    }
-
-    // public Iterable<Integer> oddCycle() {
-    //     return cycle;
+    // public boolean color(int v1) {
+    //    // validateVertex(v);
+    //     if (!isBipartite)
+    //         throw new UnsupportedOperationException("graph is not bipartite");
+    //     return color[v1];
     // }
+
+
 
 
 }
