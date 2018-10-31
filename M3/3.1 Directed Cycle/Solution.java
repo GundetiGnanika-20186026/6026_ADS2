@@ -67,9 +67,9 @@ class DirectedCycle {
     }
 
 
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
+    // public Iterable<Integer> cycle() {
+    //     return cycle;
+    // }
 
 }
 
