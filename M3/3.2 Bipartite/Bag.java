@@ -94,18 +94,19 @@ public class Bag<Item> implements Iterable<Item> {
         private Node current = first;
         /**
          * Determines if it has next.
+         * Time complexity is O(1).
          *
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
-        /**
-         * { function for removeing }.
-         */
-        public void remove() {
-            throw new UnsupportedOperationException();
-        }
+        // /**
+        //  * { function for removeing }.
+        //  */
+        // public void remove() {
+        //     throw new UnsupportedOperationException();
+        // }
         /**
          * { function for next }.
          *

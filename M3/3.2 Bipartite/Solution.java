@@ -44,6 +44,7 @@ class Bipartite {
 
     /**
      * method for dfs(depth first search).
+     *  Time complexity for this method is O(E)
      *
      * @param      g1    The g1
      * @param      v     { vertex1 }
@@ -78,6 +79,7 @@ class Bipartite {
 
     /**
      * Determines if bipartite.
+     * Time complexity for this method is O(1).
      *
      * @return     True if bipartite, False otherwise.
      */

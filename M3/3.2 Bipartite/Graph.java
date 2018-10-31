@@ -73,10 +73,11 @@ public class Graph {
 
     /**
      * return list of neighbors of v.
+     * Time complexity is O(v).
      *
      * @param      v1     { vertex }
      *
-     * @return     { description_of_the_return_value }
+     * @return     {value }
      */
     public Iterable<Integer> adj(final int v1) {
         return new AdjIterator(v1);
@@ -98,6 +99,7 @@ public class Graph {
         private int w = 0;
         /**
          * Constructs the object.
+         * Time complexity is O(1).
          *
          * @param      v2     { vertex }
          */
@@ -107,6 +109,7 @@ public class Graph {
 
         /**
          * { iterates through the graph }.
+         * Time complexity is O(n).
          *
          * @return     { item present }
          */
@@ -132,6 +135,7 @@ public class Graph {
 
         /**
          * { returns next value }.
+         * Time complexity is O(1).
          *
          * @return     { integer }
          */
