@@ -115,15 +115,12 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:31:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:31:26: Parameter g1 should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:51:26: Parameter g1 should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:51:36: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:56: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:63: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:66: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:110: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Solution.java:112: Line is longer than 80 characters (found 97). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M3\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

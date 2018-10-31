@@ -28,7 +28,7 @@ class Bipartite {
 	 *
 	 * @param      g1     { graph }
 	 */
-	public Bipartite(Graph g1) {
+	public Bipartite(final Graph g1) {
 		isBipartite = true;
 		color  = new boolean[g1.V()];
 		marked = new boolean[g1.V()];
@@ -45,7 +45,7 @@ class Bipartite {
 	/**
 	 * method for dfs(depth first search).
 	 *
-	 * @param      g1    The g 1
+	 * @param      g1    The g1
 	 * @param      v     { vertex1 }
 	 */
 	private void dfs(Graph g1, int v) {
@@ -60,10 +60,12 @@ class Bipartite {
 				edgeTo[w] = v;
 				color[w] = !color[v];
 				dfs(g1, w);
-			}   else if (color[w] == color[v]) {  // if v-w create an odd-length cycle, find it
+			}   else if (color[w] == color[v]) {
+				// if v-w create an odd-length cycle, find it
 				isBipartite = false;
 				cycle = new Stack<Integer>();
-				cycle.push(w);  // don't need this unless you want to include start vertex twice
+				cycle.push(w);
+// don't need this unless you want to include start vertex twice
 				for (int x = v; x != w; x = edgeTo[x]) {
 					cycle.push(x);
 				}
