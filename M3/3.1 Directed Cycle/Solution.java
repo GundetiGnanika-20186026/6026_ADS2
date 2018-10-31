@@ -42,7 +42,7 @@ class DirectedCycle {
     /**
      * depth first search.
      *
-     * @param      G     { graph }
+     * @param      g2     { graph }
      * @param      v     { vertex }
      */
     private void dfs(final Digraph g2, final int v) {
@@ -53,16 +53,10 @@ class DirectedCycle {
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-            }
-
-            // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(g2, w);
-            }
-
-            // trace back directed cycle
-            else if (onStack[w]) {
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -111,7 +105,7 @@ final class Solution {
         Digraph graphobj = new Digraph(vertexes);
         while (scan.hasNext()) {
             String[] lines = scan.nextLine().split(" ");
-            graphobj.addEdge(Integer.parseInt(lines[0]), Integer.parseInt(lines[1]));
+graphobj.addEdge(Integer.parseInt(lines[0]), Integer.parseInt(lines[1]));
         }
         DirectedCycle finder = new DirectedCycle(graphobj);
         if (finder.hasCycle()) {
