@@ -18,6 +18,7 @@ class Solution {
 			Scanner firstscan = new Scanner(new File("Files/" + file1));
 			//putting values into synset hashmap;
 			while (firstscan.hasNextLine()) {
+
 				String[] input = firstscan.nextLine().split(",");
 				String[] letter = input[1].split(" ");
 				synset.put(Integer.parseInt(input[0]), letter);
@@ -48,11 +49,13 @@ class Solution {
 
         //**************** try catch block *******************8
 		Digraph digraph = new Digraph(synset.size());
+
 		try {
-			Scanner scanner2 = new Scanner(new File("File/" + file2));
+
+			Scanner scanner2 = new Scanner(new File("Files/" + file2));
 			while (scanner2.hasNextLine()) {
 				String[] graphinput = scanner2.nextLine().split(",");
-				System.out.println(Arrays.toString(graphinput));
+				System.out.println(graphinput[1]);
 				digraph.addEdge(Integer.parseInt(graphinput[0]), Integer.parseInt(graphinput[1]));
 			}
 		}  catch (FileNotFoundException e) {
@@ -60,9 +63,21 @@ class Solution {
 		}
 		//*****************************************************
 
-        while(scan.hasNext()) {
+        // while(scan.hasNext()) {
         	String line1 = scan.nextLine();
-        	switch(line1) {
+        	// switch(line1) {
+        	// 	case "Graph" :
+        	// 	      System.out.println(digraph);
+        	// 	break;
+        	// 	// case "":
+        	// 	// break;
+        	// 	default:
+        	// 	      System.out.println("IllegalArgumentException");
+        	// 	break;
+        	//}
+        	while(scan.hasNext()) {
+        		String[] line = scan.nextLine().split(" ");
+        		switch(line[0]) {
         		case "Graph" :
         		      System.out.println(digraph);
         		break;
@@ -72,6 +87,8 @@ class Solution {
         		      System.out.println("IllegalArgumentException");
         		break;
         	}
+
+        	}
         }
 
 
@@ -79,5 +96,5 @@ class Solution {
 		}
 
 
-	}
+
 
