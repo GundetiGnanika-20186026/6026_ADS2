@@ -65,35 +65,31 @@ class Solution {
 
         // while(scan.hasNext()) {
         	String line1 = scan.nextLine();
-        	// switch(line1) {
-        	// 	case "Graph" :
-        	// 	      System.out.println(digraph);
-        	// 	break;
-        	// 	// case "":
-        	// 	// break;
-        	// 	default:
-        	// 	      System.out.println("IllegalArgumentException");
-        	// 	break;
-        	//}
-        	while(scan.hasNext()) {
-        		String[] line = scan.nextLine().split(" ");
-        		switch(line[0]) {
+        	switch(line1) {
         		case "Graph" :
         		      System.out.println(digraph);
         		break;
-        		// case "":
-        		// break;
+        		case "Queries":
+        		     while(scan.hasNext()) {
+        		     	String[] cmdlines = scan.nextLine().split(" ");
+        		     	if(cmdlines[0].equals("null")){
+        		     		System.out.println("IllegalArgumentException");
+        		     	}
+        		     }
+
+
         		default:
-        		      System.out.println("IllegalArgumentException");
+
         		break;
         	}
+
 
         	}
         }
 
 
 
-		}
+
 
 
 
