@@ -68,6 +68,7 @@ class Solution {
         		case "":
         		break;
         		default:
+        		      System.out.println("IllegalArgumentException");
         		break;
         	}
         }
