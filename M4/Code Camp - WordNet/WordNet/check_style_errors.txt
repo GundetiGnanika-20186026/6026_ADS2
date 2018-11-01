@@ -290,7 +290,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 4 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:4:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:6:8: Unused import - java.io.IOException. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:9: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:9:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -303,11 +302,11 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:35: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:52: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:54: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:55: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:62:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:64:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:56: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:63:14: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:65:23: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

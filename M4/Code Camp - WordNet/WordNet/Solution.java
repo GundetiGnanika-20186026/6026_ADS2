@@ -52,6 +52,7 @@ class Solution {
 			Scanner scanner2 = new Scanner(new File("File/" + file2));
 			while (scanner2.hasNextLine()) {
 				String[] graphinput = scanner2.nextLine().split(",");
+				System.out.println(Arrays.toString(graphinput));
 				digraph.addEdge(Integer.parseInt(graphinput[0]), Integer.parseInt(graphinput[1]));
 			}
 		}  catch (FileNotFoundException e) {
@@ -65,8 +66,8 @@ class Solution {
         		case "Graph" :
         		      System.out.println(digraph);
         		break;
-        		case "":
-        		break;
+        		// case "":
+        		// break;
         		default:
         		      System.out.println("IllegalArgumentException");
         		break;
