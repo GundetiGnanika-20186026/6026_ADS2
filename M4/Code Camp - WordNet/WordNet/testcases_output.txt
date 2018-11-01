@@ -78,7 +78,7 @@ distance = 0, ancestor = f
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:144)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -219,17 +219,14 @@ distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:59)
+	at Solution.main(Solution.java:144)
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-3 vertices, 2 edges 
-0: 1 
-1: 0 
-2:
+Cycle detected
 ----------------------------------------
 
