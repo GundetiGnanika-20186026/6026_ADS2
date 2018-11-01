@@ -55,7 +55,7 @@ class Solution {
 			Scanner scanner2 = new Scanner(new File("Files/" + file2));
 			while (scanner2.hasNextLine()) {
 				String[] graphinput = scanner2.nextLine().split(",");
-				System.out.println(graphinput[1]);
+				// System.out.println(graphinput[1]);
 				digraph.addEdge(Integer.parseInt(graphinput[0]), Integer.parseInt(graphinput[1]));
 			}
 		}  catch (FileNotFoundException e) {
@@ -72,10 +72,11 @@ class Solution {
         		case "Queries":
         		     while(scan.hasNext()) {
         		     	String[] cmdlines = scan.nextLine().split(" ");
-        		     	if(cmdlines[0].equals("null")){
+        		     	if(cmdlines[0].equals("null")) {
         		     		System.out.println("IllegalArgumentException");
         		     	}
         		     }
+        		break;
 
 
         		default:
