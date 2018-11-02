@@ -141,7 +141,10 @@ class Solution {
 			while (scanner2.hasNextLine()) {
 				String[] graphinput = scanner2.nextLine().split(",");
 				// System.out.println(graphinput[1]);
-				digraph.addEdge(Integer.parseInt(graphinput[0]), Integer.parseInt(graphinput[1]));
+                for(int i = 1;i<graphinput.length;i++) {
+				digraph.addEdge(Integer.parseInt(graphinput[0]),
+				 Integer.parseInt(graphinput[i]));
+                }
 			}
 		}  catch (FileNotFoundException e) {
 
