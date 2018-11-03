@@ -6,70 +6,80 @@ import java.util.Arrays;
 class PageRank {
 	Double[] pageranks;
 	Digraph originalgraph;
-    /**
-     * Constructs the object.
-     *
-     * @param      graph  The graph
-     */
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      graph  The graph
+	 */
 	PageRank(Digraph graph) {
 		this.originalgraph = graph;
 
 		pageranks = new Double[graph.V()];
 		for (int i = 0; i < graph.V(); i++) {
-			pageranks[i] = (double)1 /(double)graph.V();
+			pageranks[i] = (double)1 / (double)graph.V();
 		}
 		//System.out.println(originalgraph.V());
-		System.out.println(Arrays.toString(pageranks));
+		//System.out.println(Arrays.toString(pageranks));
 	}
 
 
 	/**
 	 * method to calculate page rank.
-	 * its complexity is O(n*n*n) as I am using 3 for loops.
+	 * its complexity is O(n*n*n*n) as I am using 3 for loops and one while loop.
 	 *
 	 * @return     { array with page rank }
 	 */
 	public Double[] pageRank() {
-        int k = 1;
-        while(k <= 1) {
-		    for(int i = 0; i < originalgraph.V(); i++){
-			    for(int j = 0; j< originalgraph.V();j++) {
-			    	if(j != i) {
-		                for(int v : originalgraph.adj[j]) {
-		        	        if(i == v) {
-		        	            //System.out.println(originalgraph.outdegree(j)+"out");
-		        	            pageranks[i] =  pageranks[j]/(double) originalgraph.outdegree(j);
-		        	        }
-		                }
-		            }
-			    }
-            }
+		int k = 1;
+            while (k <= 1000) {
+			for (int i = 0; i < originalgraph.V(); i++) {
 
-            k++;
+				for (int j = 0; j < originalgraph.V(); j++) {
+					if (j != i) {
+						for (int v : originalgraph.adj[j]) {
+							if (i == v) {
+								//System.out.println(originalgraph.outdegree(j)+"out");
+								pageranks[i] = (double) (pageranks[j] /  originalgraph.outdegree(j));
+							}
+						}
+					}
+				}
 
-	    }
-	    return pageranks;
-
-    }
-
-    public double getPR(int v) {
-    	return pageranks[v];
-    }
+			}
+			k++;
 
 
-    public  void tostring() {
 
-    	StringBuilder s = new StringBuilder();
-		for(int i = 0; i < originalgraph.V() ; i++) {
+		}
+		return pageranks;
 
-            s.append(String.format("%d: ", i));
-		    s.append(getPR(i));
-		    s.append("\n");
+	}
+
+	/**
+	 * Gets the pagerank;
+	 *
+	 * @param      v     { index }
+	 *
+	 * @return     The pr.
+	 */
+	public double getPR(int v) {
+		return pageranks[v];
+	}
+
+
+	public  void tostring() {
+
+		StringBuilder s = new StringBuilder();
+		for (int i = 0; i < originalgraph.V() ; i++) {
+
+			s.append(String.format("%d: ", i));
+			s.append(getPR(i));
+			s.append("\n");
 		}
 		System.out.println(s);
 
 
-    }
+	}
 
 }
 
@@ -115,14 +125,14 @@ public class Solution {
 			}
 		}
 		System.out.println(digraph);
-		System.out.println();
+		// System.out.println();
 
 
 
 
 		// Create page rank object and pass the graph object to the constructor
 		PageRank objpage = new PageRank(digraph);
-
+		objpage.pageRank();
 
 
 
@@ -162,20 +172,3 @@ public class Solution {
 
 
 
-// int j = 0;
-// 		for(int i = 0; i < originalgraph.V(); i++){
-// 		    for(int v : originalgraph.adj[i]) {
-
-// 		    	list[j] = v;
-// 		    	j++;
-
-// 		    	// if(i == v) {
-// 		    	//  // pageranks[i] =
-// 		    	// }
-
-// 	        }
-// 	        list[j] = 25;
-// 	        j++;
-
-// 	    }
-// 	    System.out.println(Arrays.toString(list));
