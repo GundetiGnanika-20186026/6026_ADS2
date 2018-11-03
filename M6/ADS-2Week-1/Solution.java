@@ -46,6 +46,7 @@ class PageRank {
 				}
 
 			}
+
 			k++;
 
 
@@ -67,6 +68,10 @@ class PageRank {
 	}
 
 
+    /**
+     * string representation of the page ranks.
+     * its complexity is O(N).
+     */
 	public  void tostring() {
 
 		StringBuilder s = new StringBuilder();
