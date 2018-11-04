@@ -1,9 +1,9 @@
 import java.util.Scanner;
 import java.io.File;
 import java.util.HashMap;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.ArrayList;
-import java.io.IOException;
+//import java.io.IOException;
 import java.io.FileNotFoundException;
 
 
@@ -16,7 +16,7 @@ final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	private Solution() {
 
 	}
 	/**
@@ -36,7 +36,7 @@ HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
 			//putting values into synset hashmap;
 			while (firstscan.hasNextLine()) {
 
-				String[] input = firstscan.nextLine().split(",");
+			String[] input = firstscan.nextLine().split(",");
 				String[] letter = input[1].split(" ");
 				synset.put(Integer.parseInt(input[0]), letter);
 			}
@@ -46,11 +46,11 @@ HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
 				for (int i = 0; i < values.length; i++) {
 
 					if (queries.containsKey(values[i])) {
-				ArrayList<Integer> array2 = queries.get(values[i]);
+			ArrayList<Integer> array2 = queries.get(values[i]);
 						array2.add(key);
 						queries.put(values[i], array2);
 					} else {
-					ArrayList<Integer> array1 = new ArrayList<>();
+				ArrayList<Integer> array1 = new ArrayList<>();
 						array1.add(key);
 						queries.put(values[i], array1);
 					}
@@ -75,7 +75,7 @@ HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
 				// System.out.println(graphinput[1]);
 			for (int i = 1; i < graphinput.length; i++) {
 				digraph.addEdge(Integer.parseInt(graphinput[0]),
-					            Integer.parseInt(graphinput[i]));
+					           Integer.parseInt(graphinput[i]));
 				}
 			}
 		}  catch (FileNotFoundException e) {
