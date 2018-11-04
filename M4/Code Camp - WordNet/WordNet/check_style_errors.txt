@@ -8,21 +8,12 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:3: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:17: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:52: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:60: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:74: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:136:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:214:27: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:214:31: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:219:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'multipleroots' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'multipleroots' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:219:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:223:20: '++' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:227: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:227:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:103:20: '++' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:107: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:107:11: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Direc.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
