@@ -87,7 +87,7 @@ class PageRank {
 		// System.out.println("tostring");
 		for (int i = 0; i < extragraph.V() ; i++) {
 
-			s.append(String.format("%d: ", i));
+			s.append(String.format("%d - ", i));
 			//System.out.print("hello + i" + i+"\n");
 			s.append(getPR(i));
 			// System.out.println("hello");
