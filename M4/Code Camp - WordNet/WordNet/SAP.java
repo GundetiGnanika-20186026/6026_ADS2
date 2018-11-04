@@ -41,7 +41,7 @@ public class SAP {
             for (int j = 0; j < arraylist2.size(); j++) {
 BreadthFirstPath bfsVer1 = new BreadthFirstPath(graph, arraylist1.get(i));
 BreadthFirstPath bfsVer2 = new BreadthFirstPath(graph, arraylist2.get(j));
-                for (int k = 0; k < graph.V(); k++) {
+                for (int k = 0; k < graph.vertex(); k++) {
                     if (bfsVer1.hasPathTo(k) && bfsVer2.hasPathTo(k)) {
                         distance = bfsVer1.distTo(k) + bfsVer2.distTo(k);
                         // System.out.println(distance);

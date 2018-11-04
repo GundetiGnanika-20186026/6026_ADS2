@@ -28,9 +28,9 @@ class BreadthFirstPath {
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
     public BreadthFirstPath(final Digraph graph, final int s) {
-        marked = new boolean[graph.V()];
-        distTo = new int[graph.V()];
-        edgeTo = new int[graph.V()];
+        marked = new boolean[graph.vertex()];
+        distTo = new int[graph.vertex()];
+        edgeTo = new int[graph.vertex()];
         //validateVertex(s);
         bfs(graph, s);
 
@@ -45,7 +45,7 @@ class BreadthFirstPath {
     */
     private void bfs(final Digraph graph, final int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < graph.V(); v++) {
+        for (int v = 0; v < graph.vertex(); v++) {
             distTo[v] = INFINITY;
         }
         distTo[s] = 0;
