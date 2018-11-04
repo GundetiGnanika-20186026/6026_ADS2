@@ -27,7 +27,7 @@ class BreadthFirstPath {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public BreadthFirstPath(final Digraph graph, final int s) {
+    BreadthFirstPath(final Digraph graph, final int s) {
         marked = new boolean[graph.vertex()];
         distTo = new int[graph.vertex()];
         edgeTo = new int[graph.vertex()];
@@ -100,5 +100,6 @@ class BreadthFirstPath {
 
 
 }
+
 
 
