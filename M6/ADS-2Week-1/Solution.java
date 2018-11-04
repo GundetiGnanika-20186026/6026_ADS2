@@ -87,6 +87,7 @@ class PageRank {
 
 			s.append(String.format("%d: ", i));
 			s.append(getPR(i));
+			System.out.println("hello");
 			s.append("\n");
 		}
 		System.out.println(s);
