@@ -210,11 +210,15 @@ public class Digraph {
 
 
     public boolean multipleroots() {
+        int num = 0;
         for (int i = 0; i < V(); i++) {
             if (outdegree(i) == 0) {
-                return true;
+                num ++;
+
             }
         }
+        if(num > 1)
+            return true;
         return false;
 
     }
