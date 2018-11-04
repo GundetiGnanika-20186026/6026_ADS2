@@ -50,7 +50,7 @@ class PageRank {
 
 						}
 						updated[j] = value;
-						System.out.print(updated[j] + " j \n");
+						//System.out.print(updated[j] + " j \n");
 				}
 				if(Arrays.equals(pageranks, updated)) {
 						break;
@@ -88,7 +88,7 @@ class PageRank {
 		for (int i = 0; i < extragraph.V() ; i++) {
 
 			s.append(String.format("%d: ", i));
-			System.out.print("hello + i" + i+"\n");
+			//System.out.print("hello + i" + i+"\n");
 			s.append(getPR(i));
 			// System.out.println("hello");
 			s.append("\n");
@@ -161,7 +161,7 @@ public class Solution {
 
 		// Create page rank object and pass the graph object to the constructor
 		PageRank objpage = new PageRank(extragraph);
-		//objpage.pageRank();
+		objpage.pageRank();
 
 
 
