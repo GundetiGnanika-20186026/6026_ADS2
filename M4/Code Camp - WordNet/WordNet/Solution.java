@@ -28,11 +28,11 @@ final class Solution {
 		Scanner scan = new Scanner(System.in);
 		String file1 = scan.nextLine();
 		String file2 = scan.nextLine();
-		HashMap<Integer, String[]> synset = new HashMap<>();
-		HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
-		//*****************************************************************
+HashMap<Integer, String[]> synset = new HashMap<>();
+HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
+		//********************************************************
 		try {
-			Scanner firstscan = new Scanner(new File("Files/" + file1));
+	Scanner firstscan = new Scanner(new File("Files/" + file1));
 			//putting values into synset hashmap;
 			while (firstscan.hasNextLine()) {
 
@@ -46,11 +46,11 @@ final class Solution {
 				for (int i = 0; i < values.length; i++) {
 
 					if (queries.containsKey(values[i])) {
-						ArrayList<Integer> array2 = queries.get(values[i]);
+				ArrayList<Integer> array2 = queries.get(values[i]);
 						array2.add(key);
 						queries.put(values[i], array2);
 					} else {
-						ArrayList<Integer> array1 = new ArrayList<>();
+					ArrayList<Integer> array1 = new ArrayList<>();
 						array1.add(key);
 						queries.put(values[i], array1);
 					}
@@ -69,13 +69,13 @@ final class Solution {
 
 		try {
 
-			Scanner scanner2 = new Scanner(new File("Files/" + file2));
-			while (scanner2.hasNextLine()) {
-				String[] graphinput = scanner2.nextLine().split(",");
+	Scanner scanner2 = new Scanner(new File("Files/" + file2));
+		while (scanner2.hasNextLine()) {
+	String[] graphinput = scanner2.nextLine().split(",");
 				// System.out.println(graphinput[1]);
-				for (int i = 1; i < graphinput.length; i++) {
-					digraph.addEdge(Integer.parseInt(graphinput[0]),
-					                Integer.parseInt(graphinput[i]));
+			for (int i = 1; i < graphinput.length; i++) {
+				digraph.addEdge(Integer.parseInt(graphinput[0]),
+					            Integer.parseInt(graphinput[i]));
 				}
 			}
 		}  catch (FileNotFoundException e) {
@@ -87,7 +87,7 @@ final class Solution {
 		String line1 = scan.nextLine();
 		switch (line1) {
 		case "Graph" :
-			DirectedCycle finder = new DirectedCycle(digraph);
+		DirectedCycle finder = new DirectedCycle(digraph);
 			if (finder.hasCycle()) {
 				System.out.println("Cycle detected");
 
@@ -101,18 +101,19 @@ final class Solution {
 			while (scan.hasNext()) {
 				String[] cmdlines = scan.nextLine().split(" ");
 				// if (cmdlines[0].equals("null")) {
-				// 	System.out.println("IllegalArgumentException");
+			// 	System.out.println("IllegalArgumentException");
 				// }
 				try {
 					if (cmdlines[0].equals("null")) {
-						System.out.println("IllegalArgumentException");
+			System.out.println("IllegalArgumentException");
 						return;
 					}
 				} catch (IllegalArgumentException e) {
 					System.out.println(e.getMessage());
 				}
 				SAP objectsap = new SAP(digraph);
-				objectsap.length(queries.get(cmdlines[0]), queries.get(cmdlines[1]), synset);
+			objectsap.length(queries.get(cmdlines[0]),
+				 queries.get(cmdlines[1]), synset);
 			}
 			break;
 

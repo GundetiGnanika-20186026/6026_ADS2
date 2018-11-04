@@ -34,19 +34,11 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:6:8: Unused import - java.io.IOException. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:16:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:33: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:35: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:39: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:49: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:53: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:72: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:74: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:77: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:78: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:104: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:108: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:115: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:49: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:53: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:78: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
