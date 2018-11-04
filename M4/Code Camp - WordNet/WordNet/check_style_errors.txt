@@ -40,8 +40,10 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:169: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:169:11: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:193: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:196:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:196:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 35 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Direc.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
