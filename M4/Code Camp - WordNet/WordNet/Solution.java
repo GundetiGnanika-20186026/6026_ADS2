@@ -16,7 +16,7 @@ class Solution {
 		String file2 = scan.nextLine();
 		HashMap<Integer, String[]> synset = new HashMap<>();
 		HashMap<String, ArrayList<Integer>> queries = new HashMap<>();
-        //*****************************************************************
+		//*****************************************************************
 		try {
 			Scanner firstscan = new Scanner(new File("Files/" + file1));
 			//putting values into synset hashmap;
@@ -48,9 +48,9 @@ class Solution {
 			// System.out.println(e.message());
 		}
 
-        //**********************************************
+		//**********************************************
 
-        //**************** try catch block *******************
+		//**************** try catch block *******************
 		Digraph digraph = new Digraph(synset.size());
 
 		try {
@@ -59,48 +59,50 @@ class Solution {
 			while (scanner2.hasNextLine()) {
 				String[] graphinput = scanner2.nextLine().split(",");
 				// System.out.println(graphinput[1]);
-                for(int i = 1;i<graphinput.length;i++) {
-				digraph.addEdge(Integer.parseInt(graphinput[0]),
-				 Integer.parseInt(graphinput[i]));
-                }
+				for (int i = 1; i < graphinput.length; i++) {
+					digraph.addEdge(Integer.parseInt(graphinput[0]),
+					                Integer.parseInt(graphinput[i]));
+				}
 			}
 		}  catch (FileNotFoundException e) {
 
 		}
 		//*****************************************************
 
-        // while(scan.hasNext()) {
-        	String line1 = scan.nextLine();
-        	switch(line1) {
-        		case "Graph" :
-        		      DirectedCycle finder = new DirectedCycle(digraph);
-        		      if (finder.hasCycle()) {
-                              System.out.println("Cycle detected");
+		// while(scan.hasNext()) {
+		String line1 = scan.nextLine();
+		switch (line1) {
+		case "Graph" :
+			DirectedCycle finder = new DirectedCycle(digraph);
+			if (finder.hasCycle()) {
+				System.out.println("Cycle detected");
 
-                      } else if (digraph.multipleroots()) {
-                      	System.out.println("Multiple roots");
-                      } else {
-                      	System.out.println(digraph);
-                      }
-        		break;
-        		case "Queries":
-        		     while(scan.hasNext()) {
-        		     	String[] cmdlines = scan.nextLine().split(" ");
-        		     	if(cmdlines[0].equals("null")) {
-        		     		System.out.println("IllegalArgumentException");
-        		     	}
-        		     }
-        		break;
-
-
-        		default:
-
-        		break;
-        	}
+			} else if (digraph.multipleroots()) {
+				System.out.println("Multiple roots");
+			} else {
+				System.out.println(digraph);
+			}
+			break;
+		case "Queries":
+			while (scan.hasNext()) {
+				String[] cmdlines = scan.nextLine().split(" ");
+				if (cmdlines[0].equals("null")) {
+					System.out.println("IllegalArgumentException");
+				}
+				SAP objectsap = new SAP(digraph);
+				objectsap.length(queries.get(cmdlines[0]), queries.get(cmdlines[1]), synset);
+			}
+			break;
 
 
-        	}
-        }
+		default:
+
+			break;
+		}
+
+
+	}
+}
 
 
 
