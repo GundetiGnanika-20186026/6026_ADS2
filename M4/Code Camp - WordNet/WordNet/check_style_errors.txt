@@ -22,17 +22,10 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:8: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:20:16: Parameter graph1 should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:25: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:33: Line is longer than 80 characters (found 96). [LineLength]
-Audit done.
-Checkstyle ends with 6 errors.
-Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:16:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:78: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
 Checkstyle ends with 2 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.

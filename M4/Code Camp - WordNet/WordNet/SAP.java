@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Arrays;
+//import java.util.Arrays;
 /**
  * Class for sap.
  */
@@ -10,28 +10,30 @@ public class SAP {
      */
     private Digraph graph;
 
-    // constructor takes a digraph (not necessarily a DAG)
+    // constructor takes a digraph (not necessarily a DAG).
 
     /**
      * Constructs the object.
      *
      * @param      graph1  The graph
      */
-    public SAP(Digraph graph1) {
+    public SAP(final Digraph graph1) {
         this.graph = graph1;
 
     }
 
     /**
-    // length of shortest ancestral path between v and w; -1 if no such path
+    // length of shortest ancestral path between v
+     and w; -1 if no such path.
      *
      *
      * @param      arraylist1  The arraylist 1
      * @param      arraylist2  The arraylist 2
      * @param      synset      The synset
      */
-    public void length(final ArrayList<Integer> arraylist1, final ArrayList<Integer> arraylist2,
-                      final  HashMap<Integer, String[]> synset) {
+    public void length(final ArrayList<Integer> arraylist1,
+                       final ArrayList<Integer> arraylist2,
+                       final  HashMap<Integer, String[]> synset) {
         int distance = 0;
         int max = Integer.MAX_VALUE;
         String[] a = null;
@@ -62,7 +64,7 @@ BreadthFirstPath bfsVer2 = new BreadthFirstPath(graph, arraylist2.get(j));
         ancestor.append(a[a.length - 1]);
 
 
-        System.out.println("distance = " + max + ", ancestor = " + ancestor);
+System.out.println("distance = " + max + ", ancestor = " + ancestor);
 
 
     }
