@@ -123,7 +123,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:212:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:216:20: '++' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:220: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:220:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:220:11: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:244: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
 Checkstyle ends with 48 errors.
