@@ -111,6 +111,20 @@ public class Digraph {
 
 
 
+
+
+    public Digraph reverse() {
+        Digraph reverse = new Digraph(V);
+        for (int v = 0; v < V; v++) {
+            for (int w : adj(v)) {
+                reverse.addEdge(w, v);
+            }
+        }
+        return reverse;
+    }
+
+
+
     /**
      * Returns a string representation of the graph.
      * its complexity is V+E

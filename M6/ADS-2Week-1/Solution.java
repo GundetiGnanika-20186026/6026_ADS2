@@ -4,20 +4,26 @@ import java.util.Arrays;
  * Class for page rank.
  */
 class PageRank {
-	Double[] pageranks;
-	Digraph originalgraph;
+	private Digraph extragraph;
+	private Double[] pageranks;
+	private Double[] updated;
+	private Double value;
+	private int vertexes;
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      graph  The graph
 	 */
 	PageRank(Digraph graph) {
-		this.originalgraph = graph;
-
-		pageranks = new Double[graph.V()];
+		this.extragraph = graph;
+		this.vertexes = graph.V();
+        pageranks = new Double[graph.V()];
+        updated = new Double[graph.V()];
 		for (int i = 0; i < graph.V(); i++) {
 			pageranks[i] = (double)1 / (double)graph.V();
 		}
+
+		Digraph revdigraph = extragraph.reverse();
 		//System.out.println(originalgraph.V());
 		//System.out.println(Arrays.toString(pageranks));
 	}
@@ -30,31 +36,33 @@ class PageRank {
 	 * @return     { array with page rank }
 	 */
 	public Double[] pageRank() {
-		int k = 1;
-            while (k <= 1000) {
-			for (int i = 0; i < originalgraph.V(); i++) {
 
-				for (int j = 0; j < originalgraph.V(); j++) {
-					if (j != i) {
-						for (int v : originalgraph.adj[j]) {
-							if (i == v) {
+			Digraph revdigraph = extragraph.reverse();
+			for (int i = 0; i < 1000; i++) {
+
+				for (int j = 0; j < vertexes; j++) {
+					value = 0.0;
+
+						for (int v : revdigraph.adj(j)) {
+
 								//System.out.println(originalgraph.outdegree(j)+"out");
-								pageranks[i] = (double) (pageranks[j] /  originalgraph.outdegree(j));
-							}
+								value += ((pageranks[v]) /(double)  extragraph.outdegree(v));
+
 						}
-					}
+						updated[j] = value;
 				}
+				if(Arrays.equals(pageranks, updated)) {
+						break;
+				} else {
+						pageranks = updated.clone();
 
+				}
 			}
+			return updated;
+    }
 
-			k++;
 
 
-
-		}
-		return pageranks;
-
-	}
 
 	/**
 	 * Gets the pagerank;
@@ -64,7 +72,7 @@ class PageRank {
 	 * @return     The pr.
 	 */
 	public double getPR(int v) {
-		return pageranks[v];
+		return updated[v];
 	}
 
 
@@ -75,7 +83,7 @@ class PageRank {
 	public  void tostring() {
 
 		StringBuilder s = new StringBuilder();
-		for (int i = 0; i < originalgraph.V() ; i++) {
+		for (int i = 0; i < extragraph.V() ; i++) {
 
 			s.append(String.format("%d: ", i));
 			s.append(getPR(i));
@@ -114,6 +122,7 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int vertexes = Integer.parseInt(scan.nextLine());
 		Digraph digraph = new Digraph(vertexes);
+		Digraph extragraph = new Digraph(vertexes);
 
 
 		// iterate count of vertices times
@@ -124,10 +133,21 @@ public class Solution {
 		for (int i = 0; i < vertexes; i++) {
 			String[] graphinput = scan.nextLine().split(" ");
 			// System.out.println(graphinput[1]);
-			for (int j = 1; j < graphinput.length; j++) {
-				digraph.addEdge(Integer.parseInt(graphinput[0]),
+			if(graphinput.length >= 2) {
+			   for (int j = 1; j < graphinput.length; j++) {
+				    digraph.addEdge(Integer.parseInt(graphinput[0]),
 				                Integer.parseInt(graphinput[j]));
-			}
+				    extragraph.addEdge(Integer.parseInt(graphinput[0]),
+				                Integer.parseInt(graphinput[j]));
+			    }
+		    } else {
+		    	for(int k = 0; k< vertexes;k++){
+		    		if(k != i) {
+		    			extragraph.addEdge(Integer.parseInt(graphinput[0]), k);
+
+		    		}
+		    	}
+		    }
 		}
 		System.out.println(digraph);
 		// System.out.println();
@@ -136,8 +156,8 @@ public class Solution {
 
 
 		// Create page rank object and pass the graph object to the constructor
-		PageRank objpage = new PageRank(digraph);
-		objpage.pageRank();
+		PageRank objpage = new PageRank(extragraph);
+		//objpage.pageRank();
 
 
 
