@@ -2,6 +2,9 @@
  * Class for breadth first path.
  */
 class BreadthFirstPath {
+    /**
+     * max value.
+     */
     private static final int INFINITY = Integer.MAX_VALUE;
 
     /**
@@ -28,17 +31,12 @@ class BreadthFirstPath {
         marked = new boolean[G.V()];
         distTo = new int[G.V()];
         edgeTo = new int[G.V()];
-        validateVertex(s);
+        //validateVertex(s);
         bfs(G, s);
 
         // assert check(G, s);
     }
-
-
-
-
-
-   /**
+    /**
     *  // breadth-first search from a single source
     *
     * @param      G     { graph }.
@@ -66,25 +64,25 @@ class BreadthFirstPath {
     }
 
     // breadth-first search from multiple sources
-    private void bfs(Digraph G, Iterable<Integer> sources) {
-        Queue<Integer> q = new Queue<Integer>();
-        for (int s : sources) {
-            marked[s] = true;
-            distTo[s] = 0;
-            q.enqueue(s);
-        }
-        while (!q.isEmpty()) {
-            int v = q.dequeue();
-            for (int w : G.adj(v)) {
-                if (!marked[w]) {
-                    edgeTo[w] = v;
-                    distTo[w] = distTo[v] + 1;
-                    marked[w] = true;
-                    q.enqueue(w);
-                }
-            }
-        }
-    }
+    // private void bfs(Digraph G, Iterable<Integer> sources) {
+    //     Queue<Integer> q = new Queue<Integer>();
+    //     for (int s : sources) {
+    //         marked[s] = true;
+    //         distTo[s] = 0;
+    //         q.enqueue(s);
+    //     }
+    //     while (!q.isEmpty()) {
+    //         int v = q.dequeue();
+    //         for (int w : G.adj(v)) {
+    //             if (!marked[w]) {
+    //                 edgeTo[w] = v;
+    //                 distTo[w] = distTo[v] + 1;
+    //                 marked[w] = true;
+    //                 q.enqueue(w);
+    //             }
+    //         }
+    //     }
+    // }
 
     /**
      * Is there a path between the source vertex {@code s} (or sources) and vertex {@code v}?
@@ -93,7 +91,7 @@ class BreadthFirstPath {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public boolean hasPathTo(int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return marked[v];
     }
 
@@ -105,47 +103,27 @@ class BreadthFirstPath {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int distTo(int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return distTo[v];
     }
 
-    // /**
-    //  * Returns a shortest path between the source vertex {@code s} (or sources)
-    //  * and {@code v}, or {@code null} if no such path.
-    //  * @param  v the vertex
-    //  * @return the sequence of vertices on a shortest path, as an Iterable
-    //  * @throws IllegalArgumentException unless {@code 0 <= v < V}
-    //  */
-    // public Iterable<Integer> pathTo(int v) {
-    //     validateVertex(v);
-    //     if (!hasPathTo(v)) return null;
-    //     Stack<Integer> path = new Stack<Integer>();
-    //     int x;
-    //     for (x = v; distTo[x] != 0; x = edgeTo[x])
-    //         path.push(x);
-    //     path.push(x);
-    //     return path;
+
+
+
+
+
+
+    // // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    // private void validateVertices(Iterable<Integer> vertices) {
+    //     if (vertices == null) {
+    //         throw new IllegalArgumentException("argument is null");
+    //     }
+    //     int V = marked.length;
+    //     for (int v : vertices) {
+    //         if (v < 0 || v >= V) {
+    //             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+    //         }
+    //     }
     // }
-
-
-
-    private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertices(Iterable<Integer> vertices) {
-        if (vertices == null) {
-            throw new IllegalArgumentException("argument is null");
-        }
-        int V = marked.length;
-        for (int v : vertices) {
-            if (v < 0 || v >= V) {
-                throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-            }
-        }
-    }
 }
 
