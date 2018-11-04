@@ -11,7 +11,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:103:20: '++' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:107: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:107:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:107:11: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
@@ -28,18 +28,11 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:8: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:20:16: Parameter graph should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:20:24: 'graph' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:20:16: Parameter graph1 should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:27: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:35: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:35:24: Parameter arraylist1 should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:35:55: Parameter arraylist2 should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:36:24: Parameter synset should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:71: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:74: Line is longer than 80 characters (found 111). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:77: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\SAP.java:35: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:4:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Solution.java:6:8: Unused import - java.io.IOException. [UnusedImports]

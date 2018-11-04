@@ -15,10 +15,10 @@ public class SAP {
     /**
      * Constructs the object.
      *
-     * @param      graph  The graph
+     * @param      graph1  The graph
      */
-    public SAP(Digraph graph) {
-        this.graph = graph;
+    public SAP(Digraph graph1) {
+        this.graph = graph1;
 
     }
 
@@ -32,8 +32,8 @@ public class SAP {
      * @param      arraylist2  The arraylist 2
      * @param      synset      The synset
      */
-    public void length(ArrayList<Integer> arraylist1, ArrayList<Integer> arraylist2,
-                       HashMap<Integer, String[]> synset) {
+    public void length(final ArrayList<Integer> arraylist1, final ArrayList<Integer> arraylist2,
+                      final  HashMap<Integer, String[]> synset) {
         int distance = 0;
         int max = Integer.MAX_VALUE;
         String[] a = null;
@@ -67,17 +67,5 @@ BreadthFirstPath bfsVer2 = new BreadthFirstPath(graph, arraylist2.get(j));
         System.out.println("distance = " + max + ", ancestor = " + ancestor);
 
 
-
-        // // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
-        // public int ancestor(int v, int w)
-
-        // // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
-        // public int length(Iterable<Integer> v, Iterable<Integer> w)
-
-        // // a common ancestor that participates in shortest ancestral path; -1 if no such path
-        // public int ancestor(Iterable<Integer> v, Iterable<Integer> w)
-
-        // // do unit testing of this class
-        // public static void main(String[] args)
     }
 }
