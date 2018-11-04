@@ -6,7 +6,9 @@ public class Digraph {
      *  number of vertices in this digraph.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * vertex.
+     */
     private final int v;
     /**
      * number of edges in this digraph.
@@ -100,12 +102,13 @@ public class Digraph {
         int num = 0;
         for (int i = 0; i < vertex(); i++) {
             if (outdegree(i) == 0) {
-                num ++;
+                num++;
 
             }
         }
-        if(num > 1)
+        if (num > 1) {
             return true;
+        }
         return false;
 
     }
