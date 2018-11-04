@@ -119,17 +119,17 @@ public class Digraph {
         E++;
     }
 
-    /**
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
-     *
-     * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public Iterable<Integer> adj(int v) {
-        validateVertex(v);
-        return adj[v];
-    }
+    // /**
+    //  * Returns the vertices adjacent from vertex {@code v} in this digraph.
+    //  *
+    //  * @param  v the vertex
+    //  * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+    //  * @throws IllegalArgumentException unless {@code 0 <= v < V}
+    //  */
+    // public Iterable<Integer> adj(int v) {
+    //     validateVertex(v);
+    //     return adj[v];
+    // }
 
     /**
      * Returns the number of directed edges incident from vertex {@code v}.
@@ -144,18 +144,18 @@ public class Digraph {
         return adj[v].size();
     }
 
-    /**
-     * Returns the number of directed edges incident to vertex {@code v}.
-     * This is known as the <em>indegree</em> of vertex {@code v}.
-     *
-     * @param  v the vertex
-     * @return the indegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
-     */
-    public int indegree(int v) {
-        validateVertex(v);
-        return indegree[v];
-    }
+    // /**
+    //  * Returns the number of directed edges incident to vertex {@code v}.
+    //  * This is known as the <em>indegree</em> of vertex {@code v}.
+    //  *
+    //  * @param  v the vertex
+    //  * @return the indegree of vertex {@code v}
+    //  * @throws IllegalArgumentException unless {@code 0 <= v < V}
+    //  */
+    // public int indegree(int v) {
+    //     validateVertex(v);
+    //     return indegree[v];
+    // }
 
 
     public boolean multipleroots() {
@@ -172,37 +172,37 @@ public class Digraph {
 
     }
 
-    /**
-     * Returns the reverse of the digraph.
-     *
-     * @return the reverse of the digraph
-     */
-    public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
-            }
-        }
-        return reverse;
-    }
+    // /**
+    //  * Returns the reverse of the digraph.
+    //  *
+    //  * @return the reverse of the digraph
+    //  */
+    // public Digraph reverse() {
+    //     Digraph reverse = new Digraph(V);
+    //     for (int v = 0; v < V; v++) {
+    //         for (int w : adj(v)) {
+    //             reverse.addEdge(w, v);
+    //         }
+    //     }
+    //     return reverse;
+    // }
 
-    /**
-     * Returns a string representation of the graph.
-     *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(String.format("%d: ", v));
-            for (int w : adj[v]) {
-                s.append(String.format("%d ", w));
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
-    }
+    // /**
+    //  * Returns a string representation of the graph.
+    //  *
+    //  * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+    //  *         followed by the <em>V</em> adjacency lists
+    //  */
+    // public String toString() {
+    //     StringBuilder s = new StringBuilder();
+    //     s.append(V + " vertices, " + E + " edges " + NEWLINE);
+    //     for (int v = 0; v < V; v++) {
+    //         s.append(String.format("%d: ", v));
+    //         for (int w : adj[v]) {
+    //             s.append(String.format("%d ", w));
+    //         }
+    //         s.append(NEWLINE);
+    //     }
+    //     return s.toString();
+    // }
 }

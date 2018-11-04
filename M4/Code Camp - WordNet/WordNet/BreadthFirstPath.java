@@ -23,36 +23,38 @@ class BreadthFirstPath {
     /**
      * Computes the shortest path between the source vertex {@code s}.
      * and every other vertex in the graph {@code G}.
-     * @param G the graph
+     * @param graph the graph
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public BreadthFirstPath(final Digraph G, final int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
+    public BreadthFirstPath(final Digraph graph, final int s) {
+        marked = new boolean[graph.V()];
+        distTo = new int[graph.V()];
+        edgeTo = new int[graph.V()];
         //validateVertex(s);
-        bfs(G, s);
+        bfs(graph, s);
 
         // assert check(G, s);
     }
     /**
     *  // breadth-first search from a single source.
+     *  its complexity is O(V+E).
     *
-    * @param      G     { graph }.
+    * @param      graph     { graph }.
     * @param      s     {  sourse}.
     */
-    private void bfs(final Digraph G, final int s) {
+    private void bfs(final Digraph graph, final int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < graph.V(); v++) {
             distTo[v] = INFINITY;
+        }
         distTo[s] = 0;
         marked[s] = true;
         q.enqueue(s);
 
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
+            for (int w : graph.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
                     distTo[w] = distTo[v] + 1;
@@ -69,10 +71,11 @@ class BreadthFirstPath {
      * Is there a path between the source.
      *  vertex {@code s} (or sources) and vertex {@code v}?
      * @param v the vertex
+     *  its complexity is O(1).
      * @return {@code true} if there is a path, and {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public boolean hasPathTo(int v) {
+    public boolean hasPathTo(final int v) {
         //validateVertex(v);
         return marked[v];
     }
@@ -81,11 +84,12 @@ class BreadthFirstPath {
      * {Returns the number of edges in a shortest
      *  path between the source vertex {@code s}
      * (or sources) and vertex {@code v}?}.
+     *  its complexity is O(1).
      * @param v the vertex
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int distTo(int v) {
+    public int distTo(final int v) {
         //validateVertex(v);
         return distTo[v];
     }

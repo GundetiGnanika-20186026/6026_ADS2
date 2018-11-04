@@ -4,13 +4,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:30:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:30:43: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:45:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:47: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:75:30: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:88:23: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:31:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
@@ -36,18 +31,16 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:112: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:114:25: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:114:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:126: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:129:34: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:126: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:142:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:155:25: Parameter v should be final. [FinalParameters]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:161:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'multipleroots' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'multipleroots' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:161:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:165:20: '++' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:169: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:169:11: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:193: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:169:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Digraph.java:193: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M4\Code Camp - WordNet\WordNet\Direc.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
