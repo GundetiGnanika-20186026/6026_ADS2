@@ -6,7 +6,7 @@ import java.util.HashMap;
  */
 public class SAP {
     /**
-     * graph
+     * graph.
      */
     private Digraph graph;
 
@@ -25,7 +25,7 @@ public class SAP {
     /**
     // length of shortest ancestral path between v
      and w; -1 if no such path.
-     *
+     *its complexity is  O(V+E).
      *
      * @param      arraylist1  The arraylist 1
      * @param      arraylist2  The arraylist 2

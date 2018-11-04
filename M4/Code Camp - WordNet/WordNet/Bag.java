@@ -100,12 +100,7 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext() {
             return current != null;
         }
-        // /**
-        //  * { function for removeing }.
-        //  */
-        // public void remove() {
-        //     throw new UnsupportedOperationException();
-        // }
+
         /**
          * { function for next }.
          * Time complexity for this method is O(1).
@@ -122,4 +117,5 @@ public class Bag<Item> implements Iterable<Item> {
         }
     }
 }
+
 
