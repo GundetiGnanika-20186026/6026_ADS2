@@ -31,7 +31,7 @@ class PageRank {
 
 	/**
 	 * method to calculate page rank.
-	 * its complexity is O(n*n*n*n) as I am using 3 for loops and one while loop.
+	 * its complexity is O(n*n*n) as I am using 3 for loops and one while loop.
 	 *
 	 * @return     { array with page rank }
 	 */
