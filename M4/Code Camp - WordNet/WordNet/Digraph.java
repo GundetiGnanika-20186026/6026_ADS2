@@ -119,17 +119,17 @@ public class Digraph {
         E++;
     }
 
-    // /**
-    //  * Returns the vertices adjacent from vertex {@code v} in this digraph.
-    //  *
-    //  * @param  v the vertex
-    //  * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
-    //  * @throws IllegalArgumentException unless {@code 0 <= v < V}
-    //  */
-    // public Iterable<Integer> adj(int v) {
-    //     validateVertex(v);
-    //     return adj[v];
-    // }
+    /**
+     * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     *
+     * @param  v the vertex
+     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     */
+    public Iterable<Integer> adj(int v) {
+        validateVertex(v);
+        return adj[v];
+    }
 
     /**
      * Returns the number of directed edges incident from vertex {@code v}.
