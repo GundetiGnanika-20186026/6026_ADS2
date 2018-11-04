@@ -50,6 +50,7 @@ class PageRank {
 
 						}
 						updated[j] = value;
+						System.out.print(updated[j] + " j \n");
 				}
 				if(Arrays.equals(pageranks, updated)) {
 						break;

@@ -20,9 +20,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -47,9 +47,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -74,9 +74,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -113,9 +113,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -146,9 +146,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -185,9 +185,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -212,9 +212,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -245,9 +245,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -272,9 +272,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -305,9 +305,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -326,9 +326,9 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -382,8 +382,8 @@ Your Output:
 
 hello + i0
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:91)
-	at Solution.main(Solution.java:168)
+	at PageRank.getPR(Solution.java:76)
+	at PageRank.tostring(Solution.java:92)
+	at Solution.main(Solution.java:169)
 ----------------------------------------
 
