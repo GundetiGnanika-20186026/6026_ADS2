@@ -18,11 +18,11 @@ Your Output:
 2: 0 
 3: 2 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -45,11 +45,11 @@ Your Output:
 2: 3 0 
 3: 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -72,11 +72,11 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -111,11 +111,11 @@ Your Output:
 6: 0 
 7: 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -144,11 +144,11 @@ Your Output:
 4: 0 
 5: 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -183,11 +183,11 @@ Your Output:
 6: 
 7: 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -210,11 +210,11 @@ Your Output:
 2: 3 
 3: 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -243,11 +243,11 @@ Your Output:
 4: 0 
 5: 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -270,11 +270,11 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -303,11 +303,11 @@ Your Output:
 4: 0 
 5: 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -324,11 +324,11 @@ Your Output:
 0: 1 
 1: 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -380,10 +380,10 @@ Your Output:
 10: 0 
 11: 0 
 
-hello
+tostring
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.getPR(Solution.java:75)
-	at PageRank.tostring(Solution.java:90)
-	at Solution.main(Solution.java:167)
+	at PageRank.tostring(Solution.java:91)
+	at Solution.main(Solution.java:168)
 ----------------------------------------
 
