@@ -21,7 +21,7 @@ class BreadthFirstPath {
     private int[] distTo;
 
     /**
-     * Computes the shortest path between the source vertex {@code s}
+     * Computes the shortest path between the source vertex {@code s}.
      * and every other vertex in the graph {@code G}.
      * @param G the graph
      * @param s the source vertex
@@ -37,7 +37,7 @@ class BreadthFirstPath {
         // assert check(G, s);
     }
     /**
-    *  // breadth-first search from a single source
+    *  // breadth-first search from a single source.
     *
     * @param      G     { graph }.
     * @param      s     {  sourse}.
@@ -63,29 +63,11 @@ class BreadthFirstPath {
         }
     }
 
-    // breadth-first search from multiple sources
-    // private void bfs(Digraph G, Iterable<Integer> sources) {
-    //     Queue<Integer> q = new Queue<Integer>();
-    //     for (int s : sources) {
-    //         marked[s] = true;
-    //         distTo[s] = 0;
-    //         q.enqueue(s);
-    //     }
-    //     while (!q.isEmpty()) {
-    //         int v = q.dequeue();
-    //         for (int w : G.adj(v)) {
-    //             if (!marked[w]) {
-    //                 edgeTo[w] = v;
-    //                 distTo[w] = distTo[v] + 1;
-    //                 marked[w] = true;
-    //                 q.enqueue(w);
-    //             }
-    //         }
-    //     }
-    // }
+
 
     /**
-     * Is there a path between the source vertex {@code s} (or sources) and vertex {@code v}?
+     * Is there a path between the source.
+     *  vertex {@code s} (or sources) and vertex {@code v}?
      * @param v the vertex
      * @return {@code true} if there is a path, and {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -96,8 +78,9 @@ class BreadthFirstPath {
     }
 
     /**
-     * Returns the number of edges in a shortest path between the source vertex {@code s}
-     * (or sources) and vertex {@code v}?
+     * {Returns the number of edges in a shortest
+     *  path between the source vertex {@code s}
+     * (or sources) and vertex {@code v}?}.
      * @param v the vertex
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -112,18 +95,5 @@ class BreadthFirstPath {
 
 
 
-
-    // // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    // private void validateVertices(Iterable<Integer> vertices) {
-    //     if (vertices == null) {
-    //         throw new IllegalArgumentException("argument is null");
-    //     }
-    //     int V = marked.length;
-    //     for (int v : vertices) {
-    //         if (v < 0 || v >= V) {
-    //             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    //         }
-    //     }
-    // }
 }
 
