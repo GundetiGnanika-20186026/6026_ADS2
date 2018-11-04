@@ -86,9 +86,17 @@ class Solution {
 		case "Queries":
 			while (scan.hasNext()) {
 				String[] cmdlines = scan.nextLine().split(" ");
-				if (cmdlines[0].equals("null")) {
-					System.out.println("IllegalArgumentException");
-				}
+				// if (cmdlines[0].equals("null")) {
+				// 	System.out.println("IllegalArgumentException");
+				// }
+				try {
+                			if(cmdlines[0].equals("null")) {
+                			System.out.println("IllegalArgumentException");
+                			return;
+                		    }
+                		} catch (IllegalArgumentException e) {
+                			System.out.println(e.getMessage());
+                		}
 				SAP objectsap = new SAP(digraph);
 				objectsap.length(queries.get(cmdlines[0]), queries.get(cmdlines[1]), synset);
 			}
