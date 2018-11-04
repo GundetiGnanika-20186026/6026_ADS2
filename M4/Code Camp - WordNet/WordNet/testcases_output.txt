@@ -260,20 +260,11 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Stack
-	at DirectedCycle.dfs(DirectedCycle.java:60)
-	at DirectedCycle.dfs(DirectedCycle.java:58)
-	at DirectedCycle.<init>(DirectedCycle.java:33)
-	at Solution.main(Solution.java:90)
-Caused by: java.lang.ClassNotFoundException: Stack
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 4 more
+Cycle detected
 ----------------------------------------
 
