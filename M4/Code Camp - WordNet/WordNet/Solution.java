@@ -9,8 +9,22 @@ import java.io.FileNotFoundException;
 
 /////////////////////////////////////////////////////
 
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String file1 = scan.nextLine();
 		String file2 = scan.nextLine();
@@ -90,13 +104,13 @@ class Solution {
 				// 	System.out.println("IllegalArgumentException");
 				// }
 				try {
-                			if(cmdlines[0].equals("null")) {
-                			System.out.println("IllegalArgumentException");
-                			return;
-                		    }
-                		} catch (IllegalArgumentException e) {
-                			System.out.println(e.getMessage());
-                		}
+					if (cmdlines[0].equals("null")) {
+						System.out.println("IllegalArgumentException");
+						return;
+					}
+				} catch (IllegalArgumentException e) {
+					System.out.println(e.getMessage());
+				}
 				SAP objectsap = new SAP(digraph);
 				objectsap.length(queries.get(cmdlines[0]), queries.get(cmdlines[1]), synset);
 			}
