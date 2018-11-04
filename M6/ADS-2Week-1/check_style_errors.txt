@@ -1,16 +1,7 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:1: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:39: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:44: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:46: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:106: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:108: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:122: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Bag.java:123: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M6\ADS-2Week-1\Digraph.java:3: Missing a Javadoc comment. [JavadocType]
