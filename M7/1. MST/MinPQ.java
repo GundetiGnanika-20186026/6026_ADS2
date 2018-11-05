@@ -102,6 +102,7 @@ public class MinPQ<Key> {
     }
     /**
      * resize method to resize the array.
+     * its time complexity is O(n).
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
