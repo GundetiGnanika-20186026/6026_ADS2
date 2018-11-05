@@ -1,3 +1,6 @@
+/**
+ * Class for edge weighted graph.
+ */
 public class EdgeWeightedGraph {
     /**
      * value.
@@ -7,11 +10,11 @@ public class EdgeWeightedGraph {
     /**
      * vertex.
      */
-    private final int V;
+    private final int v;
     /**
      * edge.
      */
-    private int E;
+    private int e;
     /**
      * bag.
      */
@@ -26,11 +29,11 @@ public class EdgeWeightedGraph {
      */
     public EdgeWeightedGraph(final int V) {
 
-        this.V = V;
-        this.E = 0;
+        this.v = V;
+        this.e = 0;
         adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Edge>();
+        for (int i = 0; i < V; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
     /**
@@ -41,7 +44,7 @@ public class EdgeWeightedGraph {
      *  vertices in this edge-weighted graph
      */
     public int V() {
-        return V;
+        return v;
     }
 
     /**
@@ -52,7 +55,7 @@ public class EdgeWeightedGraph {
      *  in this edge-weighted graph.
      */
     public int E() {
-        return E;
+        return e;
     }
 
 
@@ -60,29 +63,29 @@ public class EdgeWeightedGraph {
      * {Adds the undirected edge
      *  {@code e} to this edge-weighted graph}.
      *
-     * @param  e the edge
+     * @param  e1 the edge
 
      */
-    public void addEdge(final Edge e) {
-        int v = e.either();
-        int w = e.other(v);
+    public void addEdge(final Edge e1) {
+        int u = e1.either();
+        int q = e1.other(v);
 
-        adj[v].add(e);
-        adj[w].add(e);
-        E++;
+        adj[u].add(e1);
+        adj[q].add(e1);
+        e++;
     }
 
     /**
      * {Returns the edges incident on vertex {@code v}}.
      *
-     * @param  v the vertex
+     * @param  v1 the vertex
      * @return the edges incident on
      *  vertex {@code v} as an Iterable
      *
      */
-    public Iterable<Edge> adj(final int v) {
+    public Iterable<Edge> adj(final int v1) {
         //validateVertex(v);
-        return adj[v];
+        return adj[v1];
     }
 
     /**
@@ -92,9 +95,9 @@ public class EdgeWeightedGraph {
      * @return the degree of vertex {@code v}
 
      */
-    public int degree(final int v) {
+    public int degree(final int v2) {
         //validateVertex(v);
-        return adj[v].size();
+        return adj[v2].size();
     }
 
     /**
@@ -107,14 +110,12 @@ public class EdgeWeightedGraph {
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int i = 0; i < v; i++) {
             int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
+            for (Edge e : adj(i)) {
+                if (e.other(i) > i) {
                     list.add(e);
-                }
-// add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
+                } else if (e.other(i) == i) {
                     if (selfLoops % 2 == 0) list.add(e);
                     selfLoops++;
                 }
@@ -131,10 +132,10 @@ public class EdgeWeightedGraph {
    */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(v + ": ");
-            for (Edge e : adj[v]) {
+        s.append(v + " " + e + NEWLINE);
+        for (int i = 0; i < v; i++) {
+            s.append(i + ": ");
+            for (Edge e : adj[i]) {
                 s.append(e + "  ");
             }
             s.append(NEWLINE);

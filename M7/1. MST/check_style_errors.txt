@@ -3,17 +3,16 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:10:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:14:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:27:40: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:27:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:43:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:54:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:115:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:118: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:30:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:46:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:57:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:94:8: Unused @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:98:33: Expected @param tag for 'v2'. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:115:23: 'e' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:119: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:138:23: 'e' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...
