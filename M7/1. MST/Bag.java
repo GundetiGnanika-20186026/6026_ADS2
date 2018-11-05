@@ -75,7 +75,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * { Return an iterator that iterates over the items in the bag }.
-     * its complexity is O(N).
+     * its complexity is O(V).
      *
      * @return     { item }
      */
@@ -100,12 +100,7 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext() {
             return current != null;
         }
-        // /**
-        //  * { function for removeing }.
-        //  */
-        // public void remove() {
-        //     throw new UnsupportedOperationException();
-        // }
+
         /**
          * { function for next }.
          * Time complexity for this method is O(1).

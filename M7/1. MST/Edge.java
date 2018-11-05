@@ -16,9 +16,7 @@ public class Edge implements Comparable<Edge> {
     private final double weight;
 
     /**
-     * Initializes an edge between
-     *  vertices {@code v} and {@code w} of
-     * the given {@code weight}.
+     * Initializes an edge.
      *
      * @param  v1 one vertex
      * @param  w1 the other vertex
@@ -34,6 +32,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns the weight of this edge.
+     * its complexity is O(1).
      *
      * @return the weight of this edge
      */
@@ -43,6 +42,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns either endpoint of this edge.
+     * its complexity is O(1).
      *
      * @return either endpoint of this edge
      */
@@ -53,6 +53,7 @@ public class Edge implements Comparable<Edge> {
     /**
      * Returns the endpoint of this edge that is different
      * from the given vertex.
+     * its complexity is O(1).
      *
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
@@ -71,11 +72,8 @@ public class Edge implements Comparable<Edge> {
     }
     /**
      * Compares two edges by weight.
-     * Note that {@code compareTo()} is not
-     *  consistent with {@code equals()},
-     * which uses the reference equality implementation
-     * inherited from {@code Object}.
-     *
+
+     *its complexity is O(1).
      * @param  that the other edge
      * @return a negative integer, zero, or positive
      * integer depending on whether
