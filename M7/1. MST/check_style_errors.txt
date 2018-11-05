@@ -1,15 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:1: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:28: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:38: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:43: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:45: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:105: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:107: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:121: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Bag.java:122: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:3:5: Missing a Javadoc comment. [JavadocVariable]
@@ -210,7 +200,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:31: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:32: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:33: '<' is not followed by whitespace. [WhitespaceAround]
