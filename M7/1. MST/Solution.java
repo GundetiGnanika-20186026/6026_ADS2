@@ -9,7 +9,7 @@ class Solution{
 		for(int i = 0;i<vertexes;i++) {
 			String[] input = scan.nextLine().split(" ");
             Edge edgeobj = new Edge(Integer.parseInt(input[0]),
-             Integer.parseInt(input[1]), Integer.parseInt(input[2]));
+             Integer.parseInt(input[1]), Double.parseDouble(input[2]));
             weighted.addEdge(edgeobj);
         }
         KruskalMST kruskal = new KruskalMST(weighted);
