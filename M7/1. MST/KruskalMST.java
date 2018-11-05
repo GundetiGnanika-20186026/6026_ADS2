@@ -19,17 +19,17 @@ private static final double FLOATING_POINT_EPSILON = 1E-12;
       *  (or forest) of an edge-weighted graph}.
      * @param G the edge-weighted graph
      */
-    public KruskalMST(final EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph graph) {
         // more efficient to build heap by passing
         // array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.edges()) {
+        for (Edge e : graph.edges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
+        UF uf = new UF(graph.V());
+        while (!pq.isEmpty() && mst.size() < graph.V() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
