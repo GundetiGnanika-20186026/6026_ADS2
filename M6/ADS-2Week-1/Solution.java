@@ -31,7 +31,7 @@ class PageRank {
 
 	/**
 	 * method to calculate page rank.
-	 * its complexity is O(n*n*n) as I am using 3 for loops and one while loop.
+	 * its complexity is 1000(V+E) as I am using 3 for loops and one while loop.
 	 *
 	 * @return     { array with page rank }
 	 */
@@ -46,7 +46,7 @@ class PageRank {
 						for (int v : revdigraph.adj(j)) {
 
 								//System.out.println(originalgraph.outdegree(j)+"out");
-								value += ((pageranks[v]) /(double)  extragraph.outdegree(v));
+								value += ((pageranks[v]) /(double) extragraph.outdegree(v));
 
 						}
 						updated[j] = value;
@@ -67,6 +67,7 @@ class PageRank {
 
 	/**
 	 * Gets the pagerank;
+	 * its complexity is O(1).
 	 *
 	 * @param      v     { index }
 	 *
@@ -79,7 +80,7 @@ class PageRank {
 
     /**
      * string representation of the page ranks.
-     * its complexity is O(N).
+     * its complexity is O(V).
      */
 	public  void tostring() {
 
@@ -102,9 +103,9 @@ class PageRank {
 
 
 
-class WebSearch {
+// class WebSearch {
 
-}
+// }
 
 /**
  * Class for solution.
