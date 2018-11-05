@@ -4,38 +4,16 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:4:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:5:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:9: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:14:30: Parameter V should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:14:34: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:14:34: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:15: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:15: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:36:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:45:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:50:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:51: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:52: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:52:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:52:94: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:59: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:61:25: Parameter e should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:78:31: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:90:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:97: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:109:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:110: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:112: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:124: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:2: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:9: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:15: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:52: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:59: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:97: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:110: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:124: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
@@ -62,15 +40,13 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:23: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:24: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:25: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:31: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:32: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:33: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:23:39: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
