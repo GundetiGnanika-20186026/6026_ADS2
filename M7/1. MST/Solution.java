@@ -1,6 +1,20 @@
 import java.util.Scanner;
-class Solution{
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int vertexes = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
@@ -14,12 +28,5 @@ class Solution{
         }
         KruskalMST kruskal = new KruskalMST(weighted);
         System.out.format("%.5f", kruskal.weight());
-
-
-
-
-
-
-
-	}
+    }
 }
