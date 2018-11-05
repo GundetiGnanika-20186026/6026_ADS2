@@ -161,18 +161,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 84 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:1: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:12: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:25: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:29: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:32: Line is longer than 80 characters (found 108). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:105: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:134: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:136: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:150: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Queue.java:151: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
