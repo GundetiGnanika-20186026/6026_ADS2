@@ -28,8 +28,8 @@ private static final double FLOATING_POINT_EPSILON = 1E-12;
         }
 
         // run greedy algorithm
-        UF uf = new UF(graph.V());
-        while (!pq.isEmpty() && mst.size() < graph.V() - 1) {
+        UF uf = new UF(graph.vertex());
+        while (!pq.isEmpty() && mst.size() < graph.vertex() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
