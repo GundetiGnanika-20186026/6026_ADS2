@@ -237,7 +237,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:9:31: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:9:32: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:9:33: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:9:42: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Solution.java:9:39: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
