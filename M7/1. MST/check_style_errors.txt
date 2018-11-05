@@ -4,20 +4,16 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:9:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:13:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:26:30: Parameter V should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:26:34: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:26:34: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:42:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:53:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:65:25: Parameter e should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:82:31: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:94:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:114:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:117: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:10:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:14:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:27:40: 'V' hides a field. [HiddenField]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:27:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:43:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:54:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:115:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:118: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -2,7 +2,8 @@ public class EdgeWeightedGraph {
     /**
      * value.
      */
-    private static final String NEWLINE = System.getProperty("line.separator");
+    private static final String
+     NEWLINE = System.getProperty("line.separator");
     /**
      * vertex.
      */
@@ -23,7 +24,7 @@ public class EdgeWeightedGraph {
      * @param  V the number of vertices
 
      */
-    public EdgeWeightedGraph(int V) {
+    public EdgeWeightedGraph(final int V) {
 
         this.V = V;
         this.E = 0;
@@ -62,7 +63,7 @@ public class EdgeWeightedGraph {
      * @param  e the edge
 
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
 
@@ -79,7 +80,7 @@ public class EdgeWeightedGraph {
      *  vertex {@code v} as an Iterable
      *
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         //validateVertex(v);
         return adj[v];
     }
@@ -91,7 +92,7 @@ public class EdgeWeightedGraph {
      * @return the degree of vertex {@code v}
 
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         //validateVertex(v);
         return adj[v].size();
     }
