@@ -17,7 +17,7 @@ private static final double FLOATING_POINT_EPSILON = 1E-12;
      /**
      * {Compute a minimum spanning tree
       *  (or forest) of an edge-weighted graph}.
-     * @param G the edge-weighted graph
+     * @param graph the edge-weighted graph
      */
     public KruskalMST(final EdgeWeightedGraph graph) {
         // more efficient to build heap by passing
