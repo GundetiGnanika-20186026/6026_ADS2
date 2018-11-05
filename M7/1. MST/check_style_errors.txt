@@ -1,26 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:17: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:21: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:24: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:28: 'w' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:31: Parameter weight should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:16:38: 'weight' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:42: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:49:22: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:50: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:51: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:52: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:58: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:61: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\Edge.java:66:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 18 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
