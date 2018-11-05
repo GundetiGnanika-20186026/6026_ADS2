@@ -26,17 +26,7 @@ public class Edge implements Comparable<Edge> {
 
      */
     public Edge(final int v1, final int w1, final double weight1) {
-        // if (v1 < 0) {
-        //     throw new IllegalArgumentException(
-        //         "vertex index must be a nonnegative integer");
-        // }
-        // if (w1 < 0) {
-        //     throw new IllegalArgumentException(
-        //         "vertex index must be a nonnegative integer");
-        // }
-        // if (Double.isNaN(weight1)) {
-        //     throw new IllegalArgumentException("Weight is NaN");
-        // }
+
         this.v = v1;
         this.w = w1;
         this.weight = weight1;
