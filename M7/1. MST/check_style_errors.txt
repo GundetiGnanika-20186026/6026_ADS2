@@ -44,15 +44,11 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:11:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:45: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:46: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:53:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:53:27: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:53:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:61: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:85: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:100: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:61: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:85: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M7\1. MST\KruskalMST.java:100: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
