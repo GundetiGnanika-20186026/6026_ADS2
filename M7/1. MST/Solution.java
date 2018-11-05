@@ -13,7 +13,7 @@ class Solution{
             weighted.addEdge(edgeobj);
         }
         KruskalMST kruskal = new KruskalMST(weighted);
-        System.out.println(kruskal.weight());
+        System.out.format("%.5f", kruskal.weight());
 
 
 
