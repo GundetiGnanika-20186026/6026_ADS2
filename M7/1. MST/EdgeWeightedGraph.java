@@ -20,18 +20,12 @@ public class EdgeWeightedGraph {
             adj[v] = new Bag<Edge>();
         }
     }
-
-
-
-
-
-
-
-
     /**
-     * Returns the number of vertices in this edge-weighted graph.
+     * {Returns the number
+     *  of vertices in this edge-weighted graph}.
      *
-     * @return the number of vertices in this edge-weighted graph
+     * @return the number of
+     *  vertices in this edge-weighted graph
      */
     public int V() {
         return V;
