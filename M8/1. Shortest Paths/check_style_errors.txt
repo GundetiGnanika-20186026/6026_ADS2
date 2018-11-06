@@ -192,13 +192,12 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:10:27: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:19: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:26:33: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:26:34: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:26:48: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:35: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:35:82: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:12: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:20: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:22: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:23: '<' is not preceded with whitespace. [WhitespaceAround]
@@ -207,7 +206,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:40:36: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Solution.java:43:41: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Stack.java:6: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Stack.java:7: Line is longer than 80 characters (found 87). [LineLength]

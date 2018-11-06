@@ -31,8 +31,8 @@ final class Solution {
 
 		for (int i = 0; i < edges; i++) {
 			String[] formation = scan.nextLine().split(" ");
-	        Edge edgeobj = new Edge(hashobj.get(formation[1]),
-			 hashobj.get(formation[2]), Double.parseDouble(formation[3]));
+	        Edge edgeobj = new Edge(hashobj.get(formation[0]),
+			 hashobj.get(formation[1]), Double.parseDouble(formation[2]));
 			graphobj.addEdge(edgeobj);
         }
 
