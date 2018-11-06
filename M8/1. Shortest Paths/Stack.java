@@ -36,7 +36,7 @@ class Stack<Item> implements Iterable<Item> {
     /**
      * Initializes an empty stack.
      */
-    public Stack() {
+    Stack() {
         first = null;
         n = 0;
     }
@@ -118,8 +118,8 @@ class Stack<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        public ListIterator(Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> first1) {
+            current = first1;
         }
         /**
          * Determines if it has next.
