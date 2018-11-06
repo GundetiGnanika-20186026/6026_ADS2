@@ -4,9 +4,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:51: 'weight' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]

@@ -16,16 +16,17 @@ class Edge implements Comparable<Edge> {
     private final double weight;
     /**
      * Constructs the object.
+     * its time complexity is O(1).
      *
      * @param      v1       { vertex1 }
      * @param      w1       { vertex2 }
-     * @param      weight  The weight
+     * @param      weight1  The weight
      */
-    Edge(final int v1, final int w1, final double weight) {
+    Edge(final int v1, final int w1, final double weight1) {
 
         this.v = v1;
         this.w = w1;
-        this.weight = weight;
+        this.weight = weight1;
     }
 
     /**
