@@ -51,7 +51,7 @@ class DijkstraSP {
      * @param      edge    The edge
      * @param      vertex  The vertex
      */
-    private void relax(Edge edge, int vertex) {
+    private void relax(final Edge edge, final int vertex) {
         int vertexTwo = edge.other(vertex);
         if (distTo[vertexTwo] > distTo[vertex] + edge.weight()) {
             distTo[vertexTwo] = distTo[vertex] + edge.weight();
@@ -91,7 +91,9 @@ class DijkstraSP {
      * @return     { path }
      */
     public Iterable<Edge> pathTo(final int v) {
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {

@@ -1,11 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:54:24: Parameter edge should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:54:35: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:94: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:1: Missing a Javadoc comment. [JavadocType]
