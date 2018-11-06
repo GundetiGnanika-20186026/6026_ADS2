@@ -12,6 +12,7 @@ final class Solution {
     }
     /**
      * main method.
+     * time complexity is O(E + V).
      *
      * @param      args  The arguments
      */

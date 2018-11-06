@@ -22,6 +22,7 @@ class EdgeWeightedGraph {
     /**
      * {Initializes an empty edge-weighted
      *  graph with V vertices and 0 edges}.
+     *  time complexity is O(V).
      *
      * @param  v1 the number of vertices
 
@@ -105,27 +106,5 @@ class EdgeWeightedGraph {
         return adj[v].size();
     }
 
-    // /**
-    //  * Returns all edges in this edge-weighted graph.
-    //  *
-    //  * @return all edges in this edge-weighted graph, as an iterable
-    //  */
-    // public Iterable<Edge> edges() {
-    //     Bag<Edge> list = new Bag<Edge>();
-    //     for (int v = 0; v < vertex(); v++) {
-    //         int selfLoops = 0;
-    //         for (Edge e : adj(v)) {
-    //             if (e.other(v) > v) {
-    //                 list.add(e);
-    //             } else if (e.other(v) == v) {
-    //                 if (selfLoops % 2 == 0) {
-    //                     list.add(e);
-    //                 }
-    //                 selfLoops++;
-    //             }
-    //         }
-    //     }
-    //     return list;
-    // }
 
 }
