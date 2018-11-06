@@ -10,11 +10,11 @@ class EdgeWeightedGraph {
     /**
      * vertexes;
      */
-    private final int V;
+    private final int v;
     /**
      * edges.
      */
-    private int E;
+    private int e;
     /**
      * bag array.
      */
@@ -23,15 +23,15 @@ class EdgeWeightedGraph {
      * {Initializes an empty edge-weighted
      *  graph with V vertices and 0 edges}.
      *
-     * @param  V1 the number of vertices
+     * @param  v1 the number of vertices
 
      */
-    EdgeWeightedGraph(final int V1) {
+    EdgeWeightedGraph(final int v1) {
 
-        this.V = V1;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Edge>[]) new Bag[v];
+        for (int v = 0; v < v1; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -43,7 +43,7 @@ class EdgeWeightedGraph {
      * @return the number of vertices in this edge-weighted graph
      */
     public int vertex() {
-        return V;
+        return v;
     }
 
     /**
@@ -53,7 +53,7 @@ class EdgeWeightedGraph {
      * @return the number of edges in this edge-weighted graph
      */
     public int edge() {
-        return E;
+        return e;
     }
 
 
@@ -62,29 +62,29 @@ class EdgeWeightedGraph {
      * {Adds the undirected edge e to
      *  this edge-weighted graph}.
      *
-     * @param  e the edge
+     * @param  e1 the edge
 
      */
-    public void addEdge(final Edge e) {
-        int v = e.either();
-        int w = e.other(v);
+    public void addEdge(final Edge e1) {
+        int v1 = e1.either();
+        int w1 = e1.other(v);
         //validateVertex(v);
         //validateVertex(w);
-        adj[v].add(e);
-        adj[w].add(e);
-        E++;
+        adj[v1].add(e1);
+        adj[w1].add(e1);
+        e += 1;
     }
 
     /**
      * Returns the edges incident on vertex  v.
      *
-     * @param  v the vertex
+     * @param  v2 the vertex
      * @return the edges incident on vertex  v as an Iterable
 
      */
-    public Iterable<Edge> adj(final int v) {
+    public Iterable<Edge> adj(final int v2) {
         //validateVertex(v);
-        return adj[v];
+        return adj[v2];
     }
 
     /**
