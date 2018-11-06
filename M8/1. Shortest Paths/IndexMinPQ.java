@@ -29,10 +29,7 @@ implements Iterable<Integer> {
     private Key[] keys;
     /**
      * Initializes an empty indexed priority queue.
-
      * @param  max the keys
-
-
      */
     public IndexMinPQ(final int max) {
        this.maxN = max;
@@ -278,6 +275,7 @@ implements Iterable<Integer> {
      * Returns an iterator that iterates over the keys on the
      * priority queue in ascending order.
      * The iterator doesn't implement remove() since it's optional.
+     * its time complexity is O(1).
      *
      * @return an iterator that iterates
      *  over the keys in ascending order
