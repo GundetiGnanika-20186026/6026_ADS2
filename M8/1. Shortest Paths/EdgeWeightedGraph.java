@@ -8,7 +8,7 @@ class EdgeWeightedGraph {
     private static final String
     NEWLINE = System.getProperty("line.separator");
     /**
-     * vertexes;
+     * vertexes.
      */
     private final int ver;
     /**
@@ -23,12 +23,12 @@ class EdgeWeightedGraph {
      * {Initializes an empty edge-weighted
      *  graph with V vertices and 0 edges}.
      *
-     * @param  V1 the number of vertices
+     * @param  v1 the number of vertices
 
      */
-    EdgeWeightedGraph(final int V1) {
+    EdgeWeightedGraph(final int v1) {
 
-        this.ver = V1;
+        this.ver = v1;
         this.edg = 0;
         adj = (Bag<Edge>[]) new Bag[ver];
         for (int v = 0; v < ver; v++) {
