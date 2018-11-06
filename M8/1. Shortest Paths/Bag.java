@@ -30,6 +30,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
     /**
      * Constructs the object.
+     * its time complexity is O(1).
      *
      */
     public Bag() {
@@ -75,7 +76,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * { Return an iterator that iterates over the items in the bag }.
-     * its complexity is O(V).
+     * its complexity is O(1).
      *
      * @return     { item }
      */
