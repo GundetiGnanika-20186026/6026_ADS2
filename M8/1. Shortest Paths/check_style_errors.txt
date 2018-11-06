@@ -1,36 +1,11 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:2: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:7: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:18: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:55: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:57: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:67: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:80: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:83: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:99: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:100: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:118: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:124: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:135: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:142: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:153: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:223: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:236:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:236:24: Parameter edge should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:236:35: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:248:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:248:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:251:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:251:30: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:254:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:254:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:255: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:264:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:264:28: Parameter vertex should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:54:24: Parameter edge should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:54:35: Parameter vertex should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\DijkstraSP.java:94: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:1: Missing a Javadoc comment. [JavadocType]
@@ -192,7 +167,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Stack.java:119:12: Unused @param tag for 'first'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Stack.java:121:39: Expected @param tag for 'first1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.

@@ -40,7 +40,7 @@ EdgeWeightedGraph graphobj = new EdgeWeightedGraph(vertexes);
         for (int i = 0; i < queries; i++) {
             String[] qur = scan.nextLine().split(" ");
     DijkstraSP dis = new DijkstraSP(graphobj, hashobj.get(qur[0]));
-    System.out.println((int) dis.distance(hashobj.get(qur[1])));
+    System.out.println((int) dis.path(hashobj.get(qur[1])));
         }
 
     }
