@@ -47,6 +47,7 @@ class DijkstraSP {
 
     /**
      * will connect the edge with less weight.
+     * time complexity is O(logE).
      *
      * @param      edge    The edge
      * @param      vertex  The vertex
@@ -65,6 +66,7 @@ class DijkstraSP {
     }
     /**
      * distance of given vertex from source.
+     * time complexity is O(1).
      *
      * @param      v     { vertex }
      *
@@ -75,6 +77,7 @@ class DijkstraSP {
     }
     /**
      * Determines if it has path to.
+     * time complexity is O(1).
      *
      * @param      v     { vertex }
      *
@@ -85,6 +88,7 @@ class DijkstraSP {
     }
     /**
      * finds path from source to given vertex.
+     * time complexity is O(Elog(V))
      *
      * @param      v     { vertex }
      *
@@ -104,6 +108,7 @@ class DijkstraSP {
     }
     /**
      * will return the path.
+     * time complexity O(E).
      *
      * @param      vertex  The vertex
      *

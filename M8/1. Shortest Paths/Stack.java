@@ -35,6 +35,7 @@ class Stack<Item> implements Iterable<Item> {
 
     /**
      * Initializes an empty stack.
+     * its complexity is O(1).
      */
     Stack() {
         first = null;
@@ -43,6 +44,7 @@ class Stack<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this stack is empty.
+     * its complexity is O(1).
      *
      * @return true if this stack is empty; false otherwise
      */
@@ -52,6 +54,7 @@ class Stack<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this stack.
+     * its complexity is O(1).
      *
      * @return the number of items in this stack
      */
@@ -93,6 +96,7 @@ class Stack<Item> implements Iterable<Item> {
     /**
      * {Returns an iterator to this stack that
      *  iterates through the items in LIFO order}.
+     *  its time complexity is O(1).
      *
      * @return an iterator to this stack that
      *  iterates through the items in LIFO order
@@ -105,6 +109,7 @@ class Stack<Item> implements Iterable<Item> {
 
     /**
      * Class for list iterator.
+     *
      *
      * @param      <Item>  The item
      */
@@ -123,6 +128,7 @@ class Stack<Item> implements Iterable<Item> {
         }
         /**
          * Determines if it has next.
+         * its complexity is O(1).
          *
          * @return     True if has next, False otherwise.
          */
@@ -130,17 +136,15 @@ class Stack<Item> implements Iterable<Item> {
             return current != null;
         }
 
-        // public void remove() {
-        //     throw new UnsupportedOperationException();
-        // }
 
         /**
          * checks wether the next element is present.
+         * Time complexity for this method is O(1).
          *
          * @return     { returns item }.
          */
         public Item next() {
- //if (!hasNext()) throw new NoSuchElementException();
+
             Item item = current.item;
             current = current.next;
             return item;
