@@ -39,6 +39,7 @@ class EdgeWeightedGraph {
     /**
      * {Returns the number of
      * vertices in this edge-weighted graph}.
+     * its time complexity is O(1).
      *
      * @return the number of vertices in this edge-weighted graph
      */
@@ -49,6 +50,7 @@ class EdgeWeightedGraph {
     /**
      * {Returns the number of edges
      *  in this edge-weighted graph}.
+     *  its time complexity is O(1).
      *
      * @return the number of edges in this edge-weighted graph
      */
@@ -61,6 +63,8 @@ class EdgeWeightedGraph {
     /**
      * {Adds the undirected edge e to
      *  this edge-weighted graph}.
+     *  its time complexity is O(1).
+     *
      *
      * @param  e the edge
 
@@ -77,6 +81,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the edges incident on vertex  v.
+     * its time complexity is O(1).
      *
      * @param  v the vertex
      * @return the edges incident on vertex  v as an Iterable
@@ -89,6 +94,7 @@ class EdgeWeightedGraph {
 
     /**
      * Returns the degree of vertex v.
+     * its time complexity is O(1).
      *
      * @param  v the vertex
      * @return the degree of vertex  v
@@ -99,27 +105,27 @@ class EdgeWeightedGraph {
         return adj[v].size();
     }
 
-    /**
-     * Returns all edges in this edge-weighted graph.
-     *
-     * @return all edges in this edge-weighted graph, as an iterable
-     */
-    public Iterable<Edge> edges() {
-        Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < vertex(); v++) {
-            int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
-                    list.add(e);
-                } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) {
-                        list.add(e);
-                    }
-                    selfLoops++;
-                }
-            }
-        }
-        return list;
-    }
+    // /**
+    //  * Returns all edges in this edge-weighted graph.
+    //  *
+    //  * @return all edges in this edge-weighted graph, as an iterable
+    //  */
+    // public Iterable<Edge> edges() {
+    //     Bag<Edge> list = new Bag<Edge>();
+    //     for (int v = 0; v < vertex(); v++) {
+    //         int selfLoops = 0;
+    //         for (Edge e : adj(v)) {
+    //             if (e.other(v) > v) {
+    //                 list.add(e);
+    //             } else if (e.other(v) == v) {
+    //                 if (selfLoops % 2 == 0) {
+    //                     list.add(e);
+    //                 }
+    //                 selfLoops++;
+    //             }
+    //         }
+    //     }
+    //     return list;
+    // }
 
 }
