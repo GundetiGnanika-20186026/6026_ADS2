@@ -4,16 +4,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:10: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:14: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:17: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:21: 'w' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:24: Parameter weight should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:31: 'weight' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:60:22: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:83:26: Parameter that should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\Edge.java:24:51: 'weight' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]

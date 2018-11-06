@@ -17,14 +17,14 @@ class Edge implements Comparable<Edge> {
     /**
      * Constructs the object.
      *
-     * @param      v       { vertex1 }
-     * @param      w       { vertex2 }
+     * @param      v1       { vertex1 }
+     * @param      w1       { vertex2 }
      * @param      weight  The weight
      */
-    Edge(int v, int w, double weight) {
+    Edge(final int v1, final int w1, final double weight) {
 
-        this.v = v;
-        this.w = w;
+        this.v = v1;
+        this.w = w1;
         this.weight = weight;
     }
 
@@ -57,7 +57,7 @@ class Edge implements Comparable<Edge> {
      * its time complexity is O(1).
 
      */
-    public int other(int vertex) {
+    public int other(final int vertex) {
         if      (vertex == v) {
             return w;
         } else {
@@ -80,19 +80,7 @@ class Edge implements Comparable<Edge> {
      *         argument edge
      */
     @Override
-    public int compareTo(Edge that) {
+    public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
-
-    // /**
-    //  * Returns a string representation of this edge.
-    //  *
-    //  *
-    //  * @return a string representation of this edge
-    //  */
-    // public String toString() {
-    //     return String.format("%d-%d %.5f", v, w, weight);
-    // }
-
-
 }
