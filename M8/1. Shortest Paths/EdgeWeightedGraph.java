@@ -10,11 +10,11 @@ class EdgeWeightedGraph {
     /**
      * vertexes;
      */
-    private final int V;
+    private final int ver;
     /**
      * edges.
      */
-    private int E;
+    private int edg;
     /**
      * bag array.
      */
@@ -28,10 +28,10 @@ class EdgeWeightedGraph {
      */
     EdgeWeightedGraph(final int V1) {
 
-        this.V = V1;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ver = V1;
+        this.edg = 0;
+        adj = (Bag<Edge>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -43,7 +43,7 @@ class EdgeWeightedGraph {
      * @return the number of vertices in this edge-weighted graph
      */
     public int vertex() {
-        return V;
+        return ver;
     }
 
     /**
@@ -53,7 +53,7 @@ class EdgeWeightedGraph {
      * @return the number of edges in this edge-weighted graph
      */
     public int edge() {
-        return E;
+        return edg;
     }
 
 
@@ -72,7 +72,7 @@ class EdgeWeightedGraph {
         //validateVertex(w);
         adj[v].add(e);
         adj[w].add(e);
-        E++;
+        edg++;
     }
 
     /**
@@ -111,10 +111,10 @@ class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-// add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
