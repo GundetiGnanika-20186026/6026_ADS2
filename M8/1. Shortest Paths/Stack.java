@@ -1,11 +1,11 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
+//import java.util.NoSuchElementException;
 /**
  * stack class.
  *
  * @param      <Item>  The item
  */
-public class Stack<Item> implements Iterable<Item> {
+class Stack<Item> implements Iterable<Item> {
     /**
      * //top of stack.
      */
@@ -23,7 +23,13 @@ public class Stack<Item> implements Iterable<Item> {
      * @param      <Item>  The item
      */
     private static class Node<Item> {
+        /**
+         * item.
+         */
         private Item item;
+        /**
+         * next node.
+         */
         private Node<Item> next;
     }
 
@@ -103,6 +109,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @param      <Item>  The item
      */
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * current node.
+         */
         private Node<Item> current;
         /**
          * Constructs the object.
