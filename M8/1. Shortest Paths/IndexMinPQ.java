@@ -28,9 +28,9 @@ implements Iterable<Integer> {
      */
     private Key[] keys;
     /**
-     * Initializes an empty indexed priority queue with
+     * Initializes an empty indexed priority queue.
 
-     * @param  max the keys on this priority queue are
+     * @param  max the keys
 
 
      */
