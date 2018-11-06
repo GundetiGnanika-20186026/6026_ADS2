@@ -29,13 +29,13 @@ class DijkstraSP {
     DijkstraSP(final EdgeWeightedGraph g,
                final int source) {
         graph = g;
-        distTo = new Double[graph.V()];
-        edgeTo = new Edge[graph.V()];
-        for (int i = 0; i < graph.V(); i++) {
+        distTo = new Double[graph.vertex()];
+        edgeTo = new Edge[graph.vertex()];
+        for (int i = 0; i < graph.vertex(); i++) {
             distTo[i] = Double.POSITIVE_INFINITY;
         }
         distTo[source] = 0.0;
-        pq = new IndexMinPQ<Double>(graph.V());
+        pq = new IndexMinPQ<Double>(graph.vertex());
         pq.insert(source, distTo[source]);
         while (!pq.isEmpty()) {
             int vertex = pq.delMin();
