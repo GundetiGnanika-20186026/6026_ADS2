@@ -5,7 +5,8 @@ class EdgeWeightedGraph {
     /**
      * value.
      */
-    private static final String NEWLINE = System.getProperty("line.separator");
+    private static final String
+    NEWLINE = System.getProperty("line.separator");
     /**
      * vertexes;
      */
@@ -19,14 +20,15 @@ class EdgeWeightedGraph {
      */
     private Bag<Edge>[] adj;
     /**
-     * Initializes an empty edge-weighted graph with V vertices and 0 edges.
+     * {Initializes an empty edge-weighted
+     *  graph with V vertices and 0 edges}.
      *
-     * @param  V the number of vertices
+     * @param  V1 the number of vertices
 
      */
-    EdgeWeightedGraph(int V) {
+    EdgeWeightedGraph(final int V1) {
 
-        this.V = V;
+        this.V = V1;
         this.E = 0;
         adj = (Bag<Edge>[]) new Bag[V];
         for (int v = 0; v < V; v++) {
@@ -34,11 +36,9 @@ class EdgeWeightedGraph {
         }
     }
 
-
-
-
     /**
-     * Returns the number of vertices in this edge-weighted graph.
+     * {Returns the number of
+     * vertices in this edge-weighted graph}.
      *
      * @return the number of vertices in this edge-weighted graph
      */
@@ -47,7 +47,8 @@ class EdgeWeightedGraph {
     }
 
     /**
-     * Returns the number of edges in this edge-weighted graph.
+     * {Returns the number of edges
+     *  in this edge-weighted graph}.
      *
      * @return the number of edges in this edge-weighted graph
      */
@@ -58,12 +59,13 @@ class EdgeWeightedGraph {
 
 
     /**
-     * Adds the undirected edge e to this edge-weighted graph.
+     * {Adds the undirected edge e to
+     *  this edge-weighted graph}.
      *
      * @param  e the edge
 
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
         //validateVertex(v);
@@ -80,7 +82,7 @@ class EdgeWeightedGraph {
      * @return the edges incident on vertex  v as an Iterable
 
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         //validateVertex(v);
         return adj[v];
     }
@@ -92,7 +94,7 @@ class EdgeWeightedGraph {
      * @return the degree of vertex  v
 
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         //validateVertex(v);
         return adj[v].size();
     }

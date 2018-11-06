@@ -8,19 +8,14 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:12:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:27:23: Parameter V should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:27:27: 'V' hides a field. [HiddenField]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:27:27: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:66:25: Parameter e should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:83:31: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:95:23: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:112:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:115: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:10: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:13:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:17:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:29:33: Name 'V1' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:114:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\EdgeWeightedGraph.java:117: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M8\1. Shortest Paths\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
