@@ -31,6 +31,7 @@ public class SeamCarver {
 		if (x == 0 || y == 0 || x == width()-1 || y == height()-1) {
 			return 1000;
 		}
+		System.out.println(pic.get(x, y));
 		return 0;
 	}
 
