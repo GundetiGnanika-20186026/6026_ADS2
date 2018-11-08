@@ -5,6 +5,9 @@ public class SeamCarver {
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
 		this.pic = picture;
+		if(picture == null) {
+			System.out.println("picture is null");
+		}
 
 
 
@@ -16,7 +19,7 @@ public class SeamCarver {
 	}
 	// width of current picture
 	public int width() {
-		//System.out.println("entered");
+
 		return pic.width();
 	}
 
