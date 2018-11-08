@@ -220,9 +220,7 @@ Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:3:13: Variable 'width' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:4:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:4:17: Variable 'pic' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:6:9: Missing a Javadoc comment. [JavadocMethod]
@@ -247,7 +245,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:50:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:50:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]

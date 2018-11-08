@@ -1,6 +1,6 @@
 
 public class SeamCarver {
-	int width = 0;
+
 	Picture pic;
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
