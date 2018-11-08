@@ -225,7 +225,7 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:4:17: Variable 'pic' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:6:27: Parameter picture should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:8:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:8:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:14:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'picture' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'picture' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:14:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:18:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'width' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'width' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
