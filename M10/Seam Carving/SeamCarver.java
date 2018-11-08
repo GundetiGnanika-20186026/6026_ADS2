@@ -28,7 +28,7 @@ public class SeamCarver {
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
 		//System.out.print(pic.getRGB(x, y));
-		if(x==0||y==0||x==height()-1||y==width()){
+		if(x==0||y==0||x==height()||y==width()-1){
 			return 1000;
 		}
 		return 0;
