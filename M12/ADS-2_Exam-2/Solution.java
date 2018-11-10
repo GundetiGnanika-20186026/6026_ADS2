@@ -28,8 +28,12 @@ public class Solution {
 			// Other wise print "No Path Found."
 			String[] paths = scan.nextLine().split(" ");
 			DijkstraSP dis = new DijkstraSP(graphobj, Integer.parseInt(paths[0]));
-			if(!dis.hasPathTo(Integer.parseInt(paths[1])));
+			if(!dis.hasPathTo(Integer.parseInt(paths[1])))
 			System.out.println("No Path Found.");
+			else {
+				System.out.println(dis.path(Integer.parseInt(paths[1])));
+
+			}
 			break;
 
 		case "ViaPaths":

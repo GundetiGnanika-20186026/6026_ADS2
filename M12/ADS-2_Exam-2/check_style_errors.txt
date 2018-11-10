@@ -36,17 +36,17 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:12:16: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:12:16: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:12:38: ';' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:12:42: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 122). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:30: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:31: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:31:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:31:71: Empty statement. [EmptyStatement]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:37: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:31:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...
