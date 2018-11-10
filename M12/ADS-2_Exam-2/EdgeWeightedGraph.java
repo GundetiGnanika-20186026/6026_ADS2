@@ -121,8 +121,8 @@ class EdgeWeightedGraph {
                 int k = e.either();
                 // NumberFormat formatter = new DecimalFormat("#0.0000");
 //System.out.println(formatter.format(4.0));
-                s.append(e.either() + "-" + e.other(k) + " " +
-                 e.weight() + "0000" + "  ");
+                s.append(e.either() + "-" + e.other(k) + " "
+                    + e.weight() + "0000" + "  ");
             }
             s.append(NEWLINE);
         }
