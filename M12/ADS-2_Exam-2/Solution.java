@@ -59,6 +59,12 @@ final class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] path2 = scan.nextLine().split(" ");
+			DijkstraSP dis1 = new DijkstraSP(graphobj, Integer.parseInt(path2[0]));
+			if (!dis1.hasPathTo(Integer.parseInt(path2[2]))) {
+				System.out.println("No Path Found.");
+			}
+
 			break;
 
 		default:

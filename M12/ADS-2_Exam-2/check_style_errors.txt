@@ -36,7 +36,8 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:45: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:49: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:56: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:63: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
