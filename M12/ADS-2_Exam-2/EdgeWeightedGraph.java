@@ -107,16 +107,16 @@ class EdgeWeightedGraph {
     }
 
 
-     public String toString() {
+    public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(ver + " " +"vertices"+" "+ edg +" "+"edges" +NEWLINE);
+        s.append(ver + " " + "vertices" + " " + edg + " " + "edges" + NEWLINE);
         for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 int k = e.either();
-               // NumberFormat formatter = new DecimalFormat("#0.0000");
+                // NumberFormat formatter = new DecimalFormat("#0.0000");
 //System.out.println(formatter.format(4.0));
-                s.append(e.either()+"-"+e.other(k)+ " "+e.weight()+"0000"+"  ");
+                s.append(e.either() + "-" + e.other(k) + " " + e.weight() + "0000" + "  ");
             }
             s.append(NEWLINE);
         }

@@ -22,7 +22,7 @@ class DijkstraSP {
     private EdgeWeightedGraph graph;
     /**
      *the constructor to initialize the objects.
-     *time complexity is O(E + V).
+     *time complexity is O(Elog(V)).
      * @param      g  graph object.
      * @param      source  The source
      */
