@@ -20,6 +20,7 @@ class DijkstraSP {
      *the graph object.
      */
     private EdgeWeightedGraph graph;
+    //int[] my;
     /**
      *the constructor to initialize the objects.
      *time complexity is O(Elog(V)).
@@ -29,6 +30,7 @@ class DijkstraSP {
     DijkstraSP(final EdgeWeightedGraph g,
                final int source) {
         graph = g;
+        //my = new int[6];
         distTo = new Double[graph.vertex()];
         edgeTo = new Edge[graph.vertex()];
         for (int i = 0; i < graph.vertex(); i++) {
@@ -116,8 +118,11 @@ class DijkstraSP {
      */
     public double path(final int vertex) {
         double sum = 0;
+        //int i = 0;
         for (Edge each : pathTo(vertex)) {
             sum += each.weight();
+            //my[i] = each.either();
+            //i++;
         }
         return sum;
     }

@@ -10,8 +10,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:71:20: Must have at least one statement. [EmptyBlock]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M12\ADS-2_Exam-2\Solution.java:72:20: Must have at least one statement. [EmptyBlock]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.

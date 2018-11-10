@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -70,7 +71,7 @@ final class Solution {
                 System.out.println("No Path Found.");
             } else {
 
-            //System.out.println(dis1.path(Integer.parseInt(path2[2])));
+            //System.out.println(Arrays.toString(dis1.my));
 
 
             }
