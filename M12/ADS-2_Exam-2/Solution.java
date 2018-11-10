@@ -14,7 +14,7 @@ final class Solution {
      * main method.
      * for taking input the complexity is O(E).
      * we are using dijxtras algorithm whose
-     *  complexity is O(Elog(V)).
+     *  complexity in worst case is O(Elog(V)).
      *
      *
      * @param      args  The arguments
