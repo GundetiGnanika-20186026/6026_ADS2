@@ -1,22 +1,37 @@
 import java.util.Scanner;
-public class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-	public static void main(String[] args) {
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
-	    Scanner scan = new Scanner(System.in);
-	    int vertexes = Integer.parseInt(scan.nextLine());
-	    int edges = Integer.parseInt(scan.nextLine());
-	    EdgeWeightedGraph graphobj = new  EdgeWeightedGraph(vertexes);
-	    for(int i = 0; i < edges;i++){
-	    	String[] input = scan.nextLine().split(" ");
-	    	Edge obj = new Edge(Integer.parseInt(input[0]), Integer.parseInt(input[1]), Double.parseDouble(input[2]));
-            graphobj.addEdge(obj);
+		Scanner scan = new Scanner(System.in);
+		int vertexes = Integer.parseInt(scan.nextLine());
+		int edges = Integer.parseInt(scan.nextLine());
+		EdgeWeightedGraph graphobj = new  EdgeWeightedGraph(vertexes);
+		for (int i = 0; i < edges; i++) {
+			String[] input = scan.nextLine().split(" ");
+			Edge obj = new Edge(Integer.parseInt(input[0]),
+			                    Integer.parseInt(input[1]),
+			                     Double.parseDouble(input[2]));
+			graphobj.addEdge(obj);
 
-	    }
-	    String query = scan.nextLine();
-        switch (query) {
+		}
+		String query = scan.nextLine();
+		switch (query) {
 		case "Graph":
 			System.out.println(graphobj);
 			break;
@@ -28,17 +43,19 @@ public class Solution {
 			// Other wise print "No Path Found."
 			String[] paths = scan.nextLine().split(" ");
 			DijkstraSP dis = new DijkstraSP(graphobj, Integer.parseInt(paths[0]));
-			if(!dis.hasPathTo(Integer.parseInt(paths[1])))
-			System.out.println("No Path Found.");
-			else {
+			if (!dis.hasPathTo(Integer.parseInt(paths[1]))) {
+				System.out.println("No Path Found.");
+			} else {
 				System.out.println(dis.path(Integer.parseInt(paths[1])));
 
 			}
 			break;
 
 		case "ViaPaths":
+
 			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
+			// First is the source and second is the via is the one
+			// where path should pass throuh.
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
