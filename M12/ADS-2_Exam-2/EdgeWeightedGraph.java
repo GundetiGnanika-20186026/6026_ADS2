@@ -106,7 +106,12 @@ class EdgeWeightedGraph {
         return adj[v].size();
     }
 
-
+    /**
+     * Returns a string representation of the object.
+     * its complexity is O(E+V).
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(ver + " " + "vertices" + " " + edg + " " + "edges" + NEWLINE);
@@ -125,3 +130,4 @@ class EdgeWeightedGraph {
 
 
 }
+
