@@ -72,8 +72,7 @@ final class Solution {
             } else {
 
             //System.out.println(Arrays.toString(dis1.my));
-               System.out.println("692.0");
-                System.out.println("5 2 4 0 7 1");
+         System.out.println(dis1.path(Integer.parseInt(path2[2])));
 
 
             }
