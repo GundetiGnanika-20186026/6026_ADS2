@@ -19,7 +19,7 @@ class Quick3string {
      *
      * @param a the array to be sorted
      */
-    public static void sort(final String[] a) {
+    public  void sort(final String[] a) {
         //StdRandom.shuffle(a);
         sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
@@ -35,7 +35,7 @@ class Quick3string {
      *
      * @return     {dth character of s }
      */
-    private static int charAt(final String s, final int d) {
+    private  int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) {
             return -1;
@@ -54,7 +54,7 @@ class Quick3string {
      * @param      hi    The higher
      * @param      d     { the row in string }
      */
-    private static void sort(final String[] a, final int lo,
+    private  void sort(final String[] a, final int lo,
                              final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
@@ -95,7 +95,7 @@ class Quick3string {
      * @param      hi    The higher
      * @param      d     { row in a string }
      */
-    private static void insertion(final String[] a, final int lo,
+    private  void insertion(final String[] a, final int lo,
                                   final int hi, final int d) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
@@ -113,7 +113,7 @@ class Quick3string {
      * @param      i     { index1 }
      * @param      j     { index2 }
      */
-    private static void exch(final String[] a,
+    private  void exch(final String[] a,
                              final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
@@ -132,7 +132,7 @@ class Quick3string {
      *
      * @return     { true or false }
      */
-    private static boolean less(final String v, final String w, final int d) {
+    private  boolean less(final String v, final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
             if (v.charAt(i) < w.charAt(i)) {
@@ -155,7 +155,7 @@ class Quick3string {
      *
      * @return     True if sorted, False otherwise.
      */
-    private static boolean isSorted(final String[] a) {
+    private  boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
             if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
