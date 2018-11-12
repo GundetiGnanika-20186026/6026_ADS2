@@ -131,13 +131,13 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:1:8: Unused import - java.awt.Color. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:21:8: Unused @param tag for 'pic'. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:23:37: Expected @param tag for 'piture'. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:87:20: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:91: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:92: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:93: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:95: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:96: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:97: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:63:20: '1000' is a magic number. [MagicNumber]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:67: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:68: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:69: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:71: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:72: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M10\Seam Carving\SeamCarver.java:73: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...

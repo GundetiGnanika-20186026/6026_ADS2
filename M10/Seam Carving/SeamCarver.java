@@ -58,31 +58,7 @@ public class SeamCarver {
      * @return energy of pixel.
      */
     public double energy(final int x, final int y) {
-        //handle exceptions
-        // final double num = 1000.0;
-        // if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
-        //     return num;
-        // }
-        // double xCoordinate = 0.0;
-        // double yCoordinate = 0.0;
-        // Color object = picture.get(x, y);
-        // Color leftObj = picture.get(x, y - 1);
-        // Color rightObj = picture.get(x, y + 1);
-        // double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
-        // double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
-        // double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-        // xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
-        //               + Math.pow(xGreen, 2);
-        // Color topObj = picture.get(x - 1, y);
-        // Color bottomObj = picture.get(x + 1, y);
-        // double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
-        // double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
-        // double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-        // yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
-        //               + Math.pow(yGreen, 2);
-        // double sum = Math.sqrt((xCoordinate + yCoordinate));
-        // return sum;
-        //
+
         if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1) {
             return 1000;
         }
