@@ -97,9 +97,11 @@ public class Quick3string {
      */
     private static void insertion(final String[] a, final int lo,
                                   final int hi, final int d) {
-        for (int i = lo; i <= hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--)
+        for (int i = lo; i <= hi; i++) {
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
                 exch(a, j, j - 1);
+            }
+        }
     }
 
 

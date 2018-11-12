@@ -1,9 +1,7 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:100: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:101: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
