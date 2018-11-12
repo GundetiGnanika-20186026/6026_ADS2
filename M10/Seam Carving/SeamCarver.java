@@ -4,11 +4,10 @@ import java.awt.Color;
  */
 public class SeamCarver {
     /**
-     * pic variable of picture type.
+     *the picture object.
      */
-	private Picture pic;
-
-	/**
+    private Picture picture;
+    /**
      *the width of image.
      */
     private int width;
@@ -16,88 +15,75 @@ public class SeamCarver {
      *the height of pixel.
      */
     private int height;
-	// create a seam carver object based on the given picture
-
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      picture  The picture
-	 */
-	public SeamCarver(Picture picture) {
-		this.pic = picture;
-		width = picture.width();
+    /**
+     *the constructor to initialize.
+     *
+     * @param      pic   The picture
+     */
+    public SeamCarver(final Picture pic) {
+        this.picture = pic;
+        width = picture.width();
         height = picture.height();
-		if (picture == null) {
-			System.out.println("picture is null");
-		}
-
-	}
-	// current picture
-
-	/**
-	 * { return the picture }.
-	 *
-	 * @return     { picture }
-	 */
-	public Picture picture() {
-		return pic;
-	}
-	// width of current picture
-
-	/**
-	 * { returns the width }.
-	 *
-	 * @return     { width }
-	 */
-	public int width() {
-
-		return pic.width();
-	}
-
-	// height of current picture
-
-	/**
-	 * { return the height }.
-	 *
-	 * @return     { height }
-	 */
-	public int height() {
-		return pic.height();
-	}
-
-	// energy of pixel at column x and row y
-
-	/**
-	 * returns energy of the given pixcel.
-	 *
-	 * @param      x     { col }
-	 * @param      y     { row }
-	 *
-	 * @return     { energy value }
-	 */
-	public double energy(int x, int y) {
-		//System.out.print(pic.getRGB(x, y));
-		if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1) {
-			return 1000;
-		}
-		// pic.get(x, y).getRed();
-		// System.out.println();
-		int rx = pic.get(x, y - 1).getRed() - pic.get(x, y + 1).getRed();
-		int gx = pic.get(x, y - 1).getGreen() - pic.get(x, y + 1).getGreen();
-		int bx = pic.get(x, y - 1).getBlue() - pic.get(x, y + 1).getBlue();
-		double xsum = (rx * rx) + (gx * gx) + (bx * bx);
-		int ry = pic.get(x - 1, y).getRed() - pic.get(x + 1, y).getRed();
-		int gy = pic.get(x - 1, y).getGreen() - pic.get(x + 1, y).getGreen();
-		int by = pic.get(x - 1, y).getBlue() - pic.get(x + 1, y).getBlue();
-		double ysum = (ry * ry) + (gy * gy) + (by * by);
-		double res = Math.sqrt(xsum + ysum);
-		return res;
-	}
-
-
-
-
-	/**sequence of indices for horizontal seam.
+    }
+    /**
+     *the method will return the picture.
+     *object.
+     * @return picture object.
+     */
+    public Picture picture() {
+        return picture;
+    }
+    /**
+     *this method will return the width.
+     *of image.
+     * @return width of pixel
+     */
+    public int width() {
+        return width;
+    }
+    /**
+     *height of current picture.
+     *
+     * @return height of image.
+     */
+    public int height() {
+        return height;
+    }
+    /**
+     *energy of pixel at column x and row y.
+     *
+     * @param      x  x coordinate
+     * @param      y   y coordinate
+     *
+     * @return energy of pixel.
+     */
+    public double energy(final int x, final int y) {
+        //handle exceptions
+        final double num = 1000.0;
+        if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
+            return num;
+        }
+        double xCoordinate = 0.0;
+        double yCoordinate = 0.0;
+        Color object = picture.get(x, y);
+        Color leftObj = picture.get(x, y - 1);
+        Color rightObj = picture.get(x, y + 1);
+        double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
+        double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
+        double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
+        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
+                      + Math.pow(xGreen, 2);
+        Color topObj = picture.get(x - 1, y);
+        Color bottomObj = picture.get(x + 1, y);
+        double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
+        double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
+        double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
+        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
+                      + Math.pow(yGreen, 2);
+        double sum = Math.sqrt((xCoordinate + yCoordinate));
+        return sum;
+    }
+    /**sequence of indices for horizontal seam.
      *
      *time complexity is O(w*h)
      *w is the width and h is the height
@@ -165,8 +151,6 @@ public class SeamCarver {
             }
         }
     }
-
-
     /**
      *this method is to find the vertical seam.
      *first of all find the shortest path from top to.
@@ -228,8 +212,6 @@ public class SeamCarver {
             }
         }
     }
-
-
     /**
      * relaxation for vertex.
      *
@@ -263,71 +245,6 @@ public class SeamCarver {
             }
         }
     }
-
-
-    //  /**.
-    //  *time complexity is O(W * H)
-    //  *W is the width of image
-    //  *H is the height of image
-    //  * @param      distTo  The distance to
-    //  */
-    // private void reset(final double[][] distTo) {
-    //     /**
-    //      *reset all the values to maxvalue.
-    //      */
-    //     for (int i = 0; i < distTo.length; i++) {
-    //         for (int j = 0; j < distTo[i].length; j++) {
-    //             distTo[i][j] = Double.MAX_VALUE;
-    //         }
-    //     }
-    // }
-
-
-//     // // sequence of indices for vertical seam
-// 	// public int[] findVerticalSeam() {
-// 	// 	return new int[0];
-// 	// }
-// 	//
-
-
-
-
-
-// 	// sequence of indices for horizontal seam
-// 	// public int[] findHorizontalSeam() {
-// 	// 	return new int[0];
-// 	// }
-
-
-
-// 	// remove horizontal seam from current picture
-// 	public void removeHorizontalSeam(int[] seam) {
-
-// 	}
-
-// 	// remove vertical seam from current picture
-// 	public void removeVerticalSeam(int[] seam) {
-
-// 	}
-// }
-
-    // /**.
-    //  *time complexity is O(W * H)
-    //  *W is the width of image
-    //  *H is the height of image
-    //  * @param      distTo  The distance to
-    //  */
-    // private void reset(final double[][] distTo) {
-    //     /**
-    //      *reset all the values to maxvalue.
-    //      */
-    //     for (int i = 0; i < distTo.length; i++) {
-    //         for (int j = 0; j < distTo[i].length; j++) {
-    //             distTo[i][j] = Double.MAX_VALUE;
-    //         }
-    //     }
-    // }
-
     /**
      * Removes a horizontal seam.
      * time complexity is O(width * height)
@@ -338,7 +255,7 @@ public class SeamCarver {
         //handle exceptions
         for (int col = 0; col < width; col++) {
             for (int row = seam[col]; row < height - 1; row++) {
-                this.pic.set(col, row, this.pic.get(col, row + 1));
+                this.picture.set(col, row, this.picture.get(col, row + 1));
             }
         }
         height--;
@@ -353,9 +270,10 @@ public class SeamCarver {
     public void removeVerticalSeam(final int[] seam) {
         for (int row = 0; row < height; row++) {
             for (int col = seam[row]; col < width - 1; col++) {
-                this.pic.set(col, row, this.pic.get(col + 1, row));
+                this.picture.set(col, row, this.picture.get(col + 1, row));
             }
         }
         width--;
     }
 }
+
