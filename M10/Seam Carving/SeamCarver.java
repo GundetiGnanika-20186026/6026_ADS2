@@ -20,10 +20,10 @@ public class SeamCarver {
      *
      * @param      pic   The picture
      */
-    public SeamCarver(final Picture pic) {
-        this.picture = pic;
-        width = picture.width();
-        height = picture.height();
+    public SeamCarver(final Picture piture) {
+        this.picture = piture;
+        width = piture.width();
+        height = piture.height();
     }
     /**
      *the method will return the picture.
@@ -59,29 +59,45 @@ public class SeamCarver {
      */
     public double energy(final int x, final int y) {
         //handle exceptions
-        final double num = 1000.0;
-        if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
-            return num;
+        // final double num = 1000.0;
+        // if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
+        //     return num;
+        // }
+        // double xCoordinate = 0.0;
+        // double yCoordinate = 0.0;
+        // Color object = picture.get(x, y);
+        // Color leftObj = picture.get(x, y - 1);
+        // Color rightObj = picture.get(x, y + 1);
+        // double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
+        // double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
+        // double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
+        // xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
+        //               + Math.pow(xGreen, 2);
+        // Color topObj = picture.get(x - 1, y);
+        // Color bottomObj = picture.get(x + 1, y);
+        // double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
+        // double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
+        // double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
+        // yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
+        //               + Math.pow(yGreen, 2);
+        // double sum = Math.sqrt((xCoordinate + yCoordinate));
+        // return sum;
+        //
+        if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1) {
+            return 1000;
         }
-        double xCoordinate = 0.0;
-        double yCoordinate = 0.0;
-        Color object = picture.get(x, y);
-        Color leftObj = picture.get(x, y - 1);
-        Color rightObj = picture.get(x, y + 1);
-        double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
-        double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
-        double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
-                      + Math.pow(xGreen, 2);
-        Color topObj = picture.get(x - 1, y);
-        Color bottomObj = picture.get(x + 1, y);
-        double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
-        double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
-        double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
-                      + Math.pow(yGreen, 2);
-        double sum = Math.sqrt((xCoordinate + yCoordinate));
-        return sum;
+        // pic.get(x, y).getRed();
+        // System.out.println();
+        int rx = picture.get(x, y - 1).getRed() - picture.get(x, y + 1).getRed();
+        int gx = picture.get(x, y - 1).getGreen() - picture.get(x, y + 1).getGreen();
+        int bx = picture.get(x, y - 1).getBlue() - picture.get(x, y + 1).getBlue();
+        double xsum = (rx * rx) + (gx * gx) + (bx * bx);
+        int ry = picture.get(x - 1, y).getRed() - picture.get(x + 1, y).getRed();
+        int gy = picture.get(x - 1, y).getGreen() - picture.get(x + 1, y).getGreen();
+        int by = picture.get(x - 1, y).getBlue() - picture.get(x + 1, y).getBlue();
+        double ysum = (ry * ry) + (gy * gy) + (by * by);
+        double res = Math.sqrt(xsum + ysum);
+        return res;
     }
     /**sequence of indices for horizontal seam.
      *
