@@ -1,7 +1,7 @@
 /**
  * Class for quick 3 string.
  */
-class Quick3string {
+public class Quick3string {
     /**
      * // cutoff to insertion sort.
      */
