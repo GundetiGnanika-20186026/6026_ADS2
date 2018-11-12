@@ -18,7 +18,7 @@ public class SeamCarver {
     /**
      *the constructor to initialize.
      *
-     * @param      pic   The picture
+     * @param      picture   The picture
      */
     public SeamCarver(final Picture piture) {
         this.picture = piture;
