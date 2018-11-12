@@ -16,6 +16,7 @@ class Quick3string {
 
     /**
      * Rearranges the array of strings in ascending order.
+     * its complexity is 1.39WNlog(N)*.
      *
      * @param a the array to be sorted
      */
@@ -29,6 +30,7 @@ class Quick3string {
 
     /**
      * // return the dth character of s, -1 if d = length of s.
+     * its complexity is O(1).
      *
      * @param      s     { string }.
      * @param      d     { row }.
@@ -48,6 +50,7 @@ class Quick3string {
 
     /**
      *  // 3-way string quicksort a[lo..hi] starting at dth character.
+     *  its complexity is 1.39WNlog(N)*.
      *
      * @param      a     { String array}
      * @param      lo    The lower
@@ -108,6 +111,7 @@ class Quick3string {
 
     /**
      * exchange a[i] and a[j] .
+     * its complexity is O(1).
      *
      * @param      a     { String array }
      * @param      i     { index1 }

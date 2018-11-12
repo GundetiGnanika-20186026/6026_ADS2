@@ -12,6 +12,8 @@ final class Solution {
     }
     /**
      * main method.
+     * its complexity is 1.39WNlog(N)* as
+     *  we are using 3- way quick sort.
      *
      * @param      args  The arguments
      */
