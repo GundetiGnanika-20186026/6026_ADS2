@@ -167,51 +167,6 @@ public class SeamCarver {
     }
 
 
-     /**.
-     *time complexity is O(W * H)
-     *W is the width of image
-     *H is the height of image
-     * @param      distTo  The distance to
-     */
-    private void reset(final double[][] distTo) {
-        /**
-         *reset all the values to maxvalue.
-         */
-        for (int i = 0; i < distTo.length; i++) {
-            for (int j = 0; j < distTo[i].length; j++) {
-                distTo[i][j] = Double.MAX_VALUE;
-            }
-        }
-    }
-
-
-//     // // sequence of indices for vertical seam
-// 	// public int[] findVerticalSeam() {
-// 	// 	return new int[0];
-// 	// }
-// 	//
-
-
-
-
-
-// 	// sequence of indices for horizontal seam
-// 	// public int[] findHorizontalSeam() {
-// 	// 	return new int[0];
-// 	// }
-
-
-
-// 	// remove horizontal seam from current picture
-// 	public void removeHorizontalSeam(int[] seam) {
-
-// 	}
-
-// 	// remove vertical seam from current picture
-// 	public void removeVerticalSeam(int[] seam) {
-
-// 	}
-// }
     /**
      *this method is to find the vertical seam.
      *first of all find the shortest path from top to.
@@ -257,22 +212,24 @@ public class SeamCarver {
         indices[0] = indices[1];
         return indices;
     }
-    // /**.
-    //  *time complexity is O(W * H)
-    //  *W is the width of image
-    //  *H is the height of image
-    //  * @param      distTo  The distance to
-    //  */
-    // private void reset(final double[][] distTo) {
-    //     /**
-    //      *reset all the values to maxvalue.
-    //      */
-    //     for (int i = 0; i < distTo.length; i++) {
-    //         for (int j = 0; j < distTo[i].length; j++) {
-    //             distTo[i][j] = Double.MAX_VALUE;
-    //         }
-    //     }
-    // }
+    /**.
+     *time complexity is O(W * H)
+     *W is the width of image
+     *H is the height of image
+     * @param      distTo  The distance to
+     */
+    private void reset(final double[][] distTo) {
+        /**
+         *reset all the values to maxvalue.
+         */
+        for (int i = 0; i < distTo.length; i++) {
+            for (int j = 0; j < distTo[i].length; j++) {
+                distTo[i][j] = Double.MAX_VALUE;
+            }
+        }
+    }
+
+
     /**
      * relaxation for vertex.
      *
@@ -306,6 +263,71 @@ public class SeamCarver {
             }
         }
     }
+
+
+    //  /**.
+    //  *time complexity is O(W * H)
+    //  *W is the width of image
+    //  *H is the height of image
+    //  * @param      distTo  The distance to
+    //  */
+    // private void reset(final double[][] distTo) {
+    //     /**
+    //      *reset all the values to maxvalue.
+    //      */
+    //     for (int i = 0; i < distTo.length; i++) {
+    //         for (int j = 0; j < distTo[i].length; j++) {
+    //             distTo[i][j] = Double.MAX_VALUE;
+    //         }
+    //     }
+    // }
+
+
+//     // // sequence of indices for vertical seam
+// 	// public int[] findVerticalSeam() {
+// 	// 	return new int[0];
+// 	// }
+// 	//
+
+
+
+
+
+// 	// sequence of indices for horizontal seam
+// 	// public int[] findHorizontalSeam() {
+// 	// 	return new int[0];
+// 	// }
+
+
+
+// 	// remove horizontal seam from current picture
+// 	public void removeHorizontalSeam(int[] seam) {
+
+// 	}
+
+// 	// remove vertical seam from current picture
+// 	public void removeVerticalSeam(int[] seam) {
+
+// 	}
+// }
+
+    // /**.
+    //  *time complexity is O(W * H)
+    //  *W is the width of image
+    //  *H is the height of image
+    //  * @param      distTo  The distance to
+    //  */
+    // private void reset(final double[][] distTo) {
+    //     /**
+    //      *reset all the values to maxvalue.
+    //      */
+    //     for (int i = 0; i < distTo.length; i++) {
+    //         for (int j = 0; j < distTo[i].length; j++) {
+    //             distTo[i][j] = Double.MAX_VALUE;
+    //         }
+    //     }
+    // }
+
     /**
      * Removes a horizontal seam.
      * time complexity is O(width * height)
