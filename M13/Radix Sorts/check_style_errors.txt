@@ -1,18 +1,9 @@
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:40: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:69: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:70: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:71: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:76: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:92: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:93: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:128: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:129: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:145: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:146: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:100: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Quick3string.java:101: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
