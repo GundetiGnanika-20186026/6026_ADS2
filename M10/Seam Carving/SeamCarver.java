@@ -1,3 +1,4 @@
+import java.awt.Color;
 /**
  * Class for seam carver.
  */
@@ -6,6 +7,15 @@ public class SeamCarver {
      * pic variable of picture type.
      */
 	private Picture pic;
+
+	/**
+     *the width of image.
+     */
+    private int width;
+    /**
+     *the height of pixel.
+     */
+    private int height;
 	// create a seam carver object based on the given picture
 
 	/**
@@ -15,6 +25,8 @@ public class SeamCarver {
 	 */
 	public SeamCarver(Picture picture) {
 		this.pic = picture;
+		width = picture.width();
+        height = picture.height();
 		if (picture == null) {
 			System.out.println("picture is null");
 		}
