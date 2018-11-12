@@ -22,7 +22,7 @@ class Quick3string {
     public  void sort(final String[] a) {
         //StdRandom.shuffle(a);
         sort(a, 0, a.length - 1, 0);
-        assert isSorted(a);
+       // assert isSorted(a);
     }
 
 
@@ -68,7 +68,7 @@ class Quick3string {
         int i = lo + 1;
         while (i <= gt) {
             int t = charAt(a[i], d);
-            if      (t < v) {
+            if (t < v) {
                 exch(a, lt++, i++);
             } else if (t > v) {
                 exch(a, i, gt--);
@@ -123,45 +123,45 @@ class Quick3string {
 
 
 
-    /**
-     *  is v less than w, starting at character d.
-     *
-     * @param      v     { String }
-     * @param      w     { String }
-     * @param      d     { row  }
-     *
-     * @return     { true or false }
-     */
-    private  boolean less(final String v, final String w, final int d) {
-        assert v.substring(0, d).equals(w.substring(0, d));
-        for (int i = d; i < Math.min(v.length(), w.length()); i++) {
-            if (v.charAt(i) < w.charAt(i)) {
-                return true;
-            }
-            if (v.charAt(i) > w.charAt(i)) {
-                return false;
-            }
-        }
-        return v.length() < w.length();
-    }
+    // /**
+    //  *  is v less than w, starting at character d.
+    //  *
+    //  * @param      v     { String }
+    //  * @param      w     { String }
+    //  * @param      d     { row  }
+    //  *
+    //  * @return     { true or false }
+    //  */
+    // private  boolean less(final String v, final String w, final int d) {
+    //     assert v.substring(0, d).equals(w.substring(0, d));
+    //     for (int i = d; i < Math.min(v.length(), w.length()); i++) {
+    //         if (v.charAt(i) < w.charAt(i)) {
+    //             return true;
+    //         }
+    //         if (v.charAt(i) > w.charAt(i)) {
+    //             return false;
+    //         }
+    //     }
+    //     return v.length() < w.length();
+    // }
 
 
 
-    /**
-     * Determines if sorted.
-     *  // is the array sorted
-     *
-     * @param      a     { string array }
-     *
-     * @return     True if sorted, False otherwise.
-     */
-    private  boolean isSorted(final String[] a) {
-        for (int i = 1; i < a.length; i++) {
-            if (a[i].compareTo(a[i - 1]) < 0) {
-                return false;
-            }
-        }
-        return true;
-    }
+    // /**
+    //  * Determines if sorted.
+    //  *  // is the array sorted
+    //  *
+    //  * @param      a     { string array }
+    //  *
+    //  * @return     True if sorted, False otherwise.
+    //  */
+    // private  boolean isSorted(final String[] a) {
+    //     for (int i = 1; i < a.length; i++) {
+    //         if (a[i].compareTo(a[i - 1]) < 0) {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
 }
 
