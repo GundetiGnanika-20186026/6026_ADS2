@@ -1,8 +1,18 @@
-
+/**
+ * Class for seam carver.
+ */
 public class SeamCarver {
-
-	Picture pic;
+    /**
+     * pic variable of picture type.
+     */
+	private Picture pic;
 	// create a seam carver object based on the given picture
+
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      picture  The picture
+	 */
 	public SeamCarver(Picture picture) {
 		this.pic = picture;
 		if (picture == null) {
@@ -11,21 +21,48 @@ public class SeamCarver {
 
 	}
 	// current picture
+
+	/**
+	 * { return the picture }.
+	 *
+	 * @return     { picture }
+	 */
 	public Picture picture() {
-		return null;
+		return pic;
 	}
 	// width of current picture
+
+	/**
+	 * { returns the width }.
+	 *
+	 * @return     { width }
+	 */
 	public int width() {
 
 		return pic.width();
 	}
 
 	// height of current picture
+
+	/**
+	 * { return the height }.
+	 *
+	 * @return     { height }
+	 */
 	public int height() {
 		return pic.height();
 	}
 
 	// energy of pixel at column x and row y
+
+	/**
+	 * returns energy of the given pixcel.
+	 *
+	 * @param      x     { col }
+	 * @param      y     { row }
+	 *
+	 * @return     { energy value }
+	 */
 	public double energy(int x, int y) {
 		//System.out.print(pic.getRGB(x, y));
 		if (x == 0 || y == 0 || x == width() - 1 || y == height() - 1) {
@@ -45,15 +82,23 @@ public class SeamCarver {
 		return res;
 	}
 
-	// sequence of indices for horizontal seam
-	public int[] findHorizontalSeam() {
-		return new int[0];
-	}
+
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
 		return new int[0];
 	}
+
+
+
+
+
+	// sequence of indices for horizontal seam
+	public int[] findHorizontalSeam() {
+		return new int[0];
+	}
+
+
 
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
