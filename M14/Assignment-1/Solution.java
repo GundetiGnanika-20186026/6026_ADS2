@@ -54,7 +54,7 @@ final class Solution {
                 input[s] = filescan.nextLine();
                 s++;
             }
-            System.out.println(Arrays.toString(input));
+            // System.out.println(Arrays.toString(input));
             return input;
 
         } catch (IOException e) {
