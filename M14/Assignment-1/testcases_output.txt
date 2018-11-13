@@ -10,7 +10,7 @@ ABASES
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -29,7 +29,7 @@ ABSURD
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -72,7 +72,7 @@ ACCUSTOMED
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -171,7 +171,7 @@ ADY
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -222,7 +222,7 @@ SUBVERT
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -773,6 +773,6 @@ REY
 Your Output: 
 file not found
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:25)
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 

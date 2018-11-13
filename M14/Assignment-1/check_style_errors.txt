@@ -146,8 +146,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:48:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:49:41: '6013' is a magic number. [MagicNumber]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:49:13: '(' should be on the previous line. [MethodParamPad]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:50:41: '6013' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...

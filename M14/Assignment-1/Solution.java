@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.io.File;
 //import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -53,6 +54,7 @@ final class Solution {
                 input[s] = filescan.nextLine();
                 s++;
             }
+            System.out.println(Arrays.toString(input));
             return input;
 
         } catch (IOException e) {
