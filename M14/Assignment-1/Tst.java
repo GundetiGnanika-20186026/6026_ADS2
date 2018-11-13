@@ -65,7 +65,7 @@ public class Tst<Value> {
      * @return the value associated with the given key if the
      *  key is in the symbol table
      *     and {null} if the key is not in the symbol table
-     *its complexity is O(1).
+     *its complexity is O(L*log(N)).
      */
     public Value get(final String key) {
 
@@ -85,7 +85,7 @@ public class Tst<Value> {
      * @param      x     { node }
      * @param      key   The key
      * @param      d     { value in string }
-     * its complexity is O(1).
+     * its complexity is O(L*log(N)).
      * @return     { node }
      */
     private Node<Value> get(final Node<Value> x,
@@ -112,6 +112,7 @@ public class Tst<Value> {
      * with the new value if the key is already in the symbol table.
      * If the value is { null}, this effectively deletes
      *  the key from the symbol table.
+     *  its complexity is O(L*log(N)).
      * @param key the key
      * @param val the value
      *
@@ -127,6 +128,7 @@ public class Tst<Value> {
     /**
      * {Inserts the key-value pair into the symbol table,
      *  overwriting the old value}.
+     *  its complexity is O(L*log(N)).
      *
      * @param      x     { node }
      * @param      key   The key
@@ -164,6 +166,7 @@ public class Tst<Value> {
      * @param prefix the prefix
      * @return all of the keys in the set that start with { prefix},
      *     as an iterable
+     *     its complexity is O(L*log(N)).
      *
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
@@ -184,6 +187,7 @@ public class Tst<Value> {
 
     /**
      * //all keys in subtrie rooted at x with given prefix.
+     * its complexity is O(L*log(N)).
      *
      * @param      x       { node }
      * @param      prefix  The prefix

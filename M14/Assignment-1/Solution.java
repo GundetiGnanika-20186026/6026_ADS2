@@ -14,6 +14,9 @@ final class Solution {
     }
     /**
      * main method.
+     * its complexity is L*N;
+     * where L = length of each word.
+     * N = no. of strings.
      *
      * @param      args  The arguments
      */
