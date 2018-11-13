@@ -149,8 +149,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:90: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:91: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:123: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.

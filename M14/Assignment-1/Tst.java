@@ -87,8 +87,11 @@ public class Tst<Value> {
      *
      * @return     { node }
      */
-    private Node<Value> get(final Node<Value> x, final String key, final int d) {
-        if (x == null) return null;
+    private Node<Value> get(final Node<Value> x,
+     final String key, final int d) {
+        if (x == null) {
+            return null;
+        }
 
         char c = key.charAt(d);
         if      (c < x.c) {
@@ -121,8 +124,8 @@ public class Tst<Value> {
     }
 
     /**
-     * Inserts the key-value pair into the symbol table,
-     *  overwriting the old value
+     * {Inserts the key-value pair into the symbol table,
+     *  overwriting the old value}.
      *
      * @param      x     { node }
      * @param      key   The key
