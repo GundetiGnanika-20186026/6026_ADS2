@@ -1,8 +1,7 @@
 import java.util.Scanner;
 import java.io.File;
-//import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Arrays;
+//import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -45,9 +44,10 @@ final class Solution {
     public static String[] loadWords() {
 
         try {
-            Scanner filescan = new Scanner
-            (new File("Files/dictionary-algs4.txt"));
-            String[] input = new String[6013];
+            Scanner filescan = new Scanner(
+                new File("Files/dictionary-algs4.txt"));
+            final int value = 6013;
+            String[] input = new String[value];
 
             int s = 0;
             while (filescan.hasNextLine()) {
