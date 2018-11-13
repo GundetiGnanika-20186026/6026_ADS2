@@ -41,6 +41,7 @@ public class Tst<Value> {
     /**
      * Returns the number of key-value pairs in this symbol table.
      * @return the number of key-value pairs in this symbol table
+     * its complexity is O(1).
      */
     public int size() {
         return n;
@@ -51,7 +52,7 @@ public class Tst<Value> {
      * @param key the key
      * @return {true} if this symbol table contains {key} and
      *     { false} otherwise
-     *
+     *its complexity is O(1).
      */
     public boolean contains(final String key) {
 
@@ -64,7 +65,7 @@ public class Tst<Value> {
      * @return the value associated with the given key if the
      *  key is in the symbol table
      *     and {null} if the key is not in the symbol table
-     *
+     *its complexity is O(1).
      */
     public Value get(final String key) {
 
@@ -84,7 +85,7 @@ public class Tst<Value> {
      * @param      x     { node }
      * @param      key   The key
      * @param      d     { value in string }
-     *
+     * its complexity is O(1).
      * @return     { node }
      */
     private Node<Value> get(final Node<Value> x,
