@@ -178,12 +178,12 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:9:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:9:31: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:9:32: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:9:47: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:9:51: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:12:16: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:12:27: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:12:28: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:12:29: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:12:47: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Solution.java:27:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
