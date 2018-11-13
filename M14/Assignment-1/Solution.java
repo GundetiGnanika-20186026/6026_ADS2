@@ -1,6 +1,7 @@
 import java.util.Scanner;
-//import java.io.File;
+import java.io.File;
 //import java.io.FileNotFoundException;
+import java.io.IOException;
 /**
  * Class for solution.
  */
@@ -42,25 +43,26 @@ final class Solution {
      */
     public static String[] loadWords() {
 
-        // try {
-        //  Scanner filescan = new Scanner
-        //  (new File("/Files/dictionary-algs4.txt"));
-        //  String[] input = new String[6013];
+        try {
+            Scanner filescan = new Scanner
+            (new File("/Files/dictionary-algs4.txt"));
+            String[] input = new String[6013];
 
-        //  int s = 0;
-        //  while (filescan.hasNextLine()) {
-        //      input[s] = filescan.nextLine();
-        //      s++;
-        //  }
-        //  return input;
+            int s = 0;
+            while (filescan.hasNextLine()) {
+                input[s] = filescan.nextLine();
+                s++;
+            }
+            return input;
 
-        // } catch (FileNotFoundException e) {
-        //  System.out.println("file not found");
-        // }
+        } catch (IOException e) {
+            System.out.println("file not found");
+            return null;
+        }
 
-        In in = new In("/Files/dictionary-algs4.txt");
-        String[] words = in.readAllStrings();
-        return words;
-        //return null;
+        // In in = new In("/Files/dictionary-algs4.txt");
+        // String[] words = in.readAllStrings();
+        // return words;
+
     }
 }
