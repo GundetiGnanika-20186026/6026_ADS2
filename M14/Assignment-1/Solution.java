@@ -46,7 +46,7 @@ final class Solution {
 
         try {
             Scanner filescan = new Scanner
-            (new File("/Files/dictionary-algs4.txt"));
+            (new File("Files/dictionary-algs4.txt"));
             String[] input = new String[6013];
 
             int s = 0;
