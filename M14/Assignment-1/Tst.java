@@ -61,7 +61,8 @@ public class Tst<Value> {
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
+     * @return the value associated with the given key if the
+     *  key is in the symbol table
      *     and {null} if the key is not in the symbol table
      *
      */
@@ -69,7 +70,9 @@ public class Tst<Value> {
 
 
         Node<Value> x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return x.val;
     }
 
@@ -88,28 +91,38 @@ public class Tst<Value> {
         if (x == null) return null;
 
         char c = key.charAt(d);
-        if      (c < x.c)              return get(x.left,  key, d);
-        else if (c > x.c)              return get(x.right, key, d);
-        else if (d < key.length() - 1) return get(x.mid,   key, d+1);
-        else                           return x;
+        if      (c < x.c) {
+            return get(x.left,  key, d);
+        } else if (c > x.c) {
+            return get(x.right, key, d);
+        } else if (d < key.length() - 1) {
+            return get(x.mid,   key, d + 1);
+        } else {
+            return x;
+        }
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table,
+     *  overwriting the old value
      * with the new value if the key is already in the symbol table.
-     * If the value is { null}, this effectively deletes the key from the symbol table.
+     * If the value is { null}, this effectively deletes
+     *  the key from the symbol table.
      * @param key the key
      * @param val the value
      *
      */
     public void put(final String key, final Value val) {
 
-        if (!contains(key)) n++;
+        if (!contains(key)) {
+            n++;
+        }
         root = put(root, key, val, 0);
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table,
+     *  overwriting the old value
      *
      * @param      x     { node }
      * @param      key   The key
@@ -118,17 +131,23 @@ public class Tst<Value> {
      *
      * @return     { node }
      */
-    private Node<Value> put(final Node<Value> x, final String key, final Value val, final int d) {
+    private Node<Value> put(final Node<Value> x, final String key,
+                            final Value val, final int d) {
         char c = key.charAt(d);
         Node<Value> m = x;
         if (x == null) {
             m = new Node<Value>();
             m.c = c;
         }
-        if      (c < m.c)               m.left  = put(m.left,  key, val, d);
-        else if (c > m.c)               m.right = put(m.right, key, val, d);
-        else if (d < key.length() - 1)  m.mid   = put(m.mid,   key, val, d+1);
-        else                            m.val   = val;
+        if  (c < m.c) {
+            m.left  = put(m.left,  key, val, d);
+        } else if (c > m.c) {
+            m.right = put(m.right, key, val, d);
+        } else if (d < key.length() - 1)  {
+            m.mid   = put(m.mid,   key, val, d + 1);
+        } else {
+            m.val   = val;
+        }
         return m;
     }
 
@@ -147,8 +166,12 @@ public class Tst<Value> {
 
         Queue<String> queue = new Queue<String>();
         Node<Value> x = get(root, prefix, 0);
-        if (x == null) return queue;
-        if (x.val != null) queue.enqueue(prefix);
+        if (x == null) {
+            return queue;
+        }
+        if (x.val != null) {
+            queue.enqueue(prefix);
+        }
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
@@ -162,10 +185,15 @@ public class Tst<Value> {
      * @param      prefix  The prefix
      * @param      queue   The queue
      */
-    private void collect(final Node<Value> x, final StringBuilder prefix, final Queue<String> queue) {
-        if (x == null) return;
+    private void collect(final Node<Value> x, final StringBuilder prefix,
+                         final Queue<String> queue) {
+        if (x == null) {
+            return;
+        }
         collect(x.left,  prefix, queue);
-        if (x.val != null) queue.enqueue(prefix.toString() + x.c);
+        if (x.val != null) {
+            queue.enqueue(prefix.toString() + x.c);
+        }
         collect(x.mid,   prefix.append(x.c), queue);
         prefix.deleteCharAt(prefix.length() - 1);
         collect(x.right, prefix, queue);

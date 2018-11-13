@@ -149,32 +149,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:64: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:72: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:87: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:88: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:90: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:91: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:93: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:93:66: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:93:67: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:94: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:98: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:100: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:107: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:111: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:112: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:121: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:128: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:129: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:130: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:130:75: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:130:76: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:131: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:150: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:151: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:165: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:166: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:168: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M14\Assignment-1\Tst.java:123: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 3 errors.
