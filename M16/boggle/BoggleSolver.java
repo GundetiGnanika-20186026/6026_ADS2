@@ -108,47 +108,48 @@ public class BoggleSolver {
 			//System.out.println("hi");
 			bag.add(word);
 			return;
+
 		}
 		marked[i][j] = true;
 		if (validindex(i - 1, j - 1) && (!marked[i - 1][j - 1])) {
 			//System.out.println("hii");
 			Dfs(board, i - 1, j - 1, word + chartoString(board.getLetter(i - 1, j - 1)), marked);
-			marked[i - 1][j - 1] = false;
+			//marked[i - 1][j - 1] = false;
 		}
 
 		if (validindex(i - 1, j) && (!marked[i - 1][j])) {
 			Dfs(board, i - 1, j, word + chartoString(board.getLetter(i - 1, j)), marked);
-			marked[i - 1][j] = false;
+			//marked[i - 1][j] = false;
 		}
 
 		if (validindex(i - 1, j + 1) && (!marked[i - 1][j + 1])) {
 			Dfs(board, i - 1, j + 1, word + chartoString(board.getLetter(i - 1, j + 1)), marked);
-			marked[i - 1][j + 1] = false;
+			//marked[i - 1][j + 1] = false;
 		}
 
 		if (validindex(i, j - 1) && (!marked[i][j - 1])) {
 			Dfs(board, i, j - 1, word + chartoString(board.getLetter(i, j - 1)), marked);
-			marked[i][j - 1] = false;
+			//marked[i][j - 1] = false;
 		}
 
 		if (validindex(i, j + 1) && (!marked[i][j + 1])) {
 			Dfs(board, i, j + 1, word + chartoString(board.getLetter(i, j + 1)), marked);
-			marked[i][j + 1] = false;
+			//marked[i][j + 1] = false;
 		}
 
 		if (validindex(i + 1, j - 1) && (!marked[i + 1][j - 1])) {
 			Dfs(board, i + 1, j - 1, word + chartoString(board.getLetter(i + 1, j - 1)), marked);
-			marked[i + 1][j - 1] = false;
+			//marked[i + 1][j - 1] = false;
 		}
 
 		if (validindex(i + 1, j) && (!marked[i + 1][j])) {
 			Dfs(board, i + 1, j, word + chartoString(board.getLetter(i + 1, j)), marked);
-			marked[i + 1][j] = false;
+			//marked[i + 1][j] = false;
 		}
 
 		if (validindex(i + 1, j + 1) && (!marked[i + 1][j + 1])) {
 			Dfs(board, i + 1, j + 1, word + chartoString(board.getLetter(i + 1, j + 1)), marked);
-			marked[i + 1][j + 1] = false;
+			//marked[i + 1][j + 1] = false;
 		}
 	}
 }
