@@ -91,8 +91,14 @@ public class BoggleSolver {
 		if (marked[i][j]) {
 			return;
 		}
+		// if(word.length() == 1) {
+		// 	if(!trie.hasPrefix(word)) {
+		// 		return;
+		// 	}
+		// }
+
 		if(word.length() >= 3) {
-		     if (trie.keysWithPrefix(word) == null) {
+		     if (!trie.hasPrefix(word)) {
 			//System.out.println("hii");
 			   return;
 		    }

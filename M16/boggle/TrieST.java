@@ -116,6 +116,18 @@ public class TrieST<Value> {
         return results;
     }
 
+    public boolean hasPrefix(String prefix) {
+        Node x = get(root, prefix, 0);
+        Queue<String> results = new Queue<String>();
+        StringBuilder str = new StringBuilder(prefix);
+        if (x == null) return false;
+        if (x.val != null) results.enqueue(prefix.toString());
+        if(results.size() == 1) {
+            return true;
+        }
+        return false;
+    }
+
     private void collect(Node x, StringBuilder prefix, Queue<String> results) {
         if (x == null) return;
         if (x.val != null) results.enqueue(prefix.toString());
