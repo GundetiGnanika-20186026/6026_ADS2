@@ -83,9 +83,9 @@ public class BoggleSolver {
 
 	public void Dfs(BoggleBoard board, int i, int j, String word, boolean[][] marked) {
 		//System.out.println("hii");
-		if (i < 0 || j < 0 || i >= mrows || j >= ncol) {
-			return;
-		}
+		// if (i < 0 || j < 0 || i >= mrows || j >= ncol) {
+		// 	return;
+		// }
 		if (marked[i][j]) {
 			return;
 		}
