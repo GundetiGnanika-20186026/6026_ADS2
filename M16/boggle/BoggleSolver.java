@@ -22,6 +22,10 @@ public class BoggleSolver {
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		//System.out.println(board);
+		if(board == null){
+			System.out.println("board is null");
+			return null;
+		}
 		mrows = board.rows();
 		ncol = board.cols();
 
@@ -36,6 +40,9 @@ public class BoggleSolver {
 
 			}
 		}
+		// for(String i : bag){
+		// 	System.out.println(i);
+		// }
 		return bag;
 	}
 
@@ -82,10 +89,7 @@ public class BoggleSolver {
 	}
 
 	public void Dfs(BoggleBoard board, int i, int j, String word, boolean[][] marked) {
-		//System.out.println("hii");
-		// if (i < 0 || j < 0 || i >= mrows || j >= ncol) {
-		// 	return;
-		// }
+
 		if (marked[i][j]) {
 			return;
 		}
