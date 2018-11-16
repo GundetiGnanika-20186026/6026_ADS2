@@ -49,13 +49,13 @@ public class BoggleSolver {
 
 
 	public String chartoString(char chr) {
-		String string = "";
+		//String string = "";
 		if (chr == 'Q') {
-			string += "QU";
+			return "QU";
 		} else {
-			string += chr;
+			return chr+"";
 		}
-		return string;
+
 
 	}
 
