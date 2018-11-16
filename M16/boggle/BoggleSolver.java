@@ -23,7 +23,7 @@ public class BoggleSolver {
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		//System.out.println(board);
-		if(board == null){
+		if (board == null) {
 			System.out.println("board is null");
 			return null;
 		}
@@ -53,7 +53,7 @@ public class BoggleSolver {
 		if (chr == 'Q') {
 			return "QU";
 		} else {
-			return chr+"";
+			return chr + "";
 		}
 
 
@@ -91,18 +91,12 @@ public class BoggleSolver {
 		if (marked[i][j]) {
 			return;
 		}
-		// if(word.length() == 1) {
-		// 	if(!trie.hasPrefix(word)) {
-		// 		return;
-		// 	}
-		// }
-
-		if(word.length() >= 3) {
-		     if (trie.keysWithPrefix(word) == null) {
-			//System.out.println("hii");
-			   return;
-		    }
-		}
+		//if (word.length() >= 3) {
+			if (!trie.hasPrefix(word)) {
+				//System.out.println("hii");
+				return;
+			}
+		//}
 
 		if (word == "") {
 			//System.out.println("hii");
