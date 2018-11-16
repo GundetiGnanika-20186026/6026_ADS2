@@ -62,9 +62,6 @@ public class BoggleSolver {
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
-		if (!trie.contains(word)) {
-			return 0;
-		}
 		int wordlength = word.length();
 		if (wordlength <= 2) {
 			return 0;
@@ -94,9 +91,11 @@ public class BoggleSolver {
 		if (marked[i][j]) {
 			return;
 		}
-		if (trie.keysWithPrefix(word) == null) {
+		if(word.length() >= 3) {
+		     if (trie.keysWithPrefix(word) == null) {
 			//System.out.println("hii");
-			return;
+			   return;
+		    }
 		}
 
 		if (word == "") {
