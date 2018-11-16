@@ -107,6 +107,7 @@ public class BoggleSolver {
 		if (word.length() > 2 && trie.contains(word) && (!bag.contains(word))) {
 			//System.out.println("hi");
 			bag.add(word);
+			return;
 		}
 		marked[i][j] = true;
 		if (validindex(i - 1, j - 1) && (!marked[i - 1][j - 1])) {
