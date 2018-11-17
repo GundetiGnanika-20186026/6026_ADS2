@@ -287,8 +287,8 @@ Exception in thread "main" java.lang.NullPointerException
 	at java.base/java.util.ComparableTimSort.countRunAndMakeAscending(Unknown Source)
 	at java.base/java.util.ComparableTimSort.sort(Unknown Source)
 	at java.base/java.util.Arrays.sort(Unknown Source)
-	at T9.getSuggestions(Solution.java:253)
-	at T9.t9(Solution.java:266)
-	at Solution.main(Solution.java:85)
+	at T9.getSuggestions(Solution.java:270)
+	at T9.t9(Solution.java:293)
+	at Solution.main(Solution.java:92)
 ----------------------------------------
 

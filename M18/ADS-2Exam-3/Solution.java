@@ -1,14 +1,21 @@
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
+//import java.io.File;
+//import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.TreeSet;
 
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
     // Don't modify this method.
+
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
 
 	/**
 	 * main method.
@@ -19,7 +26,7 @@ public class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -97,8 +104,8 @@ public class Solution {
 	// Don't modify this method.
 
 	/**
-	 * take the every and every line from the file
-	 * and will put it in the array of string.
+	 *{take the every and every line from the file
+	 * and will put it in the array of string}.
 	 * its complexity is O(N);
 	 * N = number of words in the String.
 	 *
@@ -106,7 +113,7 @@ public class Solution {
 	 *
 	 * @return     { String array of words }
 	 */
-	public static String[] toReadFile(String file) {
+	public static String[] toReadFile(final String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
@@ -121,7 +128,7 @@ public class Solution {
      *
      * @return     { returns the symbol table }
      */
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
+	public static BinarySearchST<String, Integer> loadDictionary(final String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] msgs = toReadFile(file);
 		for (int i = 0; i < msgs.length; i++) {
@@ -143,13 +150,16 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
+	/**
+	 * Tst.
+	 */
 	private TST<Integer> trie;
     /**
      * Constructs the object.
      *
      * @param      st    { symbol table object}
      */
-	public T9(BinarySearchST<String, Integer> st) {
+	public T9(final BinarySearchST<String, Integer> st) {
 		trie = new TST<Integer>();
 		for (String word : st.keys()) {
 			trie.put(word, st.get(word));
@@ -171,7 +181,7 @@ class T9 {
 	 *
 	 * @return     All words.
 	 */
-	public Iterable<String> getAllWords(String prefix) {
+	public Iterable<String> getAllWords(final String prefix) {
 		// your code goes here
 		//System.out.println("entered");
 		return trie.keysWithPrefix(prefix);
@@ -179,7 +189,14 @@ class T9 {
 
 	}
 
-	public Iterable<String> potentialWords(String t9Signature) {
+    /**
+     * iterator.
+     *
+     * @param      t9Signature  The t 9 signature
+     *
+     * @return     { treeset }
+     */
+	public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 
 		TreeSet<String> treeset = new TreeSet<>();
@@ -232,7 +249,7 @@ class T9 {
 	 *
 	 * @return     The suggestions.
 	 */
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
 		// your code goes here
 		//System.out.println("entered");
 		Bag<String> bag1 = new Bag<String>();
@@ -262,7 +279,17 @@ class T9 {
 
 	// final output
 	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	//
+
+	/**
+	 * final output.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { value }
+	 *
+	 * @return     { string }
+	 */
+	public Iterable<String> t9(final String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
