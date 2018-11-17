@@ -57,7 +57,7 @@ BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String every : t9.potentialWords(t9Signature)) {
+	for (String every : t9.potentialWords(t9Signature)) {
 					count++;
 					System.out.println(every);
 				}
@@ -160,7 +160,7 @@ class T9 {
      *
      * @param      st    { symbol table object}
      */
-	public T9(final BinarySearchST<String, Integer> st) {
+	T9(final BinarySearchST<String, Integer> st) {
 		trie = new TST<Integer>();
 		for (String word : st.keys()) {
 			trie.put(word, st.get(word));
@@ -274,7 +274,7 @@ if (every.equals("w") || every.equals("x") || every.equals("y")
 		Arrays.sort(keys1);
 		//.System.out.println(Arrays.toString(keys1));
 		bag1.add(keys1[2 + 2 + 1]);
-        for(int l = 2; l >= 0; l--){
+        for (int l = 2; l >= 0; l--) {
         	bag1.add(keys1[l]);
         }
 
