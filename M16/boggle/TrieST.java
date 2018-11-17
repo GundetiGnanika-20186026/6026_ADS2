@@ -40,7 +40,9 @@ public class TrieST<Value> {
     public Value get(final String key) {
 
         Node x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return (Value) x.val;
     }
 
@@ -68,8 +70,12 @@ public class TrieST<Value> {
      */
     private Node get(final Node x, final String key,
                      final int d) {
-        if (x == null) return null;
-        if (d == key.length()) return x;
+        if (x == null) {
+            return null;
+        }
+        if (d == key.length()) {
+            return x;
+        }
         char c = key.charAt(d);
         return get(x.next[c], key, d + 1);
     }
@@ -87,8 +93,11 @@ public class TrieST<Value> {
      */
     public void put(final String key, final Value val) {
 
-        if (val == null) delete(key);
-        else root = put(root, key, val, 0);
+        if (val == null) {
+            delete(key);
+        } else {
+            root = put(root, key, val, 0);
+        }
     }
 
     /**
@@ -104,9 +113,13 @@ public class TrieST<Value> {
     private Node put(final Node x, final String key,
                      final Value val, final int d) {
         Node x1 = x;
-        if (x1 == null) x1 = new Node();
+        if (x1 == null) {
+            x1 = new Node();
+        }
         if (d == key.length()) {
-            if (x1.val == null) n++;
+            if (x1.val == null) {
+                n++;
+            }
             x1.val = val;
             return x1;
         }
@@ -185,8 +198,12 @@ public class TrieST<Value> {
      */
     private void collect(final Node x, final StringBuilder prefix,
                          Queue<String> results) {
-        if (x == null) return;
-        if (x.val != null) results.enqueue(prefix.toString());
+        if (x == null) {
+            return;
+        }
+        if (x.val != null) {
+            results.enqueue(prefix.toString());
+        }
         for (char c = 0; c < R; c++) {
             prefix.append(c);
             collect(x.next[c], prefix, results);
@@ -211,12 +228,16 @@ public class TrieST<Value> {
 
     private void collect(final Node x, final StringBuilder prefix,
                          String pattern, final Queue<String> results) {
-        if (x == null) return;
-        int d = prefix.length();
-        if (d == pattern.length() && x.val != null)
-            results.enqueue(prefix.toString());
-        if (d == pattern.length())
+        if (x == null) {
             return;
+        }
+        int d = prefix.length();
+        if (d == pattern.length() && x.val != null) {
+            results.enqueue(prefix.toString());
+        }
+        if (d == pattern.length()) {
+            return;
+        }
         char c = pattern.charAt(d);
         if (c == '.') {
             for (char ch = 0; ch < R; ch++) {
@@ -231,46 +252,6 @@ public class TrieST<Value> {
         }
     }
 
-    // /**
-    //  * {Returns the string in the symbol table that is
-    //  *  the longest prefix of {@code query},
-    //  * or {@code null}, if no such string}.
-    //  * @param query the query string
-    //  * @return the string in the symbol table that
-    //  *  is the longest prefix of {@code query},
-    //  *     or {@code null} if no such string
-    //  *
-    //  */
-    // public String longestPrefixOf(final String query) {
-
-    //     int length = longestPrefixOf(root, query, 0, -1);
-    //     if (length == -1) return null;
-    //     else return query.substring(0, length);
-    // }
-
-
-
-    // /**
-    // returns the length of the longest string key in the subtrie.
-    // // rooted at x that is a prefix of the query string,
-    // // assuming the first d character match and we have already
-    // // found a prefix match of given length (-1 if no such match)
-    //  *
-    //  * @param      x       { node }
-    //  * @param      query   The query
-    //  * @param      d       { value }
-    //  * @param      length  The length
-    //  *
-    //  * @return     { value }
-    //  */
-    // private int longestPrefixOf(final Node x, final String query,
-    //                             final int d, final int length) {
-    //     if (x == null) return length;
-    //     if (x.val != null) length = d;
-    //     if (d == query.length()) return length;
-    //     char c = query.charAt(d);
-    //     return longestPrefixOf(x.next[c], query, d + 1, length);
-    // }
 
     /**
      * Removes the key from the set if the key is present.
@@ -293,9 +274,13 @@ public class TrieST<Value> {
      */
     private Node delete(final Node x, final String key,
                         final int d) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         if (d == key.length()) {
-            if (x.val != null) n--;
+            if (x.val != null) {
+                n--;
+            }
             x.val = null;
         } else {
             char c = key.charAt(d);
@@ -303,10 +288,13 @@ public class TrieST<Value> {
         }
 
         // remove subtrie rooted at x if it is completely empty
-        if (x.val != null) return x;
+        if (x.val != null) {
+            return x;
+        }
         for (int c = 0; c < R; c++)
-            if (x.next[c] != null)
+            if (x.next[c] != null) {
                 return x;
+            }
         return null;
     }
 
