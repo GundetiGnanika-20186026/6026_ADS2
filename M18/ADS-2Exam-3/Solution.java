@@ -144,7 +144,7 @@ class T9 {
         int[] values = new int[6];
         String[] keys1 = new String[6];
 		for (String string : words) {
-			System.out.println("entered");
+			//System.out.println("entered");
 			int count = 0;
             keys1[i] = string;
 			for (String each : getAllWords(string)) {
@@ -158,6 +158,7 @@ class T9 {
         for(int l = 0; l < 3;l++){
         	bag1.add(keys1[l]);
         }
+        bag1.add(keys1[5]);
         return bag1;
 	}
 
