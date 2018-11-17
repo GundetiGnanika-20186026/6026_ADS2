@@ -33,7 +33,7 @@ final class Solution {
 		switch (cases) {
 		case "loadDictionary":
 			// input000.txt and output000.txt
-			BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				System.out.println(hash.get(key));
@@ -128,8 +128,9 @@ final class Solution {
      *
      * @return     { returns the symbol table }
      */
-	public static BinarySearchST<String, Integer> loadDictionary(final String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	public static BinarySearchST<String, Integer> loadDictionary(
+		final String file) {
+BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] msgs = toReadFile(file);
 		for (int i = 0; i < msgs.length; i++) {
 			String key = msgs[i].toLowerCase();
@@ -196,7 +197,7 @@ class T9 {
      *
      * @return     { treeset }
      */
-	public Iterable<String> potentialWords(final String t9Signature) {
+public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 
 		TreeSet<String> treeset = new TreeSet<>();
@@ -204,29 +205,29 @@ class T9 {
             String[] character = word.split("");
             String value = "";
             for (String every : character) {
-                if (every.equals("a") || every.equals("b") || every.equals("c")) {
+if (every.equals("a") || every.equals("b") || every.equals("c")) {
                     value = value + "2";
                 }
-                if (every.equals("d") || every.equals("e") || every.equals("f")) {
+if (every.equals("d") || every.equals("e") || every.equals("f")) {
                     value = value + "3";
                 }
-                if (every.equals("g") || every.equals("h") || every.equals("i")) {
+if (every.equals("g") || every.equals("h") || every.equals("i")) {
                     value = value + "4";
                 }
-                if (every.equals("j") || every.equals("k") || every.equals("l")) {
+if (every.equals("j") || every.equals("k") || every.equals("l")) {
                     value = value + "5";
                 }
-                if (every.equals("m") || every.equals("n") || every.equals("o")) {
+if (every.equals("m") || every.equals("n") || every.equals("o")) {
                     value = value + "6";
                 }
-                if (every.equals("p") || every.equals("q") || every.equals("r")
+if (every.equals("p") || every.equals("q") || every.equals("r")
                         || every.equals("s")) {
                     value = value + "7";
                 }
-                if (every.equals("t") || every.equals("u") || every.equals("v")) {
+if (every.equals("t") || every.equals("u") || every.equals("v")) {
                     value = value + "8";
                 }
-                if (every.equals("w") || every.equals("x") || every.equals("y")
+if (every.equals("w") || every.equals("x") || every.equals("y")
                         || every.equals("z")) {
                     value = value + "9";
                 }
@@ -241,15 +242,18 @@ class T9 {
 
 	/**
 	 * Gets the suggestions.
-	 * // return all possibilities(words), find top k with highest frequency.
-	 * its complexity is O(N). as we are using getall in this method.
+	 * // return all possibilities(words),
+	 *  find top k with highest frequency.
+	 * its complexity is O(N). as we are
+	 *  using getall in this method.
 	 *
 	 * @param      words  The words
-	 * @param      k      { no. of top frequencies to be returned }
+	 * @param      k  { no. of top frequencies to be returned }
 	 *
 	 * @return     The suggestions.
 	 */
-	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+	public Iterable<String> getSuggestions(
+		final Iterable<String> words, final int k) {
 		// your code goes here
 		//System.out.println("entered");
 		Bag<String> bag1 = new Bag<String>();
