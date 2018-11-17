@@ -155,10 +155,11 @@ class T9 {
 		}
 		Arrays.sort(keys1);
 		//.System.out.println(Arrays.toString(keys1));
-        for(int l = 0; l < 3;l++){
+		bag1.add(keys1[5]);
+        for(int l = 2; l >= 0;l--){
         	bag1.add(keys1[l]);
         }
-        bag1.add(keys1[5]);
+
         return bag1;
 	}
 
