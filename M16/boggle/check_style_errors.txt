@@ -1,4 +1,6 @@
 Starting audit...
+Audit done.
+Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleGame.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleGame.java:8: Line has trailing spaces. [RegexpSingleline]
