@@ -89,27 +89,7 @@ public class Solution {
 
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
-
- //            while (firstscan.hasNextLine()) {
- //            	System.out.println("entered");
- //            	String msg = firstscan.nextLine();
- //            	System.out.println(msg);
- //            	String lower = msg.toLowerCase();
- //            	String[] msgs = lower.split(" ");
- //            	for(int i = 0; i < msgs.length;i++){
- //            		if(!st.contains(msgs[i])) {
- //            		      st.put(msgs[i], 1);
- //            	    }else{
- //            	    	int val = st.get(msgs[i]);
- //            	    	st.put(msgs[i],val+1);
- //            	    }
- //            	}
- //            }
-
-
-
-
-	String[] msgs = toReadFile(file);
+        String[] msgs = toReadFile(file);
 		for(int i = 0; i < msgs.length;i++){
 			String key = msgs[i].toLowerCase();
             if(!st.contains(key)) {
@@ -119,22 +99,33 @@ public class Solution {
             	    st.put(key,val+1);
             }
         }
-	return st;
+	    return st;
+
+    }
 
 }
 
-}
 
 class T9 {
+	private TST trie;
 
 	public T9(BinarySearchST<String, Integer> st) {
+		trie = new TST();
+		for(String word : st.keys()){
+			trie.put(word, st.get(word));
+		}
+
+
 		// your code goes here
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+		//System.out.println("entered");
+		return trie.keysWithPrefix(prefix);
+
+
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
