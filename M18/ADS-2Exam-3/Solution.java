@@ -89,19 +89,19 @@ public class Solution {
 
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
-        String[] msgs = toReadFile(file);
-		for(int i = 0; i < msgs.length;i++){
+		String[] msgs = toReadFile(file);
+		for (int i = 0; i < msgs.length; i++) {
 			String key = msgs[i].toLowerCase();
-            if(!st.contains(key)) {
-                st.put(key, 1);
-            }else{
-            	int val = st.get(key);
-            	    st.put(key,val+1);
-            }
-        }
-	    return st;
+			if (!st.contains(key)) {
+				st.put(key, 1);
+			} else {
+				int val = st.get(key);
+				st.put(key, val + 1);
+			}
+		}
+		return st;
 
-    }
+	}
 
 }
 
@@ -111,7 +111,7 @@ class T9 {
 
 	public T9(BinarySearchST<String, Integer> st) {
 		trie = new TST();
-		for(String word : st.keys()){
+		for (String word : st.keys()) {
 			trie.put(word, st.get(word));
 		}
 
@@ -137,11 +137,26 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		System.out.println("entered");
-		for(String i : words){
-			System.out.println(i);
+		//System.out.println("entered");
+		Bag<String> bag1 = new Bag<String>();
+
+        int i = 0;
+        int[] values = new int[6];
+        String[] keys1 = new String[6];
+		for (String string : words) {
+			System.out.println("entered");
+			int count = 0;
+            keys1[i] = string;
+			for (String each : getAllWords(string)) {
+				count++;
+			}
+			values[i] = count;
+			i++;
 		}
-		return null;
+		System.out.println(Arrays.toString(keys1));
+
+        System.out.println(Arrays.toString(values));
+        return null;
 	}
 
 	// final output

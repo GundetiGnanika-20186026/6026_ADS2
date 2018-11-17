@@ -170,12 +170,13 @@ words
 
 Your Output: 
 entered
-is
-within
-words
-rights
-right
-hello
+entered
+entered
+entered
+entered
+entered
+[is, within, words, rights, right, hello]
+[13, 1, 2, 1, 4, 6]
 Exception in thread "main" java.lang.NullPointerException
 	at Solution.main(Solution.java:59)
 ----------------------------------------
@@ -229,10 +230,9 @@ paper
 keep
 
 Your Output: 
-entered
 Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:141)
-	at T9.t9(Solution.java:150)
+	at T9.getSuggestions(Solution.java:146)
+	at T9.t9(Solution.java:165)
 	at Solution.main(Solution.java:72)
 ----------------------------------------
 
