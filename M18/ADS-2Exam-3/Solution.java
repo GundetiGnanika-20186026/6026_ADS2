@@ -38,8 +38,8 @@ public class Solution {
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
-				for (String each : t9.getAllWords(prefix)) {
-					System.out.println(each);
+				for (String every : t9.getAllWords(prefix)) {
+					System.out.println(every);
 				}
 			}
 			break;
@@ -50,9 +50,9 @@ public class Solution {
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String each : t9.potentialWords(t9Signature)) {
+				for (String every : t9.potentialWords(t9Signature)) {
 					count++;
-					System.out.println(each);
+					System.out.println(every);
 				}
 			}
 			if (count == 0) {
@@ -69,8 +69,8 @@ public class Solution {
 				String line = scan.nextLine();
 				bag.add(line);
 			}
-			for (String each : t9.getSuggestions(bag, k)) {
-				System.out.println(each);
+			for (String every : t9.getSuggestions(bag, k)) {
+				System.out.println(every);
 			}
 
 			break;
@@ -82,8 +82,8 @@ public class Solution {
 			k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
 				String line = scan.nextLine();
-				for (String each : t9.t9(line, k)) {
-					System.out.println(each);
+				for (String every : t9.t9(line, k)) {
+					System.out.println(every);
 				}
 			}
 			break;
@@ -97,7 +97,7 @@ public class Solution {
 	// Don't modify this method.
 
 	/**
-	 * take the each and every line from the file
+	 * take the every and every line from the file
 	 * and will put it in the array of string.
 	 * its complexity is O(N);
 	 * N = number of words in the String.
@@ -165,7 +165,7 @@ class T9 {
 	 * Gets all words.
 	 * get all the prefixes that match with given prefix.
 	 * its time complexity is O(N).
-	 * N = number of prefixes of each word.
+	 * N = number of prefixes of every word.
 	 *
 	 * @param      prefix  The prefix
 	 *
@@ -182,44 +182,44 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 
-		// TreeSet<String> treeset = new TreeSet<>();
-  //       for (String word : trie.keys()) {
-  //           String[] character = word.split("");
-  //           String value = "";
-  //           for (String each : character) {
-  //               if (each.equals("a") || each.equals("b") || each.equals("c")) {
-  //                   value = value + "2";
-  //               }
-  //               if (each.equals("d") || each.equals("e") || each.equals("f")) {
-  //                   value = value + "3";
-  //               }
-  //               if (each.equals("g") || each.equals("h") || each.equals("i")) {
-  //                   value = value + "4";
-  //               }
-  //               if (each.equals("j") || each.equals("k") || each.equals("l")) {
-  //                   value = value + "5";
-  //               }
-  //               if (each.equals("m") || each.equals("n") || each.equals("o")) {
-  //                   value = value + "6";
-  //               }
-  //               if (each.equals("p") || each.equals("q") || each.equals("r")
-  //                       || each.equals("s")) {
-  //                   value = value + "7";
-  //               }
-  //               if (each.equals("t") || each.equals("u") || each.equals("v")) {
-  //                   value = value + "8";
-  //               }
-  //               if (each.equals("w") || each.equals("x") || each.equals("y")
-  //                       || each.equals("z")) {
-  //                   value = value + "9";
-  //               }
-  //           }
-  //           if (value.equals(t9Signature)) {
-  //               treeset.add(word);
-  //           }
-  //       }
-        // return treeset;
-		return null;
+		TreeSet<String> treeset = new TreeSet<>();
+        for (String word : trie.keys()) {
+            String[] character = word.split("");
+            String value = "";
+            for (String every : character) {
+                if (every.equals("a") || every.equals("b") || every.equals("c")) {
+                    value = value + "2";
+                }
+                if (every.equals("d") || every.equals("e") || every.equals("f")) {
+                    value = value + "3";
+                }
+                if (every.equals("g") || every.equals("h") || every.equals("i")) {
+                    value = value + "4";
+                }
+                if (every.equals("j") || every.equals("k") || every.equals("l")) {
+                    value = value + "5";
+                }
+                if (every.equals("m") || every.equals("n") || every.equals("o")) {
+                    value = value + "6";
+                }
+                if (every.equals("p") || every.equals("q") || every.equals("r")
+                        || every.equals("s")) {
+                    value = value + "7";
+                }
+                if (every.equals("t") || every.equals("u") || every.equals("v")) {
+                    value = value + "8";
+                }
+                if (every.equals("w") || every.equals("x") || every.equals("y")
+                        || every.equals("z")) {
+                    value = value + "9";
+                }
+            }
+            if (value.equals(t9Signature)) {
+                treeset.add(word);
+            }
+        }
+        return treeset;
+		// return null;
 	}
 
 	/**
@@ -244,7 +244,7 @@ class T9 {
 			//System.out.println("entered");
 			int count = 0;
             keys1[i] = string;
-			for (String each : getAllWords(string)) {
+			for (String every : getAllWords(string)) {
 				count++;
 			}
 			values[i] = count;
