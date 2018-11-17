@@ -154,8 +154,11 @@ class T9 {
 			i++;
 		}
 		Arrays.sort(keys1);
-		System.out.println(Arrays.toString(keys1));
-		return null;
+		//.System.out.println(Arrays.toString(keys1));
+        for(int l = 0; l < 3;l++){
+        	bag1.add(keys1[l]);
+        }
+        return bag1;
 	}
 
 	// final output

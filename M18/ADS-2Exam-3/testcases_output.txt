@@ -175,9 +175,9 @@ entered
 entered
 entered
 entered
-[hello, is, right, rights, within, words]
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:59)
+right
+is
+hello
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -231,7 +231,7 @@ keep
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:146)
-	at T9.t9(Solution.java:164)
+	at T9.t9(Solution.java:167)
 	at Solution.main(Solution.java:72)
 ----------------------------------------
 
