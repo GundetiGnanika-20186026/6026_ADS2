@@ -2,6 +2,8 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
+import java.util.TreeSet;
+
 /**
  * Class for solution.
  */
@@ -141,14 +143,14 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
-	private TST trie;
+	private TST<Integer> trie;
     /**
      * Constructs the object.
      *
      * @param      st    { symbol table object}
      */
 	public T9(BinarySearchST<String, Integer> st) {
-		trie = new TST();
+		trie = new TST<Integer>();
 		for (String word : st.keys()) {
 			trie.put(word, st.get(word));
 		}
@@ -180,6 +182,43 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 
+		// TreeSet<String> treeset = new TreeSet<>();
+  //       for (String word : trie.keys()) {
+  //           String[] character = word.split("");
+  //           String value = "";
+  //           for (String each : character) {
+  //               if (each.equals("a") || each.equals("b") || each.equals("c")) {
+  //                   value = value + "2";
+  //               }
+  //               if (each.equals("d") || each.equals("e") || each.equals("f")) {
+  //                   value = value + "3";
+  //               }
+  //               if (each.equals("g") || each.equals("h") || each.equals("i")) {
+  //                   value = value + "4";
+  //               }
+  //               if (each.equals("j") || each.equals("k") || each.equals("l")) {
+  //                   value = value + "5";
+  //               }
+  //               if (each.equals("m") || each.equals("n") || each.equals("o")) {
+  //                   value = value + "6";
+  //               }
+  //               if (each.equals("p") || each.equals("q") || each.equals("r")
+  //                       || each.equals("s")) {
+  //                   value = value + "7";
+  //               }
+  //               if (each.equals("t") || each.equals("u") || each.equals("v")) {
+  //                   value = value + "8";
+  //               }
+  //               if (each.equals("w") || each.equals("x") || each.equals("y")
+  //                       || each.equals("z")) {
+  //                   value = value + "9";
+  //               }
+  //           }
+  //           if (value.equals(t9Signature)) {
+  //               treeset.add(word);
+  //           }
+  //       }
+        // return treeset;
 		return null;
 	}
 
