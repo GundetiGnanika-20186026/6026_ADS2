@@ -1,4 +1,9 @@
-public class TrieST<Value> {
+/**
+ * Class for trie st.
+ *
+ * @param      <Value>  The value
+ */
+class TrieST<Value> {
     /**
      * // extended ASCII.
      */
@@ -18,14 +23,20 @@ public class TrieST<Value> {
      * Class for node.
      */
     private static class Node {
+        /**
+         * val;
+         */
         private Object val;
+        /**
+         * node.
+         */
         private Node[] next = new Node[R];
     }
 
     /**
       * Initializes an empty string symbol table.
       */
-    public TrieST() {
+    TrieST() {
     }
 
 

@@ -7,12 +7,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:21:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:22:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:200:26: Parameter results should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:229:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:230:26: Parameter pattern should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:294: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:26: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:211:26: Parameter results should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:240:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:241:26: Parameter pattern should be final. [FinalParameters]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:305: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
