@@ -238,7 +238,7 @@ class TrieST<Value> {
     }
 
     private void collect(final Node x, final StringBuilder prefix,
-                         String pattern, final Queue<String> results) {
+                        final String pattern, final Queue<String> results) {
         if (x == null) {
             return;
         }
@@ -302,10 +302,11 @@ class TrieST<Value> {
         if (x.val != null) {
             return x;
         }
-        for (int c = 0; c < R; c++)
+        for (int c = 0; c < R; c++) {
             if (x.next[c] != null) {
                 return x;
             }
+        }
         return null;
     }
 
