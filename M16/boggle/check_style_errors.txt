@@ -523,7 +523,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 53 errors.
 Starting audit...
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:2:5: Missing a Javadoc comment. [JavadocVariable]
