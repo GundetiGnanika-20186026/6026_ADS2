@@ -259,8 +259,8 @@ if (every.equals("w") || every.equals("x") || every.equals("y")
 		Bag<String> bag1 = new Bag<String>();
 
         int i = 0;
-        int[] values = new int[6];
-        String[] keys1 = new String[6];
+        int[] values = new int[2 + 2 + 2];
+        String[] keys1 = new String[2 + 2 + 2];
 		for (String string : words) {
 			//System.out.println("entered");
 			int count = 0;
@@ -273,8 +273,8 @@ if (every.equals("w") || every.equals("x") || every.equals("y")
 		}
 		Arrays.sort(keys1);
 		//.System.out.println(Arrays.toString(keys1));
-		bag1.add(keys1[5]);
-        for(int l = 2; l >= 0;l--){
+		bag1.add(keys1[2+2+1]);
+        for(int l = 2; l >= 0; l--){
         	bag1.add(keys1[l]);
         }
 
