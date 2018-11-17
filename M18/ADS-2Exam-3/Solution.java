@@ -153,10 +153,9 @@ class T9 {
 			values[i] = count;
 			i++;
 		}
+		Arrays.sort(keys1);
 		System.out.println(Arrays.toString(keys1));
-
-        System.out.println(Arrays.toString(values));
-        return null;
+		return null;
 	}
 
 	// final output
