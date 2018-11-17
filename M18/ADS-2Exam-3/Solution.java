@@ -2,10 +2,21 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    // Don't modify this method.
 
-	// Don't modify this method.
+	/**
+	 * main method.
+	 * here we wre using TST which has
+	 * the time complexities for searchhit = Lln(N);
+	 * where N = number of strings
+	 * L = length of the String.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
@@ -82,11 +93,32 @@ public class Solution {
 	}
 
 	// Don't modify this method.
+
+	/**
+	 * take the each and every line from the file
+	 * and will put it in the array of string.
+	 * its complexity is O(N);
+	 * N = number of words in the String.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { String array of words }
+	 */
 	public static String[] toReadFile(String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
 
+    /**
+     * Loads a dictionary.
+     * its complexity is O(N)+log(n).
+     * N = number of words
+     * because we are going to every word and taking the frequencies
+     * and adding the log(n) time complexity for adding into the ST.
+     * @param      file  The file
+     *
+     * @return     { returns the symbol table }
+     */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] msgs = toReadFile(file);
@@ -105,10 +137,16 @@ public class Solution {
 
 }
 
-
+/**
+ * Class for t 9.
+ */
 class T9 {
 	private TST trie;
-
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { symbol table object}
+     */
 	public T9(BinarySearchST<String, Integer> st) {
 		trie = new TST();
 		for (String word : st.keys()) {
@@ -119,7 +157,18 @@ class T9 {
 		// your code goes here
 	}
 
-	// get all the prefixes that match with given prefix.
+
+
+	/**
+	 * Gets all words.
+	 * get all the prefixes that match with given prefix.
+	 * its time complexity is O(N).
+	 * N = number of prefixes of each word.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		//System.out.println("entered");
@@ -134,7 +183,16 @@ class T9 {
 		return null;
 	}
 
-	// return all possibilities(words), find top k with highest frequency.
+	/**
+	 * Gets the suggestions.
+	 * // return all possibilities(words), find top k with highest frequency.
+	 * its complexity is O(N). as we are using getall in this method.
+	 *
+	 * @param      words  The words
+	 * @param      k      { no. of top frequencies to be returned }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		//System.out.println("entered");
