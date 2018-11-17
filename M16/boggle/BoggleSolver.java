@@ -1,16 +1,32 @@
 import java.util.Arrays;
 import java.util.HashSet;
-public class BoggleSolver {
-
-	// Initializes the data structure using the given array of strings as the dictionary.
-	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-
+/**
+ * Class for boggle solver.
+ */
+class BoggleSolver {
+	/**
+	 * R way tries.
+	 */
 	private TrieST trie;
+	/**
+	 * hashset.
+	 */
 	private HashSet<String> bag;
+	/**
+	 * rows.
+	 */
 	private int mrows;
+	/**
+	 * cols.
+	 */
 	private int ncol;
-	public BoggleSolver(String[] dictionary) {
-		//System.out.println(Arrays.toString(dictionary));
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      dictionary  The dictionary
+	 */
+	BoggleSolver(final String[] dictionary) {
+//System.out.println(Arrays.toString(dictionary));
 		trie = new TrieST();
 		int j = 0;
 		for (int i = 0; i < dictionary.length; i++) {
@@ -20,8 +36,17 @@ public class BoggleSolver {
 		bag = new HashSet<>();
 	}
 
-	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
+// Returns the set of all valid words in
+// the given Boggle board, as an Iterable.
+
+	/**
+	 * Gets all valid words.
+	 *
+	 * @param      board  The board
+	 *
+	 * @return     All valid words.
+	 */
+public Iterable<String> getAllValidWords(final BoggleBoard board) {
 		//System.out.println(board);
 		if (board == null) {
 			System.out.println("board is null");
@@ -33,11 +58,11 @@ public class BoggleSolver {
 		//char[][] arr = new char[mrows][ncol];
 		for (int i = 0; i < mrows; i++) {
 			for (int j = 0; j < ncol; j++) {
-				boolean[][] marked = new boolean[mrows][ncol];
+		boolean[][] marked = new boolean[mrows][ncol];
 				//arr[i][j] = board.getLetter(i, j);
 				String word = "";
 
-				Dfs(board, i, j, word, marked);
+				dfs(board, i, j, word, marked);
 
 			}
 		}
@@ -47,8 +72,14 @@ public class BoggleSolver {
 		return bag;
 	}
 
-
-	public String chartoString(char chr) {
+    /**
+     * converts char to String.
+     *
+     * @param      chr   The character
+     *
+     * @return     { string }
+     */
+	public String chartoString(final char chr) {
 		//String string = "";
 		if (chr == 'Q') {
 			return "QU";
@@ -59,9 +90,14 @@ public class BoggleSolver {
 
 	}
 
-	// Returns the score of the given word if it is in the dictionary, zero otherwise.
-	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
+	/**
+	 * calculates the score of given word.
+	 *
+	 * @param      word  The word
+	 *
+	 * @return     { score }
+	 */
+	public int scoreOf(final String word) {
 		int wordlength = word.length();
 		if (wordlength <= 2) {
 			return 0;
@@ -78,7 +114,15 @@ public class BoggleSolver {
 		}
 	}
 
-	public boolean validindex(int i, int j) {
+    /**
+     * checks wether the index is valid or not.
+     *
+     * @param      i     { index1 }
+     * @param      j     { index2 }
+     *
+     * @return     { boolean }
+     */
+	public boolean validIndex(final int i, final int j) {
 		if (i < 0 || i >= mrows || j < 0 || j >= ncol) {
 			return false;
 		}
@@ -86,8 +130,19 @@ public class BoggleSolver {
 
 	}
 
-	public void Dfs(BoggleBoard board, int i, int j, String word, boolean[][] marked) {
+    /**
+     * checks all possible words.
+     *
+     * @param      board   The board
+     * @param      i       { index1 }
+     * @param      j       { index2 }
+     * @param      word    The word
+     * @param      marked  The marked
+     */
+	public void dfs(final BoggleBoard board, final int i,
+	 final int j, final String word, final boolean[][] marked) {
 
+        String word1 = word;
 		if (marked[i][j]) {
 			return;
 		}
@@ -101,54 +156,63 @@ public class BoggleSolver {
 		if (word == "") {
 			//System.out.println("hii");
 			char chr = board.getLetter(i, j);
-			word = chartoString(chr);
+			word1 = chartoString(chr);
 		}
 
-		if (word.length() > 2 && trie.contains(word) && (!bag.contains(word))) {
+		if (word1.length() > 2 && trie.contains(
+			word1) && (!bag.contains(word1))) {
 			//System.out.println(word);
-			bag.add(word);
+			bag.add(word1);
 			//return;1
 
 		}
 		marked[i][j] = true;
-		if (validindex(i - 1, j - 1) && (!marked[i - 1][j - 1])) {
+		if (validIndex(i - 1, j - 1) && (!marked[i - 1][j - 1])) {
 			//System.out.println("hii");
-			Dfs(board, i - 1, j - 1, word + chartoString(board.getLetter(i - 1, j - 1)), marked);
+			dfs(board, i - 1, j - 1, word1 + chartoString(
+				board.getLetter(i - 1, j - 1)), marked);
 			marked[i - 1][j - 1] = false;
 		}
 
-		if (validindex(i - 1, j) && (!marked[i - 1][j])) {
-			Dfs(board, i - 1, j, word + chartoString(board.getLetter(i - 1, j)), marked);
+		if (validIndex(i - 1, j) && (!marked[i - 1][j])) {
+			dfs(board, i - 1, j, word1 + chartoString(
+				board.getLetter(i - 1, j)), marked);
 			marked[i - 1][j] = false;
 		}
 
-		if (validindex(i - 1, j + 1) && (!marked[i - 1][j + 1])) {
-			Dfs(board, i - 1, j + 1, word + chartoString(board.getLetter(i - 1, j + 1)), marked);
+		if (validIndex(i - 1, j + 1) && (!marked[i - 1][j + 1])) {
+			dfs(board, i - 1, j + 1, word1 + chartoString(
+				board.getLetter(i - 1, j + 1)), marked);
 			marked[i - 1][j + 1] = false;
 		}
 
-		if (validindex(i, j - 1) && (!marked[i][j - 1])) {
-			Dfs(board, i, j - 1, word + chartoString(board.getLetter(i, j - 1)), marked);
+		if (validIndex(i, j - 1) && (!marked[i][j - 1])) {
+			dfs(board, i, j - 1, word1 + chartoString(
+				board.getLetter(i, j - 1)), marked);
 			marked[i][j - 1] = false;
 		}
 
-		if (validindex(i, j + 1) && (!marked[i][j + 1])) {
-			Dfs(board, i, j + 1, word + chartoString(board.getLetter(i, j + 1)), marked);
+		if (validIndex(i, j + 1) && (!marked[i][j + 1])) {
+			dfs(board, i, j + 1, word1 + chartoString(
+				board.getLetter(i, j + 1)), marked);
 			marked[i][j + 1] = false;
 		}
 
-		if (validindex(i + 1, j - 1) && (!marked[i + 1][j - 1])) {
-			Dfs(board, i + 1, j - 1, word + chartoString(board.getLetter(i + 1, j - 1)), marked);
+		if (validIndex(i + 1, j - 1) && (!marked[i + 1][j - 1])) {
+			dfs(board, i + 1, j - 1, word1 + chartoString(
+				board.getLetter(i + 1, j - 1)), marked);
 			marked[i + 1][j - 1] = false;
 		}
 
-		if (validindex(i + 1, j) && (!marked[i + 1][j])) {
-			Dfs(board, i + 1, j, word + chartoString(board.getLetter(i + 1, j)), marked);
+		if (validIndex(i + 1, j) && (!marked[i + 1][j])) {
+			dfs(board, i + 1, j, word1 + chartoString(
+				board.getLetter(i + 1, j)), marked);
 			marked[i + 1][j] = false;
 		}
 
-		if (validindex(i + 1, j + 1) && (!marked[i + 1][j + 1])) {
-			Dfs(board, i + 1, j + 1, word + chartoString(board.getLetter(i + 1, j + 1)), marked);
+		if (validIndex(i + 1, j + 1) && (!marked[i + 1][j + 1])) {
+			dfs(board, i + 1, j + 1, word1 + chartoString(
+				board.getLetter(i + 1, j + 1)), marked);
 			marked[i + 1][j + 1] = false;
 		}
 	}
