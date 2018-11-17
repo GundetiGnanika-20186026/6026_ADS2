@@ -4,15 +4,9 @@ Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:104:42: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:106:42: '5' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:108:42: '6' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:109:32: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:110:42: '7' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:111:32: '5' is a magic number. [MagicNumber]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:113:32: '11' is a magic number. [MagicNumber]
+[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\BoggleSolver.java:143: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
