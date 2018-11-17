@@ -24,7 +24,7 @@ class TrieST<Value> {
      */
     private static class Node {
         /**
-         * val;
+         * val.
          */
         private Object val;
         /**
@@ -208,7 +208,7 @@ class TrieST<Value> {
      * @param      results  The results
      */
     private void collect(final Node x, final StringBuilder prefix,
-                         Queue<String> results) {
+                        final Queue<String> results) {
         if (x == null) {
             return;
         }
@@ -237,6 +237,14 @@ class TrieST<Value> {
         return results;
     }
 
+    /**
+     * collects all nodes.
+     *
+     * @param      x        {node}
+     * @param      prefix   The prefix
+     * @param      pattern  The pattern
+     * @param      results  The results
+     */
     private void collect(final Node x, final StringBuilder prefix,
                         final String pattern, final Queue<String> results) {
         if (x == null) {

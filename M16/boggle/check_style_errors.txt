@@ -7,8 +7,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:26: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:211:26: Parameter results should be final. [FinalParameters]
-[ERROR] C:\Users\gunde\Desktop\6026_ADS2\M16\boggle\TrieST.java:240:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
