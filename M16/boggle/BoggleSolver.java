@@ -41,6 +41,8 @@ class BoggleSolver {
 
     /**
      * Gets all valid words.
+     * its time complexity is O(rows * colums).
+     *
      *
      * @param      board  The board
      *
@@ -74,6 +76,7 @@ class BoggleSolver {
 
     /**
      * converts char to String.
+     * its time complexity is O(1).
      *
      * @param      chr   The character
      *
@@ -92,7 +95,7 @@ class BoggleSolver {
 
     /**
      * calculates the score of given word.
-     *
+     *its time complexity is O(1).
      * @param      word  The word
      *
      * @return     { score }
@@ -116,7 +119,7 @@ class BoggleSolver {
 
     /**
      * checks wether the index is valid or not.
-     *
+     *its time complexity is O(1).
      * @param      i     { index1 }
      * @param      j     { index2 }
      *
@@ -132,6 +135,7 @@ class BoggleSolver {
 
     /**
      * checks all possible words.
+     * its time complexity is O(log(N)).
      *
      * @param      board   The board
      * @param      i       { index1 }
