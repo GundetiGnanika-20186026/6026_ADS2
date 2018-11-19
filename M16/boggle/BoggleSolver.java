@@ -22,6 +22,7 @@ class BoggleSolver {
     private int ncol;
     /**
      * Constructs the object.
+     * its timecomplexity is O(no. of words in dictionary)
      *
      * @param      dictionary  The dictionary
      */
@@ -135,7 +136,7 @@ class BoggleSolver {
 
     /**
      * checks all possible words.
-     * its time complexity is O(log(N)).
+     * its time complexity is O(vertices + edges).
      *
      * @param      board   The board
      * @param      i       { index1 }
