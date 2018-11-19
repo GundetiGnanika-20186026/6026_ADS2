@@ -12,6 +12,7 @@ public final class Solution {
     }
     /**
      * Main function to drive the program.
+     * time complexity is O(W * H).
      *
      * @param      fileName  The file name
      */
@@ -33,6 +34,7 @@ public final class Solution {
     }
     /**
      * { function to print }.
+     * time complexity is O(W * H).
      *
      * @param      carver     The carver
      * @param      seam       The seam
